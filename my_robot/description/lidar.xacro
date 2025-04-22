@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- 固定 Joint：將雷達安裝在 chassis 上 -->
+  <joint name="laser_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="laser_frame"/>
+    <origin xyz="0.10 0 0.15" rpy="0 0 0"/> <!-- 離相機約 4cm、加高 -->
+  </joint>
+
+  <!-- 雷達本體：模擬 RPLIDAR A1 外觀 -->
+  <link name="laser_frame">
+    <!-- 上方旋轉雷射頭 -->
+    <visual>
+      <geometry>
+        <cylinder radius="0.035" length="0.02"/>
+      </geometry>
+      <origin xyz="0 0 0.01" rpy="0 0 0"/>
+      <material name="black"/>
+    </visual>
+
+    <!-- 下方圓形底座 -->
+    <visual>
+      <geometry>
+        <cylinder radius="0.055" length="0.015"/>
+      </geometry>
+      <origin xyz="0 0 -0.0075" rpy="0 0 0"/>
+      <material name="gray"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="0.055" length="0.035"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-5" ixy="0" ixz="0"
+               iyy="1e-5" iyz="0"
+               izz="1e-5"/>
+    </inertial>
+  </link>
+
+  <!-- Gazebo 模擬雷射雷達 sensor 設定 -->
+  <gazebo reference="laser_frame">
+    <material>Gazebo/Black</material>
+    <sensor name="rplidar_a1" type="ray">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <min_angle>-3.14</min_angle>
+            <max_angle>3.14</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.12</min>
+          <max>12.0</max>
+        </range>
+      </ray>
+      <plugin name="rplidar_plugin" filename="libgazebo_ros_ray_sensor.so">
+        <ros>
+          <argument>~/out:=scan</argument>
+        </ros>
+        <output_type>sensor_msgs/LaserScan</output_type>
+        <frame_name>laser_frame</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>

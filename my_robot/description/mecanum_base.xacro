@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="mecanum_bot">
+
+  <xacro:include filename="mecanum_wheel_inertial.xacro"/>
+
+  <!-- 顏色材質 -->
+  <material name="gray"><color rgba="0.6 0.6 0.6 1.0"/></material>
+  <material name="black"><color rgba="0.1 0.1 0.1 1.0"/></material>
+
+  <!-- 底盤參數 -->
+  <xacro:property name="chassis_length" value="0.3865"/>
+  <xacro:property name="chassis_width"  value="0.3115"/>
+  <xacro:property name="chassis_height" value="0.075"/>
+  <xacro:property name="chassis_z"      value="${0.025 + 0.075 / 2}"/>
+
+  <!-- 輪子參數 -->
+  <xacro:property name="wheel_radius" value="0.05"/>
+  <xacro:property name="wheel_width"  value="0.05"/>
+  <xacro:property name="wheel_mass"   value="0.3875"/>
+
+  <!-- 輪子位置 -->
+  <xacro:property name="wheel_x_offset" value="0.157"/>
+  <xacro:property name="wheel_y_offset" value="0.1805"/>
+
+  <!-- ✅ odom → base_link（為 RViz 提供 TF） -->
+  <link name="odom"/>
+  <joint name="odom_to_base" type="fixed">
+    <parent link="odom"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 3.1416"/>
+  </joint>
+
+  <!-- base_link & chassis -->
+  <link name="base_link"/>
+  <joint name="chassis_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="chassis"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+
+  <!-- 底盤 -->
+  <link name="chassis">
+    <visual>
+      <geometry>
+        <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+      </geometry>
+      <origin xyz="0 0 ${chassis_z}"/>
+      <material name="gray"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+      </geometry>
+      <origin xyz="0 0 ${chassis_z}"/>
+    </collision>
+    <inertial>
+      <mass value="2.0"/>
+      <origin xyz="0 0 ${chassis_z}"/>
+      <inertia ixx="0.1" iyy="0.1" izz="0.1" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="chassis">
+    <material>Gazebo/Gray</material>
+  </gazebo>
+
+  <!-- 🛞 Mecanum 輪 Macro（修正前進方向） -->
+  <xacro:macro name="mecanum_wheel" params="name x y rpy_sign axis_sign">
+    <link name="${name}_link">
+      <visual>
+        <geometry>
+          <cylinder length="${wheel_width}" radius="${wheel_radius}"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder length="${wheel_width}" radius="${wheel_radius}"/>
+        </geometry>
+      </collision>
+      <xacro:mecanum_wheel_inertial mass="${wheel_mass}" radius="${wheel_radius}" length="${wheel_width}"/>
+    </link>
+
+    <joint name="${name}_joint" type="continuous">
+      <parent link="chassis"/>
+      <child link="${name}_link"/>
+      <origin xyz="${x} ${y} 0.05" rpy="${rpy_sign} 0 0"/>
+      <axis xyz="0 0 ${axis_sign}"/>
+      <limit effort="1.5" velocity="40.0"/>
+    </joint>
+
+    <gazebo reference="${name}_link">
+      <material>Gazebo/Black</material>
+    </gazebo>
+  </xacro:macro>
+
+  <!-- ✅ 四個輪子設定（修正前進方向） -->
+  <xacro:mecanum_wheel name="front_left_wheel"  x="${wheel_x_offset}"  y="${wheel_y_offset}"  rpy_sign="-1.5708" axis_sign="1"/>
+  <xacro:mecanum_wheel name="front_right_wheel" x="${wheel_x_offset}"  y="-${wheel_y_offset}" rpy_sign="1.5708"  axis_sign="-1"/>
+  <xacro:mecanum_wheel name="rear_left_wheel"   x="-${wheel_x_offset}" y="${wheel_y_offset}"  rpy_sign="-1.5708" axis_sign="1"/>
+  <xacro:mecanum_wheel name="rear_right_wheel"  x="-${wheel_x_offset}" y="-${wheel_y_offset}" rpy_sign="1.5708"  axis_sign="-1"/>
+
+</robot>

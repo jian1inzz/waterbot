@@ -1,0 +1,100 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[33mCMake Warning (dev) at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_symlink_install-extras.cmake:17 (option):
+  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
+  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  For compatibility with older versions of CMake, option is clearing the
+  normal variable 'AMENT_CMAKE_SYMLINK_INSTALL'.
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+  /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+  /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+  CMakeLists.txt:12 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+-- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+-- Found controller_manager: 2.49.0 (/opt/ros/humble/share/controller_manager/cmake)
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/USB_DISK/ros2_workspace/build/my_robot
+-- Install configuration: ""
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rsp.launch.py
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest_build
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/events.log
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/logger_all.log
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/COLCON_IGNORE
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__/serial.cpython-310.pyc
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/launch_sim.launch.py
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/camera.launch.py
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rplidar.launch.py
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/gazebo_params.yaml
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/laser_filter.yaml
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/mecanum_controller.yaml
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_base.xacro
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/camera.xacro
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/ros2_control.xacro
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/robot.urdf.xacro
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/lidar.xacro
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/gazebo_control.xacro
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_wheel_inertial.xacro
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/move.py
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/serial_comm.py
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.sh
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.sh
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.dsv
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.bash
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.sh
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.zsh
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.dsv
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.dsv
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/packages/my_robot
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake
+-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.xml

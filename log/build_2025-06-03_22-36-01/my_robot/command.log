@@ -1,0 +1,2 @@
+Invoking command in '/home/as33697920/larry_ws/robot/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/as33697920/larry_ws/robot/src/waterbot/my_robot -DCMAKE_INSTALL_PREFIX=/home/as33697920/larry_ws/robot/install/my_robot
+Invoked command in '/home/as33697920/larry_ws/robot/build/my_robot' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/as33697920/larry_ws/robot/src/waterbot/my_robot -DCMAKE_INSTALL_PREFIX=/home/as33697920/larry_ws/robot/install/my_robot

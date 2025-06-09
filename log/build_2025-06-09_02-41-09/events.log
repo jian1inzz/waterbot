@@ -1,0 +1,88 @@
+[0.000000] (-) TimerEvent: {}
+[0.001543] (-) JobUnselected: {'identifier': 'mecanum_drive_controller'}
+[0.002074] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.002171] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict()}
+[0.002258] (my_robot) JobStarted: {'identifier': 'my_robot'}
+[0.082956] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'cmake'}
+[0.094376] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'build'}
+[0.098392] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/USB_DISK/ros2_workspace/build/my_robot', '--', '-j4', '-l4'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 59492 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/my_robot'), ('SSH_CONNECTION', '172.20.10.2 59492 172.20.10.3 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.103460] (-) TimerEvent: {}
+[0.204079] (-) TimerEvent: {}
+[0.305046] (-) TimerEvent: {}
+[0.406192] (-) TimerEvent: {}
+[0.507306] (-) TimerEvent: {}
+[0.608411] (-) TimerEvent: {}
+[0.709371] (-) TimerEvent: {}
+[0.810343] (-) TimerEvent: {}
+[0.911317] (-) TimerEvent: {}
+[1.012408] (-) TimerEvent: {}
+[1.113531] (-) TimerEvent: {}
+[1.214352] (-) TimerEvent: {}
+[1.315119] (-) TimerEvent: {}
+[1.373122] (my_robot) CommandEnded: {'returncode': 0}
+[1.380904] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'install'}
+[1.419395] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/USB_DISK/ros2_workspace/build/my_robot'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 59492 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/my_robot'), ('SSH_CONNECTION', '172.20.10.2 59492 172.20.10.3 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.421977] (-) TimerEvent: {}
+[1.456708] (my_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.477797] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch\n'}
+[1.479681] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/keyboard.launch.py\n'}
+[1.480710] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rsp.launch.py\n'}
+[1.481680] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log\n'}
+[1.482601] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest_build\n'}
+[1.483294] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest\n'}
+[1.483839] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39\n'}
+[1.484582] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/events.log\n'}
+[1.485374] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/logger_all.log\n'}
+[1.486255] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/COLCON_IGNORE\n'}
+[1.486840] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__\n'}
+[1.487589] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__/serial.cpython-310.pyc\n'}
+[1.488313] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/launch_sim.launch.py\n'}
+[1.489174] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/move.launch.py\n'}
+[1.489826] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/camera.launch.py\n'}
+[1.490634] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rplidar.launch.py\n'}
+[1.491199] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config\n'}
+[1.491676] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/gazebo_params.yaml\n'}
+[1.492230] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/rplidar_filter.yaml\n'}
+[1.492541] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/laser_filter.yaml\n'}
+[1.492860] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/mecanum_controller.yaml\n'}
+[1.493387] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description\n'}
+[1.493797] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_base.xacro\n'}
+[1.494234] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/camera.xacro\n'}
+[1.494573] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/ros2_control.xacro\n'}
+[1.494968] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/robot.urdf.xacro\n'}
+[1.495420] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/lidar.xacro\n'}
+[1.495811] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/gazebo_control.xacro\n'}
+[1.496282] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_wheel_inertial.xacro\n'}
+[1.496714] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/move.py\n'}
+[1.497143] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/serial_comm.py\n'}
+[1.497624] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/keyboard.py\n'}
+[1.498083] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/camera.py\n'}
+[1.498481] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/yolorun.py\n'}
+[1.498910] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/rplidar.py\n'}
+[1.499294] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/obstacle1.py\n'}
+[1.499673] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/yolorun2.py\n'}
+[1.499994] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/partrol3.py\n'}
+[1.500435] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/decision4.py\n'}
+[1.500823] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/hcsr04.py\n'}
+[1.501205] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/encoder.py\n'}
+[1.501602] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/ws.py\n'}
+[1.502121] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot\n'}
+[1.502497] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot\n'}
+[1.502783] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.sh\n'}
+[1.503050] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv\n'}
+[1.503314] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.sh\n'}
+[1.503575] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.dsv\n'}
+[1.503835] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.bash\n'}
+[1.504091] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.sh\n'}
+[1.504349] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.zsh\n'}
+[1.504608] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.dsv\n'}
+[1.504866] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.dsv\n'}
+[1.511093] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/packages/my_robot\n'}
+[1.511732] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake\n'}
+[1.512271] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake\n'}
+[1.512767] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.xml\n'}
+[1.522187] (-) TimerEvent: {}
+[1.541051] (my_robot) CommandEnded: {'returncode': 0}
+[1.622886] (-) TimerEvent: {}
+[1.656732] (my_robot) JobEnded: {'identifier': 'my_robot', 'rc': 0}
+[1.659401] (-) EventReactorShutdown: {}

@@ -1,0 +1,661 @@
+[0.000000] (-) TimerEvent: {}
+[0.001642] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.002205] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict()}
+[0.002675] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.002868] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.029012] (my_robot) JobStarted: {'identifier': 'my_robot'}
+[0.049004] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.073134] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.076366] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'build'}
+[0.079303] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', '--', '-j4', '-l4'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 60627 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 60627 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.091610] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'cmake'}
+[0.094841] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'build'}
+[0.096212] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/USB_DISK/ros2_workspace/build/my_robot', '--', '-j4', '-l4'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 60627 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/my_robot'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 60627 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.111361] (-) TimerEvent: {}
+[0.116921] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[0.123573] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[0.125090] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros', '--', '-j4', '-l4'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 60627 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 60627 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.211593] (-) TimerEvent: {}
+[0.320845] (my_robot) CommandEnded: {'returncode': 0}
+[0.322819] (-) TimerEvent: {}
+[0.324031] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'install'}
+[0.374122] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/USB_DISK/ros2_workspace/build/my_robot'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 60627 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/my_robot'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 60627 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.400953] (mecanum_drive_controller) StdoutLine: {'line': b'[ 12%] Built target gmock_main\n'}
+[0.411067] (my_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.412283] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch\n'}
+[0.413981] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/keyboard.launch.py\n'}
+[0.414992] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rsp.launch.py\n'}
+[0.416416] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log\n'}
+[0.417816] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest_build\n'}
+[0.418511] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest\n'}
+[0.419159] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39\n'}
+[0.420782] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/events.log\n'}
+[0.421666] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/logger_all.log\n'}
+[0.422880] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/COLCON_IGNORE\n'}
+[0.423624] (-) TimerEvent: {}
+[0.424253] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__\n'}
+[0.425846] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__/serial.cpython-310.pyc\n'}
+[0.428104] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/launch_sim.launch.py\n'}
+[0.430173] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/move.launch.py\n'}
+[0.432442] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/camera.launch.py\n'}
+[0.434348] (mecanum_drive_controller) StdoutLine: {'line': b'[ 31%] Built target gmock\n'}
+[0.437426] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rplidar.launch.py\n'}
+[0.438147] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config\n'}
+[0.442380] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/gazebo_params.yaml\n'}
+[0.443125] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/rplidar_filter.yaml\n'}
+[0.443640] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/laser_filter.yaml\n'}
+[0.444301] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/mecanum_controller.yaml\n'}
+[0.451456] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description\n'}
+[0.456559] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_base.xacro\n'}
+[0.460275] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/camera.xacro\n'}
+[0.464788] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/ros2_control.xacro\n'}
+[0.468186] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/robot.urdf.xacro\n'}
+[0.473278] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/lidar.xacro\n'}
+[0.477516] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/gazebo_control.xacro\n'}
+[0.481588] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_wheel_inertial.xacro\n'}
+[0.487468] (mecanum_drive_controller) StdoutLine: {'line': b'[ 43%] Built target mecanum_drive_controller_parameters\n'}
+[0.490728] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/move.py\n'}
+[0.494741] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/serial_comm.py\n'}
+[0.500188] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/keyboard.py\n'}
+[0.504285] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/camera.py\n'}
+[0.508134] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/yolorun.py\n'}
+[0.529674] (-) TimerEvent: {}
+[0.531456] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/rplidar.py\n'}
+[0.533613] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot\n'}
+[0.541645] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot\n'}
+[0.544369] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.sh\n'}
+[0.546899] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv\n'}
+[0.549201] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.sh\n'}
+[0.556305] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.dsv\n'}
+[0.558954] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.bash\n'}
+[0.561463] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.sh\n'}
+[0.565754] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.zsh\n'}
+[0.572361] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.dsv\n'}
+[0.574623] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.dsv\n'}
+[0.577102] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/packages/my_robot\n'}
+[0.581589] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake\n'}
+[0.584491] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake\n'}
+[0.589246] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.xml\n'}
+[0.591051] (rplidar_ros) StdoutLine: {'line': b'[  5%] Built target rplidar_client\n'}
+[0.593023] (rplidar_ros) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o\x1b[0m\n'}
+[0.595654] (my_robot) CommandEnded: {'returncode': 0}
+[0.604789] (rplidar_ros) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o\x1b[0m\n'}
+[0.632036] (-) TimerEvent: {}
+[0.644866] (mecanum_drive_controller) StdoutLine: {'line': b'[ 56%] Built target test_load_mecanum_drive_controller\n'}
+[0.674206] (mecanum_drive_controller) StdoutLine: {'line': b'[ 75%] Built target mecanum_drive_controller\n'}
+[0.692176] (my_robot) JobEnded: {'identifier': 'my_robot', 'rc': 0}
+[0.732207] (-) TimerEvent: {}
+[0.811733] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] Built target test_mecanum_drive_controller_preceeding\n'}
+[0.813447] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] Built target test_mecanum_drive_controller\n'}
+[0.832429] (-) TimerEvent: {}
+[0.856076] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[0.858369] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'install'}
+[0.864883] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 60627 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 60627 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.891234] (mecanum_drive_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.891960] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller\n'}
+[0.892725] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp\n'}
+[0.893351] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml\n'}
+[0.894009] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller\n'}
+[0.894731] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller\n'}
+[0.895266] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp\n'}
+[0.895914] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp\n'}
+[0.897072] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h\n'}
+[0.897846] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so\n'}
+[0.899009] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh\n'}
+[0.899810] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv\n'}
+[0.900637] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller\n'}
+[0.901429] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller\n'}
+[0.902225] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh\n'}
+[0.903011] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv\n'}
+[0.903861] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh\n'}
+[0.904900] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv\n'}
+[0.905522] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash\n'}
+[0.908243] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh\n'}
+[0.912838] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh\n'}
+[0.913582] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv\n'}
+[0.919041] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv\n'}
+[0.921337] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller\n'}
+[0.922684] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller\n'}
+[0.924717] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake\n'}
+[0.926003] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake\n'}
+[0.928399] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.930715] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.933296] (-) TimerEvent: {}
+[0.934476] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake\n'}
+[0.937197] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake\n'}
+[0.938468] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml\n'}
+[0.942889] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[1.013567] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 0}
+[1.033482] (-) TimerEvent: {}
+[1.134229] (-) TimerEvent: {}
+[1.234964] (-) TimerEvent: {}
+[1.335724] (-) TimerEvent: {}
+[1.436487] (-) TimerEvent: {}
+[1.537265] (-) TimerEvent: {}
+[1.638035] (-) TimerEvent: {}
+[1.738843] (-) TimerEvent: {}
+[1.839615] (-) TimerEvent: {}
+[1.940562] (-) TimerEvent: {}
+[2.041627] (-) TimerEvent: {}
+[2.142419] (-) TimerEvent: {}
+[2.243222] (-) TimerEvent: {}
+[2.344277] (-) TimerEvent: {}
+[2.445324] (-) TimerEvent: {}
+[2.546451] (-) TimerEvent: {}
+[2.647377] (-) TimerEvent: {}
+[2.748466] (-) TimerEvent: {}
+[2.849456] (-) TimerEvent: {}
+[2.950342] (-) TimerEvent: {}
+[3.051320] (-) TimerEvent: {}
+[3.152339] (-) TimerEvent: {}
+[3.253203] (-) TimerEvent: {}
+[3.354225] (-) TimerEvent: {}
+[3.455213] (-) TimerEvent: {}
+[3.556105] (-) TimerEvent: {}
+[3.657147] (-) TimerEvent: {}
+[3.758149] (-) TimerEvent: {}
+[3.859142] (-) TimerEvent: {}
+[3.960279] (-) TimerEvent: {}
+[4.061136] (-) TimerEvent: {}
+[4.162086] (-) TimerEvent: {}
+[4.263154] (-) TimerEvent: {}
+[4.364281] (-) TimerEvent: {}
+[4.465131] (-) TimerEvent: {}
+[4.566100] (-) TimerEvent: {}
+[4.667010] (-) TimerEvent: {}
+[4.767966] (-) TimerEvent: {}
+[4.869046] (-) TimerEvent: {}
+[4.970073] (-) TimerEvent: {}
+[5.071111] (-) TimerEvent: {}
+[5.172117] (-) TimerEvent: {}
+[5.273177] (-) TimerEvent: {}
+[5.374276] (-) TimerEvent: {}
+[5.475281] (-) TimerEvent: {}
+[5.576144] (-) TimerEvent: {}
+[5.677099] (-) TimerEvent: {}
+[5.778039] (-) TimerEvent: {}
+[5.879021] (-) TimerEvent: {}
+[5.980015] (-) TimerEvent: {}
+[6.080877] (-) TimerEvent: {}
+[6.181780] (-) TimerEvent: {}
+[6.282637] (-) TimerEvent: {}
+[6.383530] (-) TimerEvent: {}
+[6.484492] (-) TimerEvent: {}
+[6.585508] (-) TimerEvent: {}
+[6.686458] (-) TimerEvent: {}
+[6.787365] (-) TimerEvent: {}
+[6.888223] (-) TimerEvent: {}
+[6.989113] (-) TimerEvent: {}
+[7.089951] (-) TimerEvent: {}
+[7.190860] (-) TimerEvent: {}
+[7.291882] (-) TimerEvent: {}
+[7.392878] (-) TimerEvent: {}
+[7.493772] (-) TimerEvent: {}
+[7.594662] (-) TimerEvent: {}
+[7.695538] (-) TimerEvent: {}
+[7.796592] (-) TimerEvent: {}
+[7.897465] (-) TimerEvent: {}
+[7.998382] (-) TimerEvent: {}
+[8.099256] (-) TimerEvent: {}
+[8.200113] (-) TimerEvent: {}
+[8.301048] (-) TimerEvent: {}
+[8.401903] (-) TimerEvent: {}
+[8.502777] (-) TimerEvent: {}
+[8.603710] (-) TimerEvent: {}
+[8.704789] (-) TimerEvent: {}
+[8.805660] (-) TimerEvent: {}
+[8.906559] (-) TimerEvent: {}
+[9.007533] (-) TimerEvent: {}
+[9.108476] (-) TimerEvent: {}
+[9.209388] (-) TimerEvent: {}
+[9.310275] (-) TimerEvent: {}
+[9.411181] (-) TimerEvent: {}
+[9.512144] (-) TimerEvent: {}
+[9.613111] (-) TimerEvent: {}
+[9.713994] (-) TimerEvent: {}
+[9.814854] (-) TimerEvent: {}
+[9.915839] (-) TimerEvent: {}
+[10.016919] (-) TimerEvent: {}
+[10.117854] (-) TimerEvent: {}
+[10.218794] (-) TimerEvent: {}
+[10.319896] (-) TimerEvent: {}
+[10.420964] (-) TimerEvent: {}
+[10.522003] (-) TimerEvent: {}
+[10.623527] (-) TimerEvent: {}
+[10.724875] (-) TimerEvent: {}
+[10.825855] (-) TimerEvent: {}
+[10.926873] (-) TimerEvent: {}
+[11.027829] (-) TimerEvent: {}
+[11.128774] (-) TimerEvent: {}
+[11.229748] (-) TimerEvent: {}
+[11.330673] (-) TimerEvent: {}
+[11.377734] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[11.378666] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[11.380259] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[11.381016] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[11.381689] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.382315] (rplidar_ros) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[11.382918] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.383516] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[11.384153] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[11.384761] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[11.385360] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.386063] (rplidar_ros) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[11.386740] (rplidar_ros) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.393854] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:617:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[11.394690] (rplidar_ros) StderrLine: {'line': b'  617 |  }\n'}
+[11.395352] (rplidar_ros) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.396021] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:62:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.396701] (rplidar_ros) StderrLine: {'line': b'   62 |  \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[11.397355] (rplidar_ros) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[11.430889] (-) TimerEvent: {}
+[11.450403] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RPlidarNode::init_param()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.451400] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:90:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kchannel_type\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.452245] (rplidar_ros) StderrLine: {'line': b'   90 |          this->get_parameter_or<std::string>("channel_type", \x1b[01;31m\x1b[Kchannel_type\x1b[m\x1b[K, "serial");\n'}
+[11.452966] (rplidar_ros) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.474945] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:91:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktcp_ip\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.475890] (rplidar_ros) StderrLine: {'line': b'   91 |          this->get_parameter_or<std::string>("tcp_ip", \x1b[01;31m\x1b[Ktcp_ip\x1b[m\x1b[K, "192.168.0.7");\n'}
+[11.476666] (rplidar_ros) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[11.501270] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:92:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktcp_port\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.502235] (rplidar_ros) StderrLine: {'line': b'   92 |          this->get_parameter_or<int>("tcp_port", \x1b[01;31m\x1b[Ktcp_port\x1b[m\x1b[K, 20108);\n'}
+[11.502960] (rplidar_ros) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.525909] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:93:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kudp_ip\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.526949] (rplidar_ros) StderrLine: {'line': b'   93 |          this->get_parameter_or<std::string>("udp_ip", \x1b[01;31m\x1b[Kudp_ip\x1b[m\x1b[K, "192.168.11.2");\n'}
+[11.527667] (rplidar_ros) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[11.531104] (-) TimerEvent: {}
+[11.552269] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:94:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kudp_port\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.553188] (rplidar_ros) StderrLine: {'line': b'   94 |          this->get_parameter_or<int>("udp_port", \x1b[01;31m\x1b[Kudp_port\x1b[m\x1b[K, 8089);\n'}
+[11.554546] (rplidar_ros) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.555244] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[11.556691] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[11.557525] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[11.558293] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[11.559096] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.559819] (rplidar_ros) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[11.560674] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.561408] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[11.562199] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[11.563007] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[11.563752] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.564328] (rplidar_ros) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[11.564804] (rplidar_ros) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.571739] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:617:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[11.572805] (rplidar_ros) StderrLine: {'line': b'  617 |  }\n'}
+[11.573637] (rplidar_ros) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.574417] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:62:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.575272] (rplidar_ros) StderrLine: {'line': b'   62 |  \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[11.576235] (rplidar_ros) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[11.584269] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:95:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kserial_port\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.585195] (rplidar_ros) StderrLine: {'line': b'   95 |          this->get_parameter_or<std::string>("serial_port", \x1b[01;31m\x1b[Kserial_port\x1b[m\x1b[K, "/dev/ttyUSB0");\n'}
+[11.585908] (rplidar_ros) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.621567] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:96:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kserial_baudrate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.622879] (rplidar_ros) StderrLine: {'line': b'   96 |          this->get_parameter_or<int>("serial_baudrate", \x1b[01;31m\x1b[Kserial_baudrate\x1b[m\x1b[K, 1000000/*256000*/);//ros run for A1 A2, change to 256000 if A3\n'}
+[11.623972] (rplidar_ros) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.631356] (-) TimerEvent: {}
+[11.634072] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RPlidarNode::init_param()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.635041] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:90:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kchannel_type\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.635983] (rplidar_ros) StderrLine: {'line': b'   90 |          this->get_parameter_or<std::string>("channel_type", \x1b[01;31m\x1b[Kchannel_type\x1b[m\x1b[K, "serial");\n'}
+[11.636934] (rplidar_ros) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.652952] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:97:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kframe_id\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.656542] (rplidar_ros) StderrLine: {'line': b'   97 |          this->get_parameter_or<std::string>("frame_id", \x1b[01;31m\x1b[Kframe_id\x1b[m\x1b[K, "laser_frame");\n'}
+[11.660149] (rplidar_ros) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.665617] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:91:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktcp_ip\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.668785] (rplidar_ros) StderrLine: {'line': b'   91 |          this->get_parameter_or<std::string>("tcp_ip", \x1b[01;31m\x1b[Ktcp_ip\x1b[m\x1b[K, "192.168.0.7");\n'}
+[11.672371] (rplidar_ros) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[11.686737] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:98:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinverted\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.690279] (rplidar_ros) StderrLine: {'line': b'   98 |          this->get_parameter_or<bool>("inverted", \x1b[01;31m\x1b[Kinverted\x1b[m\x1b[K, false);\n'}
+[11.693244] (rplidar_ros) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.700775] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:92:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktcp_port\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.705431] (rplidar_ros) StderrLine: {'line': b'   92 |          this->get_parameter_or<int>("tcp_port", \x1b[01;31m\x1b[Ktcp_port\x1b[m\x1b[K, 20108);\n'}
+[11.709067] (rplidar_ros) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.729684] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:93:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kudp_ip\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.732496] (-) TimerEvent: {}
+[11.734364] (rplidar_ros) StderrLine: {'line': b'   93 |          this->get_parameter_or<std::string>("udp_ip", \x1b[01;31m\x1b[Kudp_ip\x1b[m\x1b[K, "192.168.11.2");\n'}
+[11.737495] (rplidar_ros) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[11.741086] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:99:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kangle_compensate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.744143] (rplidar_ros) StderrLine: {'line': b'   99 |          this->get_parameter_or<bool>("angle_compensate", \x1b[01;31m\x1b[Kangle_compensate\x1b[m\x1b[K, false);\n'}
+[11.747258] (rplidar_ros) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.762386] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:94:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kudp_port\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.766023] (rplidar_ros) StderrLine: {'line': b'   94 |          this->get_parameter_or<int>("udp_port", \x1b[01;31m\x1b[Kudp_port\x1b[m\x1b[K, 8089);\n'}
+[11.769324] (rplidar_ros) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.777117] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:100:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kflip_x_axis\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.780045] (rplidar_ros) StderrLine: {'line': b'  100 |          this->get_parameter_or<bool>("flip_x_axis", \x1b[01;31m\x1b[Kflip_x_axis\x1b[m\x1b[K, false);\n'}
+[11.783256] (rplidar_ros) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.795396] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:95:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kserial_port\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.798447] (rplidar_ros) StderrLine: {'line': b'   95 |          this->get_parameter_or<std::string>("serial_port", \x1b[01;31m\x1b[Kserial_port\x1b[m\x1b[K, "/dev/ttyUSB0");\n'}
+[11.801555] (rplidar_ros) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.811685] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:101:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kauto_standby\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.814580] (rplidar_ros) StderrLine: {'line': b'  101 |          this->get_parameter_or<bool>("auto_standby", \x1b[01;31m\x1b[Kauto_standby\x1b[m\x1b[K, false);\n'}
+[11.817756] (rplidar_ros) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.832729] (-) TimerEvent: {}
+[11.834543] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:96:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kserial_baudrate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.837233] (rplidar_ros) StderrLine: {'line': b'   96 |          this->get_parameter_or<int>("serial_baudrate", \x1b[01;31m\x1b[Kserial_baudrate\x1b[m\x1b[K, 1000000/*256000*/);//ros run for A1 A2, change to 256000 if A3\n'}
+[11.840215] (rplidar_ros) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.843558] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:102:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktopic_name\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktypename\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.846672] (rplidar_ros) StderrLine: {'line': b'  102 |          this->get_parameter_or<std::string>("topic_name", \x1b[01;31m\x1b[Ktopic_name\x1b[m\x1b[K, "scan");\n'}
+[11.849476] (rplidar_ros) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.852509] (rplidar_ros) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[Ktypename\x1b[m\x1b[K\n'}
+[11.864262] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:97:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kframe_id\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.867215] (rplidar_ros) StderrLine: {'line': b'   97 |          this->get_parameter_or<std::string>("frame_id", \x1b[01;31m\x1b[Kframe_id\x1b[m\x1b[K, "laser_frame");\n'}
+[11.870642] (rplidar_ros) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.873995] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:103:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan_mode\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.877071] (rplidar_ros) StderrLine: {'line': b'  103 |          this->get_parameter_or<std::string>("scan_mode", \x1b[01;31m\x1b[Kscan_mode\x1b[m\x1b[K, std::string());\n'}
+[11.879889] (rplidar_ros) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.893106] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:98:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinverted\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.896158] (rplidar_ros) StderrLine: {'line': b'   98 |          this->get_parameter_or<bool>("inverted", \x1b[01;31m\x1b[Kinverted\x1b[m\x1b[K, false);\n'}
+[11.898858] (rplidar_ros) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.907648] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:105:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan_frequency\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.910245] (rplidar_ros) StderrLine: {'line': b'  105 |              this->get_parameter_or<float>("scan_frequency", \x1b[01;31m\x1b[Kscan_frequency\x1b[m\x1b[K, 20.0);\n'}
+[11.913232] (rplidar_ros) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.932534] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:99:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kangle_compensate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.934795] (-) TimerEvent: {}
+[11.935992] (rplidar_ros) StderrLine: {'line': b'   99 |          this->get_parameter_or<bool>("angle_compensate", \x1b[01;31m\x1b[Kangle_compensate\x1b[m\x1b[K, false);\n'}
+[11.938946] (rplidar_ros) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.942972] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:107:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan_frequency\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.945175] (rplidar_ros) StderrLine: {'line': b'  107 |              this->get_parameter_or<float>("scan_frequency", \x1b[01;31m\x1b[Kscan_frequency\x1b[m\x1b[K, 10.0);\n'}
+[11.947487] (rplidar_ros) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.963088] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:100:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kflip_x_axis\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.965962] (rplidar_ros) StderrLine: {'line': b'  100 |          this->get_parameter_or<bool>("flip_x_axis", \x1b[01;31m\x1b[Kflip_x_axis\x1b[m\x1b[K, false);\n'}
+[11.968783] (rplidar_ros) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.995506] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:101:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kauto_standby\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.998565] (rplidar_ros) StderrLine: {'line': b'  101 |          this->get_parameter_or<bool>("auto_standby", \x1b[01;31m\x1b[Kauto_standby\x1b[m\x1b[K, false);\n'}
+[12.001707] (rplidar_ros) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.013334] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool RPlidarNode::stop_motor(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.016210] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:169:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kauto_standby\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.019385] (rplidar_ros) StderrLine: {'line': b'  169 |          if (\x1b[01;31m\x1b[Kauto_standby\x1b[m\x1b[K) {\n'}
+[12.021926] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.025002] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:179:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass RPlidarNode\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kstop\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.028540] (rplidar_ros) StderrLine: {'line': b'  179 |          this->\x1b[01;31m\x1b[Kstop\x1b[m\x1b[K();\n'}
+[12.031086] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.033650] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:102:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktopic_name\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktypename\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.036668] (-) TimerEvent: {}
+[12.038191] (rplidar_ros) StderrLine: {'line': b'  102 |          this->get_parameter_or<std::string>("topic_name", \x1b[01;31m\x1b[Ktopic_name\x1b[m\x1b[K, "scan");\n'}
+[12.041294] (rplidar_ros) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.044294] (rplidar_ros) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[Ktypename\x1b[m\x1b[K\n'}
+[12.052528] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool RPlidarNode::start_motor(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.055708] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:190:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kauto_standby\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.058598] (rplidar_ros) StderrLine: {'line': b'  190 |          if (\x1b[01;31m\x1b[Kauto_standby\x1b[m\x1b[K) {\n'}
+[12.061518] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.064254] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:103:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan_mode\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.066817] (rplidar_ros) StderrLine: {'line': b'  103 |          this->get_parameter_or<std::string>("scan_mode", \x1b[01;31m\x1b[Kscan_mode\x1b[m\x1b[K, std::string());\n'}
+[12.068870] (rplidar_ros) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.071114] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:197:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass RPlidarNode\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kstart\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.073741] (rplidar_ros) StderrLine: {'line': b'  197 |          return this->\x1b[01;31m\x1b[Kstart\x1b[m\x1b[K();\n'}
+[12.076524] (rplidar_ros) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.086362] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RPlidarNode::publish_scan(rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&, sl_lidar_response_measurement_node_hq_t*, size_t, rclcpp::Time, double, bool, bool, float, float, float, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.088945] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kempty parentheses were disambiguated as a function declaration [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse\x07-Wvexing-parse\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.091901] (rplidar_ros) StderrLine: {'line': b'  308 |      bool set_scan_mode\x1b[01;35m\x1b[K()\x1b[m\x1b[K {\n'}
+[12.094587] (rplidar_ros) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[12.097437] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kremove parentheses to default-initialize a variable\n'}
+[12.100394] (rplidar_ros) StderrLine: {'line': b'  308 |      bool set_scan_mode\x1b[01;36m\x1b[K()\x1b[m\x1b[K {\n'}
+[12.102925] (rplidar_ros) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[12.104939] (rplidar_ros) StderrLine: {'line': b'      |                        \x1b[31m\x1b[K--\x1b[m\x1b[K\n'}
+[12.107322] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kor replace parentheses with braces to value-initialize a variable\n'}
+[12.109986] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[12.112841] (rplidar_ros) StderrLine: {'line': b'  308 |      bool set_scan_mode() \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[12.115703] (rplidar_ros) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.118381] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kempty parentheses were disambiguated as a function declaration [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse\x07-Wvexing-parse\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.120881] (rplidar_ros) StderrLine: {'line': b'  359 |      bool start\x1b[01;35m\x1b[K()\x1b[m\x1b[K\n'}
+[12.123594] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[12.126106] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kremove parentheses to default-initialize a variable\n'}
+[12.128455] (rplidar_ros) StderrLine: {'line': b'  359 |      bool start\x1b[01;36m\x1b[K()\x1b[m\x1b[K\n'}
+[12.130783] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[12.133052] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[31m\x1b[K--\x1b[m\x1b[K\n'}
+[12.135305] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kor replace parentheses with braces to value-initialize a variable\n'}
+[12.137641] (-) TimerEvent: {}
+[12.138572] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:360:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[12.140991] (rplidar_ros) StderrLine: {'line': b'  360 |      \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[12.143309] (rplidar_ros) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.145610] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:377:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[12.147978] (rplidar_ros) StderrLine: {'line': b'  377 |      \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[12.150265] (rplidar_ros) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.152621] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:388:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kpublic\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.154952] (rplidar_ros) StderrLine: {'line': b'  388 |  \x1b[01;31m\x1b[Kpublic\x1b[m\x1b[K:\n'}
+[12.157283] (rplidar_ros) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[12.159623] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:574:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kprivate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.162127] (rplidar_ros) StderrLine: {'line': b'  574 |    \x1b[01;31m\x1b[Kprivate\x1b[m\x1b[K:\n'}
+[12.164531] (rplidar_ros) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.166786] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:105:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan_frequency\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.169391] (rplidar_ros) StderrLine: {'line': b'  105 |              this->get_parameter_or<float>("scan_frequency", \x1b[01;31m\x1b[Kscan_frequency\x1b[m\x1b[K, 20.0);\n'}
+[12.171868] (rplidar_ros) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.174521] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:107:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan_frequency\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.176992] (rplidar_ros) StderrLine: {'line': b'  107 |              this->get_parameter_or<float>("scan_frequency", \x1b[01;31m\x1b[Kscan_frequency\x1b[m\x1b[K, 10.0);\n'}
+[12.179518] (rplidar_ros) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.181617] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:587:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::string frame_id\x1b[m\x1b[K\xe2\x80\x99 shadows a parameter\n'}
+[12.184050] (rplidar_ros) StderrLine: {'line': b'  587 |      std::string \x1b[01;31m\x1b[Kframe_id\x1b[m\x1b[K;\n'}
+[12.186692] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.189582] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:239:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::string frame_id\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[12.192551] (rplidar_ros) StderrLine: {'line': b'  239 |          \x1b[01;36m\x1b[Kstd::string frame_id\x1b[m\x1b[K)\n'}
+[12.194084] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[12.194952] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:588:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdeclaration of \xe2\x80\x98\x1b[01m\x1b[Kbool inverted\x1b[m\x1b[K\xe2\x80\x99 shadows a parameter\n'}
+[12.195805] (rplidar_ros) StderrLine: {'line': b'  588 |      bool \x1b[01;31m\x1b[Kinverted\x1b[m\x1b[K = false;\n'}
+[12.196450] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.197237] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbool inverted\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[12.197869] (rplidar_ros) StderrLine: {'line': b'  236 |          double scan_time, \x1b[01;36m\x1b[Kbool inverted\x1b[m\x1b[K, bool flip_X_axis,\n'}
+[12.198682] (rplidar_ros) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[12.199253] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:592:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdeclaration of \xe2\x80\x98\x1b[01m\x1b[Kfloat max_distance\x1b[m\x1b[K\xe2\x80\x99 shadows a parameter\n'}
+[12.199881] (rplidar_ros) StderrLine: {'line': b'  592 |      float \x1b[01;31m\x1b[Kmax_distance\x1b[m\x1b[K = 8.0;\n'}
+[12.200601] (rplidar_ros) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.201519] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:238:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfloat max_distance\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[12.202937] (rplidar_ros) StderrLine: {'line': b'  238 |          \x1b[01;36m\x1b[Kfloat max_distance\x1b[m\x1b[K,\n'}
+[12.203597] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.204264] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:584:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktcp_port\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.204914] (rplidar_ros) StderrLine: {'line': b'  584 |      int \x1b[01;35m\x1b[Ktcp_port\x1b[m\x1b[K = 20108;\n'}
+[12.205536] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.206583] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:585:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kudp_port\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.207481] (rplidar_ros) StderrLine: {'line': b'  585 |      int \x1b[01;35m\x1b[Kudp_port\x1b[m\x1b[K = 8089;\n'}
+[12.208180] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.208819] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:586:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kserial_baudrate\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.209583] (rplidar_ros) StderrLine: {'line': b'  586 |      int \x1b[01;35m\x1b[Kserial_baudrate\x1b[m\x1b[K = 115200;\n'}
+[12.210230] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.210926] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:588:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kinverted\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.211741] (rplidar_ros) StderrLine: {'line': b'  588 |      bool \x1b[01;35m\x1b[Kinverted\x1b[m\x1b[K = false;\n'}
+[12.212540] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.213348] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:589:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle_compensate\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.214124] (rplidar_ros) StderrLine: {'line': b'  589 |      bool \x1b[01;35m\x1b[Kangle_compensate\x1b[m\x1b[K = true;\n'}
+[12.214899] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.215624] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:590:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kflip_x_axis\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.216705] (rplidar_ros) StderrLine: {'line': b'  590 |      bool \x1b[01;35m\x1b[Kflip_x_axis\x1b[m\x1b[K = false;\n'}
+[12.217568] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.218264] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:591:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kauto_standby\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.218746] (rplidar_ros) StderrLine: {'line': b'  591 |      bool \x1b[01;35m\x1b[Kauto_standby\x1b[m\x1b[K = false;\n'}
+[12.219176] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.219595] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:592:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmax_distance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.220104] (rplidar_ros) StderrLine: {'line': b'  592 |      float \x1b[01;35m\x1b[Kmax_distance\x1b[m\x1b[K = 8.0;\n'}
+[12.220558] (rplidar_ros) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.220998] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:593:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle_compensate_multiple\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.221446] (rplidar_ros) StderrLine: {'line': b'  593 |      size_t \x1b[01;35m\x1b[Kangle_compensate_multiple\x1b[m\x1b[K = 1;//it stand of angle compensate at per 1 degree\n'}
+[12.221926] (rplidar_ros) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.222643] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:595:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kscan_frequency\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.223254] (rplidar_ros) StderrLine: {'line': b'  595 |      float \x1b[01;35m\x1b[Kscan_frequency\x1b[m\x1b[K;\n'}
+[12.223876] (rplidar_ros) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.224578] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:597:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kis_scanning\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.225276] (rplidar_ros) StderrLine: {'line': b'  597 |      bool \x1b[01;35m\x1b[Kis_scanning\x1b[m\x1b[K = false;\n'}
+[12.226022] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.226703] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:599:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdrv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.227680] (rplidar_ros) StderrLine: {'line': b'  599 |      ILidarDriver *\x1b[01;35m\x1b[Kdrv\x1b[m\x1b[K = nullptr;\n'}
+[12.228472] (rplidar_ros) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[12.229211] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kinverted\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.230081] (rplidar_ros) StderrLine: {'line': b'  236 |          double scan_time, \x1b[01;35m\x1b[Kbool inverted\x1b[m\x1b[K, bool flip_X_axis,\n'}
+[12.230846] (rplidar_ros) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[12.231636] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflip_X_axis\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.232530] (rplidar_ros) StderrLine: {'line': b'  236 |          double scan_time, bool inverted, \x1b[01;35m\x1b[Kbool flip_X_axis\x1b[m\x1b[K,\n'}
+[12.233127] (rplidar_ros) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.233598] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:237:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kangle_min\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.234048] (rplidar_ros) StderrLine: {'line': b'  237 |          \x1b[01;35m\x1b[Kfloat angle_min\x1b[m\x1b[K, float angle_max,\n'}
+[12.234526] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.234950] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:237:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kangle_max\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.235399] (rplidar_ros) StderrLine: {'line': b'  237 |          float angle_min, \x1b[01;35m\x1b[Kfloat angle_max\x1b[m\x1b[K,\n'}
+[12.235820] (rplidar_ros) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.236318] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint RPlidarNode::main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.236983] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:613:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RPlidarNode::ExitHandler(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.237585] (rplidar_ros) StderrLine: {'line': b'  613 |    signal(SIGINT,\x1b[01;31m\x1b[KExitHandler\x1b[m\x1b[K);\n'}
+[12.238160] (-) TimerEvent: {}
+[12.238719] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.239637] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:602:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.240424] (rplidar_ros) StderrLine: {'line': b'  602 |  void \x1b[01;36m\x1b[KExitHandler\x1b[m\x1b[K(int sig)\n'}
+[12.241096] (rplidar_ros) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.241687] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:614:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class RPlidarNode\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass RPlidarNode\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kwork_loop\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.242561] (rplidar_ros) StderrLine: {'line': b'  614 |    int ret = rplidar_node->\x1b[01;31m\x1b[Kwork_loop\x1b[m\x1b[K();\n'}
+[12.243136] (rplidar_ros) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.243696] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[12.244338] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:617:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[12.245003] (rplidar_ros) StderrLine: {'line': b'  617 |  }\n'}
+[12.245881] (rplidar_ros) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.246657] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool RPlidarNode::stop_motor(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.247325] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:169:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kauto_standby\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.247967] (rplidar_ros) StderrLine: {'line': b'  169 |          if (\x1b[01;31m\x1b[Kauto_standby\x1b[m\x1b[K) {\n'}
+[12.248616] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.249223] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:179:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass RPlidarNode\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kstop\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.249937] (rplidar_ros) StderrLine: {'line': b'  179 |          this->\x1b[01;31m\x1b[Kstop\x1b[m\x1b[K();\n'}
+[12.250562] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.251139] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool RPlidarNode::start_motor(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.251854] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:190:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kauto_standby\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.252578] (rplidar_ros) StderrLine: {'line': b'  190 |          if (\x1b[01;31m\x1b[Kauto_standby\x1b[m\x1b[K) {\n'}
+[12.253187] (rplidar_ros) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.253785] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:197:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass RPlidarNode\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kstart\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.254446] (rplidar_ros) StderrLine: {'line': b'  197 |          return this->\x1b[01;31m\x1b[Kstart\x1b[m\x1b[K();\n'}
+[12.255030] (rplidar_ros) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.271628] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RPlidarNode::publish_scan(rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&, sl_lidar_response_measurement_node_hq_t*, size_t, rclcpp::Time, double, bool, bool, float, float, float, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.272793] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kempty parentheses were disambiguated as a function declaration [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse\x07-Wvexing-parse\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.273877] (rplidar_ros) StderrLine: {'line': b'  308 |      bool set_scan_mode\x1b[01;35m\x1b[K()\x1b[m\x1b[K {\n'}
+[12.274937] (rplidar_ros) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[12.275971] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kremove parentheses to default-initialize a variable\n'}
+[12.276693] (rplidar_ros) StderrLine: {'line': b'  308 |      bool set_scan_mode\x1b[01;36m\x1b[K()\x1b[m\x1b[K {\n'}
+[12.277298] (rplidar_ros) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[12.277895] (rplidar_ros) StderrLine: {'line': b'      |                        \x1b[31m\x1b[K--\x1b[m\x1b[K\n'}
+[12.278530] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kor replace parentheses with braces to value-initialize a variable\n'}
+[12.279150] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[12.279740] (rplidar_ros) StderrLine: {'line': b'  308 |      bool set_scan_mode() \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[12.280379] (rplidar_ros) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.280992] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kempty parentheses were disambiguated as a function declaration [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse\x07-Wvexing-parse\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.281607] (rplidar_ros) StderrLine: {'line': b'  359 |      bool start\x1b[01;35m\x1b[K()\x1b[m\x1b[K\n'}
+[12.282195] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[12.282829] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kremove parentheses to default-initialize a variable\n'}
+[12.283522] (rplidar_ros) StderrLine: {'line': b'  359 |      bool start\x1b[01;36m\x1b[K()\x1b[m\x1b[K\n'}
+[12.284177] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[12.285237] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[31m\x1b[K--\x1b[m\x1b[K\n'}
+[12.285906] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kor replace parentheses with braces to value-initialize a variable\n'}
+[12.286516] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:360:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[12.287133] (rplidar_ros) StderrLine: {'line': b'  360 |      \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[12.287757] (rplidar_ros) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.288441] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:377:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[12.289110] (rplidar_ros) StderrLine: {'line': b'  377 |      \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[12.289742] (rplidar_ros) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.290352] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:388:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kpublic\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.291019] (rplidar_ros) StderrLine: {'line': b'  388 |  \x1b[01;31m\x1b[Kpublic\x1b[m\x1b[K:\n'}
+[12.291588] (rplidar_ros) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[12.292213] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:574:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kprivate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.292875] (rplidar_ros) StderrLine: {'line': b'  574 |    \x1b[01;31m\x1b[Kprivate\x1b[m\x1b[K:\n'}
+[12.293489] (rplidar_ros) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.338426] (-) TimerEvent: {}
+[12.348632] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:587:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::string frame_id\x1b[m\x1b[K\xe2\x80\x99 shadows a parameter\n'}
+[12.350287] (rplidar_ros) StderrLine: {'line': b'  587 |      std::string \x1b[01;31m\x1b[Kframe_id\x1b[m\x1b[K;\n'}
+[12.352153] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.352914] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:239:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::string frame_id\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[12.354096] (rplidar_ros) StderrLine: {'line': b'  239 |          \x1b[01;36m\x1b[Kstd::string frame_id\x1b[m\x1b[K)\n'}
+[12.354810] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[12.355424] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:588:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdeclaration of \xe2\x80\x98\x1b[01m\x1b[Kbool inverted\x1b[m\x1b[K\xe2\x80\x99 shadows a parameter\n'}
+[12.356098] (rplidar_ros) StderrLine: {'line': b'  588 |      bool \x1b[01;31m\x1b[Kinverted\x1b[m\x1b[K = false;\n'}
+[12.356748] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.357375] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbool inverted\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[12.358152] (rplidar_ros) StderrLine: {'line': b'  236 |          double scan_time, \x1b[01;36m\x1b[Kbool inverted\x1b[m\x1b[K, bool flip_X_axis,\n'}
+[12.358998] (rplidar_ros) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[12.359949] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:592:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdeclaration of \xe2\x80\x98\x1b[01m\x1b[Kfloat max_distance\x1b[m\x1b[K\xe2\x80\x99 shadows a parameter\n'}
+[12.360674] (rplidar_ros) StderrLine: {'line': b'  592 |      float \x1b[01;31m\x1b[Kmax_distance\x1b[m\x1b[K = 8.0;\n'}
+[12.361907] (rplidar_ros) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.362602] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:238:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfloat max_distance\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[12.363254] (rplidar_ros) StderrLine: {'line': b'  238 |          \x1b[01;36m\x1b[Kfloat max_distance\x1b[m\x1b[K,\n'}
+[12.363847] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.364548] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:584:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktcp_port\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.365197] (rplidar_ros) StderrLine: {'line': b'  584 |      int \x1b[01;35m\x1b[Ktcp_port\x1b[m\x1b[K = 20108;\n'}
+[12.366391] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.368022] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:585:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kudp_port\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.368860] (rplidar_ros) StderrLine: {'line': b'  585 |      int \x1b[01;35m\x1b[Kudp_port\x1b[m\x1b[K = 8089;\n'}
+[12.369627] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.370395] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:586:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kserial_baudrate\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.371062] (rplidar_ros) StderrLine: {'line': b'  586 |      int \x1b[01;35m\x1b[Kserial_baudrate\x1b[m\x1b[K = 115200;\n'}
+[12.371904] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.372602] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:588:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kinverted\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.373227] (rplidar_ros) StderrLine: {'line': b'  588 |      bool \x1b[01;35m\x1b[Kinverted\x1b[m\x1b[K = false;\n'}
+[12.373810] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.374518] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:589:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle_compensate\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.375148] (rplidar_ros) StderrLine: {'line': b'  589 |      bool \x1b[01;35m\x1b[Kangle_compensate\x1b[m\x1b[K = true;\n'}
+[12.375816] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.376470] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:590:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kflip_x_axis\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.377170] (rplidar_ros) StderrLine: {'line': b'  590 |      bool \x1b[01;35m\x1b[Kflip_x_axis\x1b[m\x1b[K = false;\n'}
+[12.377823] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.378449] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:591:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kauto_standby\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.379063] (rplidar_ros) StderrLine: {'line': b'  591 |      bool \x1b[01;35m\x1b[Kauto_standby\x1b[m\x1b[K = false;\n'}
+[12.379653] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.380298] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:592:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmax_distance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.380901] (rplidar_ros) StderrLine: {'line': b'  592 |      float \x1b[01;35m\x1b[Kmax_distance\x1b[m\x1b[K = 8.0;\n'}
+[12.381487] (rplidar_ros) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.382060] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:593:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle_compensate_multiple\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.382694] (rplidar_ros) StderrLine: {'line': b'  593 |      size_t \x1b[01;35m\x1b[Kangle_compensate_multiple\x1b[m\x1b[K = 1;//it stand of angle compensate at per 1 degree\n'}
+[12.383279] (rplidar_ros) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.383875] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:595:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kscan_frequency\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.384660] (rplidar_ros) StderrLine: {'line': b'  595 |      float \x1b[01;35m\x1b[Kscan_frequency\x1b[m\x1b[K;\n'}
+[12.385258] (rplidar_ros) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.385814] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:597:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kis_scanning\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.386511] (rplidar_ros) StderrLine: {'line': b'  597 |      bool \x1b[01;35m\x1b[Kis_scanning\x1b[m\x1b[K = false;\n'}
+[12.387084] (rplidar_ros) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.387650] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:599:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdrv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.388335] (rplidar_ros) StderrLine: {'line': b'  599 |      ILidarDriver *\x1b[01;35m\x1b[Kdrv\x1b[m\x1b[K = nullptr;\n'}
+[12.388942] (rplidar_ros) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[12.389533] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kinverted\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.390153] (rplidar_ros) StderrLine: {'line': b'  236 |          double scan_time, \x1b[01;35m\x1b[Kbool inverted\x1b[m\x1b[K, bool flip_X_axis,\n'}
+[12.390751] (rplidar_ros) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[12.391327] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflip_X_axis\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.391962] (rplidar_ros) StderrLine: {'line': b'  236 |          double scan_time, bool inverted, \x1b[01;35m\x1b[Kbool flip_X_axis\x1b[m\x1b[K,\n'}
+[12.399861] (rplidar_ros) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.400555] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:237:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kangle_min\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.401189] (rplidar_ros) StderrLine: {'line': b'  237 |          \x1b[01;35m\x1b[Kfloat angle_min\x1b[m\x1b[K, float angle_max,\n'}
+[12.401731] (rplidar_ros) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.402396] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:237:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kangle_max\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.403136] (rplidar_ros) StderrLine: {'line': b'  237 |          float angle_min, \x1b[01;35m\x1b[Kfloat angle_max\x1b[m\x1b[K,\n'}
+[12.403747] (rplidar_ros) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.404541] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint RPlidarNode::main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.405239] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:613:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RPlidarNode::ExitHandler(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.405845] (rplidar_ros) StderrLine: {'line': b'  613 |    signal(SIGINT,\x1b[01;31m\x1b[KExitHandler\x1b[m\x1b[K);\n'}
+[12.406391] (rplidar_ros) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.406950] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:602:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.407500] (rplidar_ros) StderrLine: {'line': b'  602 |  void \x1b[01;36m\x1b[KExitHandler\x1b[m\x1b[K(int sig)\n'}
+[12.408120] (rplidar_ros) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.408911] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:614:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class RPlidarNode\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass RPlidarNode\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kwork_loop\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.409551] (rplidar_ros) StderrLine: {'line': b'  614 |    int ret = rplidar_node->\x1b[01;31m\x1b[Kwork_loop\x1b[m\x1b[K();\n'}
+[12.410142] (rplidar_ros) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.410713] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[12.411271] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:617:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[12.411845] (rplidar_ros) StderrLine: {'line': b'  617 |  }\n'}
+[12.412493] (rplidar_ros) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.438624] (-) TimerEvent: {}
+[12.539501] (-) TimerEvent: {}
+[12.640383] (-) TimerEvent: {}
+[12.741281] (-) TimerEvent: {}
+[12.842256] (-) TimerEvent: {}
+[12.943123] (-) TimerEvent: {}
+[13.044006] (-) TimerEvent: {}
+[13.144884] (-) TimerEvent: {}
+[13.245818] (-) TimerEvent: {}
+[13.346736] (-) TimerEvent: {}
+[13.447578] (-) TimerEvent: {}
+[13.548520] (-) TimerEvent: {}
+[13.649390] (-) TimerEvent: {}
+[13.750284] (-) TimerEvent: {}
+[13.851156] (-) TimerEvent: {}
+[13.952077] (-) TimerEvent: {}
+[14.052940] (-) TimerEvent: {}
+[14.153815] (-) TimerEvent: {}
+[14.255046] (-) TimerEvent: {}
+[14.291302] (rplidar_ros) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rplidar_composition.dir/build.make:76: CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o] Error 1\n'}
+[14.292243] (rplidar_ros) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/rplidar_composition.dir/all] Error 2\n'}
+[14.292705] (rplidar_ros) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[14.355199] (-) TimerEvent: {}
+[14.455310] (rplidar_ros) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rplidar_node.dir/build.make:76: CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o] Error 1\n'}
+[14.455998] (-) TimerEvent: {}
+[14.456527] (rplidar_ros) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/rplidar_node.dir/all] Error 2\n'}
+[14.457282] (rplidar_ros) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.462483] (rplidar_ros) CommandEnded: {'returncode': 2}
+[14.500968] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 2}
+[14.513301] (-) EventReactorShutdown: {}

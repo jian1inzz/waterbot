@@ -1,0 +1,464 @@
+[0.000000] (-) TimerEvent: {}
+[0.001651] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.002266] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict()}
+[0.002876] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.003209] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.029752] (my_robot) JobStarted: {'identifier': 'my_robot'}
+[0.049534] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.073820] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.077058] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'build'}
+[0.080173] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', '--', '-j4', '-l4'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 58940 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 58940 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.093406] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'cmake'}
+[0.096234] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'build'}
+[0.097467] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/USB_DISK/ros2_workspace/build/my_robot', '--', '-j4', '-l4'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 58940 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/my_robot'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 58940 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.112245] (-) TimerEvent: {}
+[0.117848] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[0.121369] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[0.123001] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros', '--', '-j4', '-l4'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 58940 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 58940 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.212499] (-) TimerEvent: {}
+[0.314234] (my_robot) CommandEnded: {'returncode': 0}
+[0.315583] (-) TimerEvent: {}
+[0.318171] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'install'}
+[0.356489] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/USB_DISK/ros2_workspace/build/my_robot'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 58940 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/my_robot'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 58940 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.372113] (mecanum_drive_controller) StdoutLine: {'line': b'[ 12%] Built target mecanum_drive_controller_parameters\n'}
+[0.381353] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rplidar_node\x1b[0m\n'}
+[0.398269] (rplidar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rplidar_composition\x1b[0m\n'}
+[0.410373] (my_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.412622] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch\n'}
+[0.415397] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/keyboard.launch.py\n'}
+[0.418191] (-) TimerEvent: {}
+[0.419968] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rsp.launch.py\n'}
+[0.420611] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log\n'}
+[0.421060] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest_build\n'}
+[0.421503] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest\n'}
+[0.421957] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39\n'}
+[0.422592] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/events.log\n'}
+[0.423279] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/logger_all.log\n'}
+[0.423937] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/COLCON_IGNORE\n'}
+[0.424504] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__\n'}
+[0.425086] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__/serial.cpython-310.pyc\n'}
+[0.425705] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/launch_sim.launch.py\n'}
+[0.435306] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/move.launch.py\n'}
+[0.438004] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/camera.launch.py\n'}
+[0.442263] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rplidar.launch.py\n'}
+[0.444136] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config\n'}
+[0.444941] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/gazebo_params.yaml\n'}
+[0.445798] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/rplidar_filter.yaml\n'}
+[0.447007] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/laser_filter.yaml\n'}
+[0.462307] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/mecanum_controller.yaml\n'}
+[0.463996] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description\n'}
+[0.464424] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_base.xacro\n'}
+[0.464789] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/camera.xacro\n'}
+[0.465143] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/ros2_control.xacro\n'}
+[0.465498] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/robot.urdf.xacro\n'}
+[0.465851] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/lidar.xacro\n'}
+[0.466405] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/gazebo_control.xacro\n'}
+[0.466783] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_wheel_inertial.xacro\n'}
+[0.467143] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/move.py\n'}
+[0.467484] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/serial_comm.py\n'}
+[0.467818] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/keyboard.py\n'}
+[0.468199] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/camera.py\n'}
+[0.468547] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/yolorun.py\n'}
+[0.468883] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/rplidar.py\n'}
+[0.469225] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot\n'}
+[0.469570] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot\n'}
+[0.469919] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.sh\n'}
+[0.490926] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv\n'}
+[0.491484] (mecanum_drive_controller) StdoutLine: {'line': b'[ 25%] Built target gmock_main\n'}
+[0.491947] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.sh\n'}
+[0.492347] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.dsv\n'}
+[0.492793] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.bash\n'}
+[0.493190] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.sh\n'}
+[0.493553] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.zsh\n'}
+[0.493900] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.dsv\n'}
+[0.494321] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.dsv\n'}
+[0.494675] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/packages/my_robot\n'}
+[0.495004] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake\n'}
+[0.495316] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake\n'}
+[0.495630] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.xml\n'}
+[0.495945] (my_robot) CommandEnded: {'returncode': 0}
+[0.496894] (mecanum_drive_controller) StdoutLine: {'line': b'[ 43%] Built target gmock\n'}
+[0.518449] (-) TimerEvent: {}
+[0.551814] (rplidar_ros) StdoutLine: {'line': b'[  5%] Built target rplidar_client\n'}
+[0.602471] (mecanum_drive_controller) StdoutLine: {'line': b'[ 62%] Built target mecanum_drive_controller\n'}
+[0.618631] (-) TimerEvent: {}
+[0.643454] (rplidar_ros) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o\x1b[0m\n'}
+[0.662867] (my_robot) JobEnded: {'identifier': 'my_robot', 'rc': 0}
+[0.690901] (rplidar_ros) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o\x1b[0m\n'}
+[0.708327] (mecanum_drive_controller) StdoutLine: {'line': b'[ 75%] Built target test_load_mecanum_drive_controller\n'}
+[0.718861] (-) TimerEvent: {}
+[0.774321] (mecanum_drive_controller) StdoutLine: {'line': b'[ 87%] Built target test_mecanum_drive_controller\n'}
+[0.783198] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] Built target test_mecanum_drive_controller_preceeding\n'}
+[0.819054] (-) TimerEvent: {}
+[0.824676] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[0.826953] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'install'}
+[0.827984] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 58940 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 58940 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.861461] (mecanum_drive_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.862419] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller\n'}
+[0.863918] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp\n'}
+[0.865244] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml\n'}
+[0.867340] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller\n'}
+[0.868584] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller\n'}
+[0.869861] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp\n'}
+[0.871040] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp\n'}
+[0.872122] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h\n'}
+[0.874578] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so\n'}
+[0.876901] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh\n'}
+[0.878172] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv\n'}
+[0.879566] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller\n'}
+[0.880906] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller\n'}
+[0.882212] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh\n'}
+[0.883513] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv\n'}
+[0.884776] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh\n'}
+[0.885999] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv\n'}
+[0.887320] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash\n'}
+[0.888548] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh\n'}
+[0.889779] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh\n'}
+[0.891021] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv\n'}
+[0.892261] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv\n'}
+[0.894642] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller\n'}
+[0.895872] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller\n'}
+[0.897703] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake\n'}
+[0.898953] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake\n'}
+[0.900271] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.901539] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.902904] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake\n'}
+[0.903656] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake\n'}
+[0.905167] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml\n'}
+[0.911541] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[0.922771] (-) TimerEvent: {}
+[1.007009] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 0}
+[1.022966] (-) TimerEvent: {}
+[1.123745] (-) TimerEvent: {}
+[1.224837] (-) TimerEvent: {}
+[1.326016] (-) TimerEvent: {}
+[1.427077] (-) TimerEvent: {}
+[1.528301] (-) TimerEvent: {}
+[1.629529] (-) TimerEvent: {}
+[1.730777] (-) TimerEvent: {}
+[1.832031] (-) TimerEvent: {}
+[1.933216] (-) TimerEvent: {}
+[2.034508] (-) TimerEvent: {}
+[2.136010] (-) TimerEvent: {}
+[2.237166] (-) TimerEvent: {}
+[2.338918] (-) TimerEvent: {}
+[2.440461] (-) TimerEvent: {}
+[2.542280] (-) TimerEvent: {}
+[2.643609] (-) TimerEvent: {}
+[2.745218] (-) TimerEvent: {}
+[2.846742] (-) TimerEvent: {}
+[2.948407] (-) TimerEvent: {}
+[3.049265] (-) TimerEvent: {}
+[3.150180] (-) TimerEvent: {}
+[3.251190] (-) TimerEvent: {}
+[3.352103] (-) TimerEvent: {}
+[3.453212] (-) TimerEvent: {}
+[3.554821] (-) TimerEvent: {}
+[3.655837] (-) TimerEvent: {}
+[3.756868] (-) TimerEvent: {}
+[3.857777] (-) TimerEvent: {}
+[3.958753] (-) TimerEvent: {}
+[4.059583] (-) TimerEvent: {}
+[4.160609] (-) TimerEvent: {}
+[4.261597] (-) TimerEvent: {}
+[4.362836] (-) TimerEvent: {}
+[4.463819] (-) TimerEvent: {}
+[4.564669] (-) TimerEvent: {}
+[4.665654] (-) TimerEvent: {}
+[4.766586] (-) TimerEvent: {}
+[4.867532] (-) TimerEvent: {}
+[4.968657] (-) TimerEvent: {}
+[5.069587] (-) TimerEvent: {}
+[5.170673] (-) TimerEvent: {}
+[5.271543] (-) TimerEvent: {}
+[5.372452] (-) TimerEvent: {}
+[5.473480] (-) TimerEvent: {}
+[5.574383] (-) TimerEvent: {}
+[5.675332] (-) TimerEvent: {}
+[5.776288] (-) TimerEvent: {}
+[5.877293] (-) TimerEvent: {}
+[5.978239] (-) TimerEvent: {}
+[6.079143] (-) TimerEvent: {}
+[6.180092] (-) TimerEvent: {}
+[6.281361] (-) TimerEvent: {}
+[6.382350] (-) TimerEvent: {}
+[6.483279] (-) TimerEvent: {}
+[6.584220] (-) TimerEvent: {}
+[6.685180] (-) TimerEvent: {}
+[6.786228] (-) TimerEvent: {}
+[6.887161] (-) TimerEvent: {}
+[6.988123] (-) TimerEvent: {}
+[7.089084] (-) TimerEvent: {}
+[7.190093] (-) TimerEvent: {}
+[7.291089] (-) TimerEvent: {}
+[7.391983] (-) TimerEvent: {}
+[7.493003] (-) TimerEvent: {}
+[7.593981] (-) TimerEvent: {}
+[7.694911] (-) TimerEvent: {}
+[7.795800] (-) TimerEvent: {}
+[7.896786] (-) TimerEvent: {}
+[7.997768] (-) TimerEvent: {}
+[8.099084] (-) TimerEvent: {}
+[8.200346] (-) TimerEvent: {}
+[8.301343] (-) TimerEvent: {}
+[8.402320] (-) TimerEvent: {}
+[8.503284] (-) TimerEvent: {}
+[8.604232] (-) TimerEvent: {}
+[8.705200] (-) TimerEvent: {}
+[8.806182] (-) TimerEvent: {}
+[8.907076] (-) TimerEvent: {}
+[9.008018] (-) TimerEvent: {}
+[9.109226] (-) TimerEvent: {}
+[9.210252] (-) TimerEvent: {}
+[9.311239] (-) TimerEvent: {}
+[9.412221] (-) TimerEvent: {}
+[9.514163] (-) TimerEvent: {}
+[9.615157] (-) TimerEvent: {}
+[9.716145] (-) TimerEvent: {}
+[9.817094] (-) TimerEvent: {}
+[9.918135] (-) TimerEvent: {}
+[10.019166] (-) TimerEvent: {}
+[10.120237] (-) TimerEvent: {}
+[10.221745] (-) TimerEvent: {}
+[10.322767] (-) TimerEvent: {}
+[10.424371] (-) TimerEvent: {}
+[10.525997] (-) TimerEvent: {}
+[10.627698] (-) TimerEvent: {}
+[10.728719] (-) TimerEvent: {}
+[10.829700] (-) TimerEvent: {}
+[10.930664] (-) TimerEvent: {}
+[11.031625] (-) TimerEvent: {}
+[11.132604] (-) TimerEvent: {}
+[11.233579] (-) TimerEvent: {}
+[11.334962] (-) TimerEvent: {}
+[11.435945] (-) TimerEvent: {}
+[11.455382] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[11.456386] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[11.457107] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[11.457699] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[11.458493] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.459565] (rplidar_ros) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[11.460227] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.460862] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[11.462369] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[11.463094] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[11.463737] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.464542] (rplidar_ros) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[11.465176] (rplidar_ros) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.504147] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:41\x1b[m\x1b[K,\n'}
+[11.504933] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[11.505567] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[11.507123] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[11.507874] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.508560] (rplidar_ros) StderrLine: {'line': b'   66 |     sl_u8 data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[11.509200] (rplidar_ros) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.509827] (rplidar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54\x1b[m\x1b[K,\n'}
+[11.510512] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36\x1b[m\x1b[K,\n'}
+[11.511096] (rplidar_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38\x1b[m\x1b[K:\n'}
+[11.511713] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kpayload\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.512365] (rplidar_ros) StderrLine: {'line': b'  324 |     sl_u8  payload[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[11.512965] (rplidar_ros) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.536161] (-) TimerEvent: {}
+[11.635730] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RPlidarNode::publish_scan(rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&, sl_lidar_response_measurement_node_hq_t*, size_t, rclcpp::Time, double, bool, bool, float, float, float, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.636594] (-) TimerEvent: {}
+[11.637866] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:233:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kinverted\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.638812] (rplidar_ros) StderrLine: {'line': b'  233 |                        double scan_time, \x1b[01;35m\x1b[Kbool inverted\x1b[m\x1b[K, bool flip_X_axis,\n'}
+[11.639536] (rplidar_ros) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[11.640149] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:233:62:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflip_X_axis\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.640868] (rplidar_ros) StderrLine: {'line': b'  233 |                        double scan_time, bool inverted, \x1b[01;35m\x1b[Kbool flip_X_axis\x1b[m\x1b[K,\n'}
+[11.641909] (rplidar_ros) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.682382] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RPlidarNode::publish_scan(rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&, sl_lidar_response_measurement_node_hq_t*, size_t, rclcpp::Time, double, bool, bool, float, float, float, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.683446] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:233:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kinverted\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.684159] (rplidar_ros) StderrLine: {'line': b'  233 |                        double scan_time, \x1b[01;35m\x1b[Kbool inverted\x1b[m\x1b[K, bool flip_X_axis,\n'}
+[11.684794] (rplidar_ros) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[11.685449] (rplidar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:233:62:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflip_X_axis\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.686147] (rplidar_ros) StderrLine: {'line': b'  233 |                        double scan_time, bool inverted, \x1b[01;35m\x1b[Kbool flip_X_axis\x1b[m\x1b[K,\n'}
+[11.686793] (rplidar_ros) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.736850] (-) TimerEvent: {}
+[11.837808] (-) TimerEvent: {}
+[11.938790] (-) TimerEvent: {}
+[12.039732] (-) TimerEvent: {}
+[12.140722] (-) TimerEvent: {}
+[12.241675] (-) TimerEvent: {}
+[12.343177] (-) TimerEvent: {}
+[12.444141] (-) TimerEvent: {}
+[12.545029] (-) TimerEvent: {}
+[12.646528] (-) TimerEvent: {}
+[12.747429] (-) TimerEvent: {}
+[12.848440] (-) TimerEvent: {}
+[12.949428] (-) TimerEvent: {}
+[13.050695] (-) TimerEvent: {}
+[13.151646] (-) TimerEvent: {}
+[13.252612] (-) TimerEvent: {}
+[13.353596] (-) TimerEvent: {}
+[13.454581] (-) TimerEvent: {}
+[13.555529] (-) TimerEvent: {}
+[13.656481] (-) TimerEvent: {}
+[13.757460] (-) TimerEvent: {}
+[13.858420] (-) TimerEvent: {}
+[13.959375] (-) TimerEvent: {}
+[14.060265] (-) TimerEvent: {}
+[14.161191] (-) TimerEvent: {}
+[14.262171] (-) TimerEvent: {}
+[14.363105] (-) TimerEvent: {}
+[14.464055] (-) TimerEvent: {}
+[14.565025] (-) TimerEvent: {}
+[14.666016] (-) TimerEvent: {}
+[14.767086] (-) TimerEvent: {}
+[14.867957] (-) TimerEvent: {}
+[14.968867] (-) TimerEvent: {}
+[15.069899] (-) TimerEvent: {}
+[15.171530] (-) TimerEvent: {}
+[15.272794] (-) TimerEvent: {}
+[15.374184] (-) TimerEvent: {}
+[15.475491] (-) TimerEvent: {}
+[15.576862] (-) TimerEvent: {}
+[15.678515] (-) TimerEvent: {}
+[15.780277] (-) TimerEvent: {}
+[15.881238] (-) TimerEvent: {}
+[15.982283] (-) TimerEvent: {}
+[16.084006] (-) TimerEvent: {}
+[16.185264] (-) TimerEvent: {}
+[16.286250] (-) TimerEvent: {}
+[16.387227] (-) TimerEvent: {}
+[16.488261] (-) TimerEvent: {}
+[16.589296] (-) TimerEvent: {}
+[16.690350] (-) TimerEvent: {}
+[16.791692] (-) TimerEvent: {}
+[16.892749] (-) TimerEvent: {}
+[16.993718] (-) TimerEvent: {}
+[17.094642] (-) TimerEvent: {}
+[17.195929] (-) TimerEvent: {}
+[17.296926] (-) TimerEvent: {}
+[17.397895] (-) TimerEvent: {}
+[17.498876] (-) TimerEvent: {}
+[17.599822] (-) TimerEvent: {}
+[17.700791] (-) TimerEvent: {}
+[17.801848] (-) TimerEvent: {}
+[17.903030] (-) TimerEvent: {}
+[18.003922] (-) TimerEvent: {}
+[18.104905] (-) TimerEvent: {}
+[18.205958] (-) TimerEvent: {}
+[18.306934] (-) TimerEvent: {}
+[18.407862] (-) TimerEvent: {}
+[18.508908] (-) TimerEvent: {}
+[18.609898] (-) TimerEvent: {}
+[18.710882] (-) TimerEvent: {}
+[18.811878] (-) TimerEvent: {}
+[18.912886] (-) TimerEvent: {}
+[19.013870] (-) TimerEvent: {}
+[19.115239] (-) TimerEvent: {}
+[19.216210] (-) TimerEvent: {}
+[19.317219] (-) TimerEvent: {}
+[19.418224] (-) TimerEvent: {}
+[19.519246] (-) TimerEvent: {}
+[19.620219] (-) TimerEvent: {}
+[19.721201] (-) TimerEvent: {}
+[19.822500] (-) TimerEvent: {}
+[19.923509] (-) TimerEvent: {}
+[20.024476] (-) TimerEvent: {}
+[20.125491] (-) TimerEvent: {}
+[20.226523] (-) TimerEvent: {}
+[20.327480] (-) TimerEvent: {}
+[20.428441] (-) TimerEvent: {}
+[20.530433] (-) TimerEvent: {}
+[20.632322] (-) TimerEvent: {}
+[20.733270] (-) TimerEvent: {}
+[20.834236] (-) TimerEvent: {}
+[20.935234] (-) TimerEvent: {}
+[21.036162] (-) TimerEvent: {}
+[21.137145] (-) TimerEvent: {}
+[21.238108] (-) TimerEvent: {}
+[21.339059] (-) TimerEvent: {}
+[21.440302] (-) TimerEvent: {}
+[21.541761] (-) TimerEvent: {}
+[21.643574] (-) TimerEvent: {}
+[21.744377] (-) TimerEvent: {}
+[21.845197] (-) TimerEvent: {}
+[21.946014] (-) TimerEvent: {}
+[22.046917] (-) TimerEvent: {}
+[22.147735] (-) TimerEvent: {}
+[22.248548] (-) TimerEvent: {}
+[22.349475] (-) TimerEvent: {}
+[22.450735] (-) TimerEvent: {}
+[22.554377] (-) TimerEvent: {}
+[22.655566] (-) TimerEvent: {}
+[22.753552] (rplidar_ros) StdoutLine: {'line': b'[ 13%] \x1b[32m\x1b[1mLinking CXX executable rplidar_composition\x1b[0m\n'}
+[22.755771] (-) TimerEvent: {}
+[22.777063] (rplidar_ros) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking CXX executable rplidar_node\x1b[0m\n'}
+[22.856058] (-) TimerEvent: {}
+[22.957583] (-) TimerEvent: {}
+[23.058891] (-) TimerEvent: {}
+[23.160310] (-) TimerEvent: {}
+[23.261574] (-) TimerEvent: {}
+[23.363083] (-) TimerEvent: {}
+[23.464624] (-) TimerEvent: {}
+[23.566163] (-) TimerEvent: {}
+[23.667351] (-) TimerEvent: {}
+[23.768439] (-) TimerEvent: {}
+[23.869698] (-) TimerEvent: {}
+[23.971017] (-) TimerEvent: {}
+[24.071944] (-) TimerEvent: {}
+[24.173631] (-) TimerEvent: {}
+[24.275365] (-) TimerEvent: {}
+[24.374497] (rplidar_ros) StdoutLine: {'line': b'[ 57%] Built target rplidar_composition\n'}
+[24.375533] (-) TimerEvent: {}
+[24.394784] (rplidar_ros) StdoutLine: {'line': b'[100%] Built target rplidar_node\n'}
+[24.436331] (rplidar_ros) CommandEnded: {'returncode': 0}
+[24.438776] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'install'}
+[24.442660] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 58940 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/as33697920/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 58940 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[24.473076] (rplidar_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.473693] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch\n'}
+[24.474580] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py\n'}
+[24.475173] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py\n'}
+[24.475584] (-) TimerEvent: {}
+[24.475966] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py\n'}
+[24.476827] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py\n'}
+[24.477388] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py\n'}
+[24.477862] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py\n'}
+[24.478571] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py\n'}
+[24.479072] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py\n'}
+[24.479534] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py\n'}
+[24.479962] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py\n'}
+[24.480306] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py\n'}
+[24.480597] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py\n'}
+[24.480900] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py\n'}
+[24.481316] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py\n'}
+[24.481639] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py\n'}
+[24.482011] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py\n'}
+[24.482562] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py\n'}
+[24.482905] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py\n'}
+[24.483230] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py\n'}
+[24.483604] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py\n'}
+[24.483941] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py\n'}
+[24.484261] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py\n'}
+[24.484576] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py\n'}
+[24.484901] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py\n'}
+[24.485218] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/rviz\n'}
+[24.485526] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz\n'}
+[24.485838] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/lib/rplidar_ros/rplidar_node\n'}
+[24.497354] (rplidar_ros) StdoutLine: {'line': b'-- Set runtime path of "/mnt/USB_DISK/ros2_workspace/install/rplidar_ros/lib/rplidar_ros/rplidar_node" to ""\n'}
+[24.498478] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[24.513937] (rplidar_ros) StdoutLine: {'line': b'-- Set runtime path of "/mnt/USB_DISK/ros2_workspace/install/rplidar_ros/lib/rplidar_ros/rplidar_composition" to ""\n'}
+[24.515018] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/lib/rplidar_ros/rplidar_client\n'}
+[24.516398] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros\n'}
+[24.517011] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros\n'}
+[24.517477] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh\n'}
+[24.517981] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv\n'}
+[24.518497] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/environment/path.sh\n'}
+[24.518929] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/environment/path.dsv\n'}
+[24.519409] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/local_setup.bash\n'}
+[24.519873] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/local_setup.sh\n'}
+[24.520298] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/local_setup.zsh\n'}
+[24.520646] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/local_setup.dsv\n'}
+[24.520959] (rplidar_ros) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/package.dsv\n'}
+[24.521387] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros\n'}
+[24.521826] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[24.522313] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[24.522746] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake\n'}
+[24.523230] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake\n'}
+[24.523593] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/package.xml\n'}
+[24.528438] (rplidar_ros) CommandEnded: {'returncode': 0}
+[24.575788] (-) TimerEvent: {}
+[24.601720] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 0}
+[24.605461] (-) EventReactorShutdown: {}

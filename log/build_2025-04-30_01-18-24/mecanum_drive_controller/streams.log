@@ -1,0 +1,115 @@
+[0.065s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/as33697920/larry_ws/src/waterbot/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller
+[1.439s] -- The CXX compiler identification is GNU 11.4.0
+[1.481s] -- Detecting CXX compiler ABI info
+[1.870s] -- Detecting CXX compiler ABI info - done
+[1.896s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.899s] -- Detecting CXX compile features
+[1.902s] -- Detecting CXX compile features - done
+[1.938s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.717s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.352s] -- Found controller_interface: 2.49.0 (/opt/ros/humble/share/controller_interface/cmake)
+[3.699s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.743s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.806s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.887s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.992s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.178s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.197s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.335s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[5.531s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.544s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[5.590s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.603s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[5.636s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[5.670s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.736s] -- Looking for C++ include pthread.h
+[6.251s] -- Looking for C++ include pthread.h - found
+[6.252s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.738s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.743s] -- Found Threads: TRUE  
+[6.987s] -- Found generate_parameter_library: 0.4.0 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[7.005s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[7.150s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[7.250s] -- Found realtime_tools: 2.12.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[7.339s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[7.411s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[7.442s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[7.506s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[7.513s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[7.513s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[7.904s] -- Found ament_cmake_gmock: 1.3.11 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[7.921s] -- Found controller_manager: 2.49.0 (/opt/ros/humble/share/controller_manager/cmake)
+[8.035s] -- Found ros2_control_test_assets: 2.49.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)
+[8.058s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[8.260s] -- The C compiler identification is GNU 11.4.0
+[8.294s] -- Detecting C compiler ABI info
+[8.710s] -- Detecting C compiler ABI info - done
+[8.735s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.736s] -- Detecting C compile features
+[8.737s] -- Detecting C compile features - done
+[8.772s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[8.779s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[9.238s] -- Configuring done
+[10.034s] -- Generating done
+[10.094s] -- Build files have been written to: /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller
+[10.149s] Invoked command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/as33697920/larry_ws/src/waterbot/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller
+[10.156s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller -- -j4 -l4
+[10.376s] [ 12%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[10.377s] [ 12%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp /home/as33697920/larry_ws/src/waterbot/mecanum_drive_controller/src/mecanum_drive_controller.yaml `[0m
+[10.382s] [ 18%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[10.387s] [ 25%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[13.728s] [ 31%] [34m[1mCreating deprecated header file /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller/include/mecanum_drive_controller_parameters.hpp[0m
+[15.821s] [ 31%] Built target mecanum_drive_controller_parameters
+[16.005s] [ 37%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[21.045s] [ 43%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[21.222s] [ 43%] Built target gmock_main
+[21.268s] [ 50%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o[0m
+[31.817s] [ 56%] [32m[1mLinking CXX static library libgmock.a[0m
+[74.444s] [ 56%] Built target gmock
+[74.536s] [ 62%] [32mBuilding CXX object CMakeFiles/test_load_mecanum_drive_controller.dir/test/test_load_mecanum_drive_controller.cpp.o[0m
+[74.709s] [ 68%] [32m[1mLinking CXX shared library libmecanum_drive_controller.so[0m
+[79.875s] [ 68%] Built target mecanum_drive_controller
+[79.985s] [ 75%] [32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller.dir/test/test_mecanum_drive_controller.cpp.o[0m
+[79.995s] [ 81%] [32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller_preceeding.dir/test/test_mecanum_drive_controller_preceeding.cpp.o[0m
+[106.367s] [ 87%] [32m[1mLinking CXX executable test_load_mecanum_drive_controller[0m
+[109.531s] [ 87%] Built target test_load_mecanum_drive_controller
+[121.152s] [ 93%] [32m[1mLinking CXX executable test_mecanum_drive_controller_preceeding[0m
+[126.313s] [ 93%] Built target test_mecanum_drive_controller_preceeding
+[144.400s] [100%] [32m[1mLinking CXX executable test_mecanum_drive_controller[0m
+[151.088s] [100%] Built target test_mecanum_drive_controller
+[151.133s] Invoked command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller -- -j4 -l4
+[151.144s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller
+[151.173s] -- Install configuration: ""
+[151.174s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller
+[151.175s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp
+[151.177s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml
+[151.181s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller
+[151.182s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller
+[151.184s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp
+[151.185s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp
+[151.187s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h
+[151.188s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so
+[151.269s] -- Set runtime path of "/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so" to ""
+[151.270s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh
+[151.272s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv
+[151.274s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller
+[151.276s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller
+[151.278s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh
+[151.280s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv
+[151.281s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh
+[151.283s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv
+[151.285s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash
+[151.292s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh
+[151.292s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh
+[151.293s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv
+[151.298s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv
+[151.298s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller
+[151.299s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller
+[151.300s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake
+[151.303s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake
+[151.305s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[151.307s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[151.310s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake
+[151.311s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake
+[151.313s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml
+[151.324s] Invoked command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller

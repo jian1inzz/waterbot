@@ -1,0 +1,84 @@
+[0.100s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/my_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/my_robot -- -j4 -l4
+[0.607s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.308s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.529s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.545s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.582s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.637s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.707s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.934s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.951s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.661s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.996s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[3.235s] -- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+[3.238s] -- Found controller_manager: 2.50.0 (/opt/ros/humble/share/controller_manager/cmake)
+[4.134s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.525s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.616s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.628s] -- Added test 'lint_cmake' to check CMake code style
+[4.636s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.684s] -- Added test 'xmllint' to check XML markup files
+[4.695s] -- Configuring done
+[4.806s] -- Generating done
+[4.831s] -- Build files have been written to: /mnt/USB_DISK/ros2_workspace/build/my_robot
+[4.927s] Invoked command in '/mnt/USB_DISK/ros2_workspace/build/my_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/my_robot -- -j4 -l4
+[4.966s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/my_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/USB_DISK/ros2_workspace/build/my_robot
+[4.992s] -- Install configuration: ""
+[4.992s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch
+[4.993s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/keyboard.launch.py
+[4.994s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rsp.launch.py
+[4.994s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log
+[4.994s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest_build
+[4.995s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest
+[4.995s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39
+[4.996s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/events.log
+[4.996s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/logger_all.log
+[4.997s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/COLCON_IGNORE
+[4.997s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__
+[4.999s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__/serial.cpython-310.pyc
+[5.000s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/launch_sim.launch.py
+[5.000s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/move.launch.py
+[5.001s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/camera.launch.py
+[5.001s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rplidar.launch.py
+[5.002s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config
+[5.002s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/gazebo_params.yaml
+[5.003s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/rplidar_filter.yaml
+[5.003s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/laser_filter.yaml
+[5.003s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/mecanum_controller.yaml
+[5.004s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description
+[5.004s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_base.xacro
+[5.005s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/camera.xacro
+[5.005s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/ros2_control.xacro
+[5.006s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/robot.urdf.xacro
+[5.006s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/lidar.xacro
+[5.006s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/gazebo_control.xacro
+[5.007s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_wheel_inertial.xacro
+[5.007s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/move.py
+[5.007s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/serial_comm.py
+[5.008s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/keyboard.py
+[5.008s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/camera.py
+[5.009s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/yolorun.py
+[5.009s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/rplidar.py
+[5.010s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/obstacle1.py
+[5.010s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/yolorun2.py
+[5.010s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/partrol3.py
+[5.011s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/decision4.py
+[5.011s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/hcsr04.py
+[5.011s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/encoder.py
+[5.012s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/ws.py
+[5.012s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot
+[5.013s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot
+[5.013s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.sh
+[5.014s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv
+[5.014s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.sh
+[5.015s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.dsv
+[5.015s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.bash
+[5.015s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.sh
+[5.016s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.zsh
+[5.017s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.dsv
+[5.018s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.dsv
+[5.019s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/packages/my_robot
+[5.020s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake
+[5.021s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake
+[5.021s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.xml
+[5.022s] Invoked command in '/mnt/USB_DISK/ros2_workspace/build/my_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/USB_DISK/ros2_workspace/build/my_robot

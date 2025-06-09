@@ -1,0 +1,71 @@
+[0.082s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/rplidar_ros -- -j4 -l4
+[0.315s] [35m[1mConsolidate compiler generated dependencies of target rplidar_node[0m
+[0.352s] [35m[1mConsolidate compiler generated dependencies of target rplidar_composition[0m
+[0.458s] [  5%] Built target rplidar_client
+[0.575s] [  7%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o[0m
+[0.612s] [ 10%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o[0m
+[11.394s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[11.395s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.395s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.396s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.397s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.398s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[11.398s]       |                [01;35m[K^[m[K
+[11.399s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.399s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.400s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.401s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.402s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[11.402s]       |                    [01;35m[K^[m[K
+[11.425s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[11.425s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.426s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.427s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.427s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.428s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[11.429s]       |                [01;35m[K^[m[K
+[11.429s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.430s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.431s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.431s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.432s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[11.432s]       |                    [01;35m[K^[m[K
+[11.598s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid RPlidarNode::publish_scan(rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&, sl_lidar_response_measurement_node_hq_t*, size_t, rclcpp::Time, double, bool, bool, float, float, float, std::string)[m[K’:
+[11.599s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:286:40:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_idx[m[K’ was not declared in this scope
+[11.600s]   286 |                     i, real_angle_deg, [01;31m[Ktarget_idx[m[K, scan_msg->ranges.size());
+[11.603s]       |                                        [01;31m[K^~~~~~~~~~[m[K
+[11.603s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:234:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinverted[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.604s]   234 |         double scan_time, [01;35m[Kbool inverted[m[K, bool flip_X_axis,
+[11.605s]       |                           [01;35m[K~~~~~^~~~~~~~[m[K
+[11.606s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:234:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflip_X_axis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.607s]   234 |         double scan_time, bool inverted, [01;35m[Kbool flip_X_axis[m[K,
+[11.607s]       |                                          [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[11.608s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:235:15:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.609s]   235 |         [01;35m[Kfloat angle_min[m[K, float angle_max,
+[11.610s]       |         [01;35m[K~~~~~~^~~~~~~~~[m[K
+[11.611s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:235:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.611s]   235 |         float angle_min, [01;35m[Kfloat angle_max[m[K,
+[11.612s]       |                          [01;35m[K~~~~~~^~~~~~~~~[m[K
+[11.631s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid RPlidarNode::publish_scan(rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&, sl_lidar_response_measurement_node_hq_t*, size_t, rclcpp::Time, double, bool, bool, float, float, float, std::string)[m[K’:
+[11.632s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:286:40:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_idx[m[K’ was not declared in this scope
+[11.633s]   286 |                     i, real_angle_deg, [01;31m[Ktarget_idx[m[K, scan_msg->ranges.size());
+[11.634s]       |                                        [01;31m[K^~~~~~~~~~[m[K
+[11.634s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:234:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinverted[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.635s]   234 |         double scan_time, [01;35m[Kbool inverted[m[K, bool flip_X_axis,
+[11.636s]       |                           [01;35m[K~~~~~^~~~~~~~[m[K
+[11.636s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:234:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflip_X_axis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.637s]   234 |         double scan_time, bool inverted, [01;35m[Kbool flip_X_axis[m[K,
+[11.638s]       |                                          [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[11.638s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:235:15:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.639s]   235 |         [01;35m[Kfloat angle_min[m[K, float angle_max,
+[11.639s]       |         [01;35m[K~~~~~~^~~~~~~~~[m[K
+[11.640s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:235:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.641s]   235 |         float angle_min, [01;35m[Kfloat angle_max[m[K,
+[11.641s]       |                          [01;35m[K~~~~~~^~~~~~~~~[m[K
+[15.618s] gmake[2]: *** [CMakeFiles/rplidar_node.dir/build.make:76: CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o] Error 1
+[15.619s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/rplidar_node.dir/all] Error 2
+[15.619s] gmake[1]: *** Waiting for unfinished jobs....
+[15.635s] gmake[2]: *** [CMakeFiles/rplidar_composition.dir/build.make:76: CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o] Error 1
+[15.636s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/rplidar_composition.dir/all] Error 2
+[15.639s] gmake: *** [Makefile:146: all] Error 2
+[15.643s] Invoked command in '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/rplidar_ros -- -j4 -l4

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="mecanum_wheel_inertial" params="mass radius length">
+    <inertial>
+      <mass value="${mass}"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia
+        ixx="${(1/12)*mass*(3*radius*radius + length*length)}"
+        iyy="${(1/12)*mass*(3*radius*radius + length*length)}"
+        izz="${0.5*mass*radius*radius}"
+        ixy="0.0" ixz="0.0" iyz="0.0"/>
+    </inertial>
+  </xacro:macro>
+
+</robot>

@@ -1,0 +1,4 @@
+[0.089s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/my_robot -- -j4 -l4
+[0.182s] [0mCMake Error: The source directory "/home/as33697920/larry_ws/src/waterbot/my_robot" does not exist.
+[0.183s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.184s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1

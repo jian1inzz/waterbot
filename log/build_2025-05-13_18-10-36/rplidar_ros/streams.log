@@ -1,0 +1,115 @@
+[0.083s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/rplidar_ros -- -j4 -l4
+[0.314s] [35m[1mConsolidate compiler generated dependencies of target rplidar_composition[0m
+[0.327s] [35m[1mConsolidate compiler generated dependencies of target rplidar_node[0m
+[0.490s] [  5%] Built target rplidar_client
+[0.575s] [  7%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o[0m
+[0.616s] [ 10%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o[0m
+[11.405s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[11.408s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.410s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.412s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.415s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.417s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[11.420s]       |                [01;35m[K^[m[K
+[11.422s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.425s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.427s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.430s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.432s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[11.435s]       |                    [01;35m[K^[m[K
+[11.437s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[11.439s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.441s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.444s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.446s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.449s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[11.452s]       |                [01;35m[K^[m[K
+[11.454s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.456s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.459s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.461s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.463s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[11.466s]       |                    [01;35m[K^[m[K
+[11.589s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid RPlidarNode::publish_scan(rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&, sl_lidar_response_measurement_node_hq_t*, size_t, rclcpp::Time, double, bool, bool, float, float, float, std::string)[m[K’:
+[11.590s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:234:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinverted[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.591s]   234 |         double scan_time, [01;35m[Kbool inverted[m[K, bool flip_X_axis,
+[11.592s]       |                           [01;35m[K~~~~~^~~~~~~~[m[K
+[11.592s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:234:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflip_X_axis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.593s]   234 |         double scan_time, bool inverted, [01;35m[Kbool flip_X_axis[m[K,
+[11.594s]       |                                          [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[11.595s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:235:15:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.596s]   235 |         [01;35m[Kfloat angle_min[m[K, float angle_max,
+[11.597s]       |         [01;35m[K~~~~~~^~~~~~~~~[m[K
+[11.598s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:235:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.599s]   235 |         float angle_min, [01;35m[Kfloat angle_max[m[K,
+[11.599s]       |                          [01;35m[K~~~~~~^~~~~~~~~[m[K
+[11.617s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid RPlidarNode::publish_scan(rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&, sl_lidar_response_measurement_node_hq_t*, size_t, rclcpp::Time, double, bool, bool, float, float, float, std::string)[m[K’:
+[11.618s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:234:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinverted[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.619s]   234 |         double scan_time, [01;35m[Kbool inverted[m[K, bool flip_X_axis,
+[11.620s]       |                           [01;35m[K~~~~~^~~~~~~~[m[K
+[11.621s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:234:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflip_X_axis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.622s]   234 |         double scan_time, bool inverted, [01;35m[Kbool flip_X_axis[m[K,
+[11.622s]       |                                          [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[11.623s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:235:15:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.624s]   235 |         [01;35m[Kfloat angle_min[m[K, float angle_max,
+[11.625s]       |         [01;35m[K~~~~~~^~~~~~~~~[m[K
+[11.627s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:235:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.628s]   235 |         float angle_min, [01;35m[Kfloat angle_max[m[K,
+[11.629s]       |                          [01;35m[K~~~~~~^~~~~~~~~[m[K
+[23.814s] [ 13%] [32m[1mLinking CXX executable rplidar_node[0m
+[23.926s] [ 15%] [32m[1mLinking CXX executable rplidar_composition[0m
+[25.453s] [ 57%] Built target rplidar_node
+[25.571s] [100%] Built target rplidar_composition
+[25.615s] Invoked command in '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/rplidar_ros -- -j4 -l4
+[25.623s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/USB_DISK/ros2_workspace/build/rplidar_ros
+[25.649s] -- Install configuration: ""
+[25.650s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch
+[25.651s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py
+[25.651s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py
+[25.652s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py
+[25.652s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py
+[25.652s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py
+[25.653s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py
+[25.653s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py
+[25.654s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py
+[25.654s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py
+[25.654s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py
+[25.655s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py
+[25.655s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py
+[25.656s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py
+[25.656s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py
+[25.656s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py
+[25.657s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py
+[25.657s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py
+[25.658s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py
+[25.658s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py
+[25.658s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py
+[25.659s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py
+[25.659s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py
+[25.659s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py
+[25.660s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py
+[25.660s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/rviz
+[25.660s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz
+[25.661s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/lib/rplidar_ros/rplidar_node
+[25.674s] -- Set runtime path of "/mnt/USB_DISK/ros2_workspace/install/rplidar_ros/lib/rplidar_ros/rplidar_node" to ""
+[25.675s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[25.690s] -- Set runtime path of "/mnt/USB_DISK/ros2_workspace/install/rplidar_ros/lib/rplidar_ros/rplidar_composition" to ""
+[25.691s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/lib/rplidar_ros/rplidar_client
+[25.693s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[25.693s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[25.694s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[25.694s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[25.695s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[25.695s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[25.695s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[25.696s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[25.696s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[25.697s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[25.697s] -- Installing: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/package.dsv
+[25.698s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[25.698s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.699s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[25.699s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[25.700s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[25.700s] -- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/rplidar_ros/share/rplidar_ros/package.xml
+[25.706s] Invoked command in '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/USB_DISK/ros2_workspace/build/rplidar_ros

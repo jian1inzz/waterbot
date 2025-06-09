@@ -1,0 +1,1660 @@
+[0.000000] (-) TimerEvent: {}
+[0.001620] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.002187] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict()}
+[0.002640] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.026363] (my_robot) JobStarted: {'identifier': 'my_robot'}
+[0.046548] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.048889] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/as33697920/larry_ws/src/waterbot/mecanum_drive_controller', '-DCMAKE_INSTALL_PREFIX=/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 57921 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 57921 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.065946] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'cmake'}
+[0.073144] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '/home/as33697920/larry_ws/src/waterbot/my_robot', '-DCMAKE_INSTALL_PREFIX=/mnt/USB_DISK/ros2_workspace/install/my_robot'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 57921 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/my_robot'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 57921 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.099074] (-) TimerEvent: {}
+[0.199983] (-) TimerEvent: {}
+[0.301156] (-) TimerEvent: {}
+[0.402270] (-) TimerEvent: {}
+[0.503376] (-) TimerEvent: {}
+[0.604546] (-) TimerEvent: {}
+[0.705837] (-) TimerEvent: {}
+[0.806824] (-) TimerEvent: {}
+[0.907917] (-) TimerEvent: {}
+[1.008800] (-) TimerEvent: {}
+[1.109902] (-) TimerEvent: {}
+[1.136128] (my_robot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.164489] (mecanum_drive_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.196910] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.210070] (-) TimerEvent: {}
+[1.311033] (-) TimerEvent: {}
+[1.395254] (my_robot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.411241] (-) TimerEvent: {}
+[1.426929] (my_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.511465] (-) TimerEvent: {}
+[1.562107] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.587793] (mecanum_drive_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.589975] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.592260] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.611695] (-) TimerEvent: {}
+[1.619472] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.711876] (-) TimerEvent: {}
+[1.748385] (my_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.774147] (my_robot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.775164] (my_robot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.776647] (my_robot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.788786] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.812175] (-) TimerEvent: {}
+[1.913924] (-) TimerEvent: {}
+[2.015674] (-) TimerEvent: {}
+[2.116636] (-) TimerEvent: {}
+[2.158816] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.184736] (my_robot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.186349] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.188103] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.211378] (my_robot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.216826] (-) TimerEvent: {}
+[2.318332] (-) TimerEvent: {}
+[2.379881] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.418544] (-) TimerEvent: {}
+[2.519429] (-) TimerEvent: {}
+[2.620311] (-) TimerEvent: {}
+[2.721222] (-) TimerEvent: {}
+[2.822255] (-) TimerEvent: {}
+[2.923535] (-) TimerEvent: {}
+[2.951686] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found controller_interface: 2.49.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[2.953640] (my_robot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.023722] (-) TimerEvent: {}
+[3.124536] (-) TimerEvent: {}
+[3.225327] (-) TimerEvent: {}
+[3.264440] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.312625] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.325521] (-) TimerEvent: {}
+[3.362895] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.425700] (-) TimerEvent: {}
+[3.432021] (mecanum_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.446211] (my_robot) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.523159] (mecanum_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.525856] (-) TimerEvent: {}
+[3.626635] (-) TimerEvent: {}
+[3.714602] (my_robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.726816] (-) TimerEvent: {}
+[3.751236] (my_robot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.802832] (my_robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.827013] (-) TimerEvent: {}
+[3.869987] (my_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.927204] (-) TimerEvent: {}
+[3.961933] (my_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.027487] (-) TimerEvent: {}
+[4.128783] (-) TimerEvent: {}
+[4.218515] (my_robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.228987] (-) TimerEvent: {}
+[4.237351] (my_robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.329169] (-) TimerEvent: {}
+[4.430421] (-) TimerEvent: {}
+[4.531284] (-) TimerEvent: {}
+[4.557168] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.577169] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.631495] (-) TimerEvent: {}
+[4.643268] (my_robot) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.720474] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[4.731722] (-) TimerEvent: {}
+[4.770099] (my_robot) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.831908] (-) TimerEvent: {}
+[4.923763] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.932120] (-) TimerEvent: {}
+[4.934823] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[4.980861] (my_robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.982044] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.993876] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[5.022753] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[5.032337] (-) TimerEvent: {}
+[5.042749] (my_robot) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.053527] (mecanum_drive_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.116404] (mecanum_drive_controller) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[5.132539] (-) TimerEvent: {}
+[5.234628] (-) TimerEvent: {}
+[5.335602] (-) TimerEvent: {}
+[5.404017] (my_robot) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.406137] (my_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.435830] (-) TimerEvent: {}
+[5.536785] (-) TimerEvent: {}
+[5.637714] (-) TimerEvent: {}
+[5.653207] (mecanum_drive_controller) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[5.654400] (mecanum_drive_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.737904] (-) TimerEvent: {}
+[5.752849] (my_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.757073] (my_robot) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.838094] (-) TimerEvent: {}
+[5.939350] (-) TimerEvent: {}
+[6.029099] (my_robot) StdoutLine: {'line': b'-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)\n'}
+[6.039596] (-) TimerEvent: {}
+[6.140629] (-) TimerEvent: {}
+[6.152592] (mecanum_drive_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.156402] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.240793] (-) TimerEvent: {}
+[6.273236] (my_robot) StdoutLine: {'line': b'-- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)\n'}
+[6.290601] (my_robot) StdoutLine: {'line': b'-- Found controller_manager: 2.49.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[6.340965] (-) TimerEvent: {}
+[6.396806] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found generate_parameter_library: 0.4.0 (/opt/ros/humble/share/generate_parameter_library/cmake)\n'}
+[6.414346] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[6.441160] (-) TimerEvent: {}
+[6.542260] (-) TimerEvent: {}
+[6.551197] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[6.642449] (-) TimerEvent: {}
+[6.644712] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found realtime_tools: 2.12.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[6.725990] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[6.742641] (-) TimerEvent: {}
+[6.799266] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[6.828872] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[6.842831] (-) TimerEvent: {}
+[6.890517] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[6.896648] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[6.897466] (mecanum_drive_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[6.943006] (-) TimerEvent: {}
+[7.043895] (-) TimerEvent: {}
+[7.089178] (my_robot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.144095] (-) TimerEvent: {}
+[7.244856] (-) TimerEvent: {}
+[7.266633] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 1.3.11 (/opt/ros/humble/share/ament_cmake_gmock/cmake)\n'}
+[7.284671] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found controller_manager: 2.49.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[7.345151] (-) TimerEvent: {}
+[7.417837] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 2.49.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)\n'}
+[7.437331] (mecanum_drive_controller) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[7.445330] (-) TimerEvent: {}
+[7.535856] (my_robot) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.545544] (-) TimerEvent: {}
+[7.587979] (my_robot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.596234] (my_robot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.601409] (my_robot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.629135] (mecanum_drive_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[7.630112] (my_robot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.637573] (my_robot) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.645719] (-) TimerEvent: {}
+[7.657565] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[7.682531] (my_robot) StdoutLine: {'line': b'-- Generating done\n'}
+[7.694595] (my_robot) StdoutLine: {'line': b'-- Build files have been written to: /mnt/USB_DISK/ros2_workspace/build/my_robot\n'}
+[7.740427] (my_robot) CommandEnded: {'returncode': 0}
+[7.742614] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'build'}
+[7.742855] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/USB_DISK/ros2_workspace/build/my_robot', '--', '-j4', '-l4'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 57921 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/my_robot'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 57921 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[7.745842] (-) TimerEvent: {}
+[7.846753] (-) TimerEvent: {}
+[7.916956] (my_robot) CommandEnded: {'returncode': 0}
+[7.920172] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'install'}
+[7.946974] (-) TimerEvent: {}
+[7.964503] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/USB_DISK/ros2_workspace/build/my_robot'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 57921 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/my_robot'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 57921 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[7.992481] (my_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.993710] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch\n'}
+[7.994653] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/keyboard.launch.py\n'}
+[7.995529] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rsp.launch.py\n'}
+[7.996346] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log\n'}
+[7.997425] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest_build\n'}
+[7.998654] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/latest\n'}
+[7.999552] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39\n'}
+[8.000062] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/events.log\n'}
+[8.001317] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/build_2025-04-29_03-51-39/logger_all.log\n'}
+[8.003433] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/log/COLCON_IGNORE\n'}
+[8.004495] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__\n'}
+[8.005515] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/__pycache__/serial.cpython-310.pyc\n'}
+[8.007236] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/launch_sim.launch.py\n'}
+[8.008460] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/move.launch.py\n'}
+[8.009739] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/camera.launch.py\n'}
+[8.011061] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/launch/rplidar.launch.py\n'}
+[8.012342] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config\n'}
+[8.013500] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/gazebo_params.yaml\n'}
+[8.014795] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/laser_filter.yaml\n'}
+[8.016121] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/config/mecanum_controller.yaml\n'}
+[8.017442] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description\n'}
+[8.018368] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_base.xacro\n'}
+[8.019792] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/camera.xacro\n'}
+[8.021197] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/ros2_control.xacro\n'}
+[8.022689] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/robot.urdf.xacro\n'}
+[8.024117] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/lidar.xacro\n'}
+[8.025582] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/gazebo_control.xacro\n'}
+[8.027118] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/description/mecanum_wheel_inertial.xacro\n'}
+[8.029144] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/move.py\n'}
+[8.030439] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/serial_comm.py\n'}
+[8.031873] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/lib/my_robot/Keyboard.py\n'}
+[8.033997] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot\n'}
+[8.036174] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot\n'}
+[8.038429] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.sh\n'}
+[8.040097] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv\n'}
+[8.041780] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.sh\n'}
+[8.043477] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/environment/path.dsv\n'}
+[8.045130] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.bash\n'}
+[8.047153] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.sh\n'}
+[8.047955] (-) TimerEvent: {}
+[8.049509] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.zsh\n'}
+[8.050655] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/local_setup.dsv\n'}
+[8.052222] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.dsv\n'}
+[8.054136] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/ament_index/resource_index/packages/my_robot\n'}
+[8.056042] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake\n'}
+[8.057364] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake\n'}
+[8.058982] (my_robot) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.xml\n'}
+[8.077502] (my_robot) CommandEnded: {'returncode': 0}
+[8.100035] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[8.125770] (mecanum_drive_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[8.126864] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[8.128346] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[8.148141] (-) TimerEvent: {}
+[8.163112] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[8.169131] (mecanum_drive_controller) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[8.248427] (-) TimerEvent: {}
+[8.357275] (-) TimerEvent: {}
+[8.458015] (-) TimerEvent: {}
+[8.558727] (-) TimerEvent: {}
+[8.642223] (mecanum_drive_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.658902] (-) TimerEvent: {}
+[8.759604] (-) TimerEvent: {}
+[8.860398] (-) TimerEvent: {}
+[8.961170] (-) TimerEvent: {}
+[9.061926] (-) TimerEvent: {}
+[9.092561] (my_robot) JobEnded: {'identifier': 'my_robot', 'rc': 0}
+[9.162091] (-) TimerEvent: {}
+[9.262754] (-) TimerEvent: {}
+[9.363445] (-) TimerEvent: {}
+[9.382803] (mecanum_drive_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[9.443876] (mecanum_drive_controller) StdoutLine: {'line': b'-- Build files have been written to: /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller\n'}
+[9.463722] (-) TimerEvent: {}
+[9.496384] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[9.498283] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'build'}
+[9.499369] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', '--', '-j4', '-l4'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 57921 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 57921 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[9.563930] (-) TimerEvent: {}
+[9.664737] (-) TimerEvent: {}
+[9.725971] (mecanum_drive_controller) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp /home/as33697920/larry_ws/src/waterbot/mecanum_drive_controller/src/mecanum_drive_controller.yaml `\x1b[0m\n'}
+[9.727050] (mecanum_drive_controller) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[9.727930] (mecanum_drive_controller) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[9.753938] (mecanum_drive_controller) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[9.764967] (-) TimerEvent: {}
+[9.866224] (-) TimerEvent: {}
+[9.967125] (-) TimerEvent: {}
+[10.067916] (-) TimerEvent: {}
+[10.168747] (-) TimerEvent: {}
+[10.269478] (-) TimerEvent: {}
+[10.370206] (-) TimerEvent: {}
+[10.471127] (-) TimerEvent: {}
+[10.572281] (-) TimerEvent: {}
+[10.673256] (-) TimerEvent: {}
+[10.774307] (-) TimerEvent: {}
+[10.875263] (-) TimerEvent: {}
+[10.976139] (-) TimerEvent: {}
+[11.077005] (-) TimerEvent: {}
+[11.178084] (-) TimerEvent: {}
+[11.279083] (-) TimerEvent: {}
+[11.380591] (-) TimerEvent: {}
+[11.482013] (-) TimerEvent: {}
+[11.583849] (-) TimerEvent: {}
+[11.685637] (-) TimerEvent: {}
+[11.787199] (-) TimerEvent: {}
+[11.888769] (-) TimerEvent: {}
+[11.990636] (-) TimerEvent: {}
+[12.092092] (-) TimerEvent: {}
+[12.193727] (-) TimerEvent: {}
+[12.295215] (-) TimerEvent: {}
+[12.396776] (-) TimerEvent: {}
+[12.498527] (-) TimerEvent: {}
+[12.600139] (-) TimerEvent: {}
+[12.701958] (-) TimerEvent: {}
+[12.803622] (-) TimerEvent: {}
+[12.905283] (-) TimerEvent: {}
+[13.007601] (-) TimerEvent: {}
+[13.025911] (mecanum_drive_controller) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mCreating deprecated header file /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller/include/mecanum_drive_controller_parameters.hpp\x1b[0m\n'}
+[13.108069] (-) TimerEvent: {}
+[13.209466] (-) TimerEvent: {}
+[13.272814] (mecanum_drive_controller) StdoutLine: {'line': b'[ 31%] Built target mecanum_drive_controller_parameters\n'}
+[13.309642] (-) TimerEvent: {}
+[13.401699] (mecanum_drive_controller) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o\x1b[0m\n'}
+[13.409852] (-) TimerEvent: {}
+[13.511130] (-) TimerEvent: {}
+[13.612529] (-) TimerEvent: {}
+[13.714182] (-) TimerEvent: {}
+[13.816215] (-) TimerEvent: {}
+[13.918398] (-) TimerEvent: {}
+[14.020345] (-) TimerEvent: {}
+[14.122496] (-) TimerEvent: {}
+[14.224903] (-) TimerEvent: {}
+[14.326891] (-) TimerEvent: {}
+[14.428484] (-) TimerEvent: {}
+[14.530527] (-) TimerEvent: {}
+[14.632403] (-) TimerEvent: {}
+[14.734910] (-) TimerEvent: {}
+[14.837286] (-) TimerEvent: {}
+[14.939549] (-) TimerEvent: {}
+[15.043514] (-) TimerEvent: {}
+[15.146862] (-) TimerEvent: {}
+[15.251056] (-) TimerEvent: {}
+[15.355569] (-) TimerEvent: {}
+[15.459409] (-) TimerEvent: {}
+[15.563105] (-) TimerEvent: {}
+[15.666825] (-) TimerEvent: {}
+[15.770270] (-) TimerEvent: {}
+[15.874113] (-) TimerEvent: {}
+[15.978294] (-) TimerEvent: {}
+[16.082343] (-) TimerEvent: {}
+[16.186280] (-) TimerEvent: {}
+[16.290418] (-) TimerEvent: {}
+[16.394012] (-) TimerEvent: {}
+[16.497232] (-) TimerEvent: {}
+[16.601267] (-) TimerEvent: {}
+[16.705509] (-) TimerEvent: {}
+[16.809235] (-) TimerEvent: {}
+[16.913221] (-) TimerEvent: {}
+[17.017493] (-) TimerEvent: {}
+[17.121834] (-) TimerEvent: {}
+[17.225733] (-) TimerEvent: {}
+[17.329676] (-) TimerEvent: {}
+[17.432044] (-) TimerEvent: {}
+[17.535159] (-) TimerEvent: {}
+[17.638798] (-) TimerEvent: {}
+[17.741696] (-) TimerEvent: {}
+[17.844830] (-) TimerEvent: {}
+[17.947856] (-) TimerEvent: {}
+[18.050183] (-) TimerEvent: {}
+[18.152296] (-) TimerEvent: {}
+[18.255299] (-) TimerEvent: {}
+[18.365534] (-) TimerEvent: {}
+[18.468596] (-) TimerEvent: {}
+[18.571572] (-) TimerEvent: {}
+[18.674499] (-) TimerEvent: {}
+[18.776938] (-) TimerEvent: {}
+[18.879293] (-) TimerEvent: {}
+[18.981845] (-) TimerEvent: {}
+[19.084535] (-) TimerEvent: {}
+[19.187376] (-) TimerEvent: {}
+[19.288837] (-) TimerEvent: {}
+[19.390617] (-) TimerEvent: {}
+[19.492326] (-) TimerEvent: {}
+[19.594290] (-) TimerEvent: {}
+[19.696347] (-) TimerEvent: {}
+[19.797929] (-) TimerEvent: {}
+[19.899975] (-) TimerEvent: {}
+[20.002157] (-) TimerEvent: {}
+[20.103929] (-) TimerEvent: {}
+[20.205895] (-) TimerEvent: {}
+[20.307481] (-) TimerEvent: {}
+[20.409192] (-) TimerEvent: {}
+[20.510863] (-) TimerEvent: {}
+[20.612390] (-) TimerEvent: {}
+[20.713947] (-) TimerEvent: {}
+[20.815425] (-) TimerEvent: {}
+[20.917197] (-) TimerEvent: {}
+[20.947395] (mecanum_drive_controller) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX static library libgmock_main.a\x1b[0m\n'}
+[21.017438] (-) TimerEvent: {}
+[21.119388] (-) TimerEvent: {}
+[21.142454] (mecanum_drive_controller) StdoutLine: {'line': b'[ 43%] Built target gmock_main\n'}
+[21.193357] (mecanum_drive_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o\x1b[0m\n'}
+[21.219655] (-) TimerEvent: {}
+[21.322012] (-) TimerEvent: {}
+[21.423805] (-) TimerEvent: {}
+[21.525686] (-) TimerEvent: {}
+[21.627945] (-) TimerEvent: {}
+[21.730166] (-) TimerEvent: {}
+[21.832272] (-) TimerEvent: {}
+[21.934171] (-) TimerEvent: {}
+[22.036115] (-) TimerEvent: {}
+[22.138097] (-) TimerEvent: {}
+[22.240249] (-) TimerEvent: {}
+[22.342143] (-) TimerEvent: {}
+[22.444372] (-) TimerEvent: {}
+[22.546193] (-) TimerEvent: {}
+[22.648316] (-) TimerEvent: {}
+[22.750322] (-) TimerEvent: {}
+[22.852286] (-) TimerEvent: {}
+[22.954410] (-) TimerEvent: {}
+[23.056241] (-) TimerEvent: {}
+[23.158398] (-) TimerEvent: {}
+[23.260482] (-) TimerEvent: {}
+[23.362437] (-) TimerEvent: {}
+[23.463753] (-) TimerEvent: {}
+[23.565144] (-) TimerEvent: {}
+[23.666583] (-) TimerEvent: {}
+[23.768514] (-) TimerEvent: {}
+[23.870767] (-) TimerEvent: {}
+[23.972575] (-) TimerEvent: {}
+[24.074545] (-) TimerEvent: {}
+[24.176619] (-) TimerEvent: {}
+[24.278545] (-) TimerEvent: {}
+[24.380472] (-) TimerEvent: {}
+[24.482608] (-) TimerEvent: {}
+[24.584746] (-) TimerEvent: {}
+[24.686959] (-) TimerEvent: {}
+[24.789365] (-) TimerEvent: {}
+[24.891624] (-) TimerEvent: {}
+[24.994004] (-) TimerEvent: {}
+[25.096758] (-) TimerEvent: {}
+[25.199110] (-) TimerEvent: {}
+[25.300507] (-) TimerEvent: {}
+[25.401872] (-) TimerEvent: {}
+[25.502987] (-) TimerEvent: {}
+[25.604041] (-) TimerEvent: {}
+[25.705242] (-) TimerEvent: {}
+[25.806225] (-) TimerEvent: {}
+[25.907906] (-) TimerEvent: {}
+[26.010735] (-) TimerEvent: {}
+[26.113451] (-) TimerEvent: {}
+[26.215904] (-) TimerEvent: {}
+[26.319024] (-) TimerEvent: {}
+[26.421496] (-) TimerEvent: {}
+[26.524243] (-) TimerEvent: {}
+[26.626712] (-) TimerEvent: {}
+[26.729052] (-) TimerEvent: {}
+[26.831823] (-) TimerEvent: {}
+[26.934938] (-) TimerEvent: {}
+[27.037553] (-) TimerEvent: {}
+[27.139908] (-) TimerEvent: {}
+[27.242600] (-) TimerEvent: {}
+[27.345075] (-) TimerEvent: {}
+[27.447568] (-) TimerEvent: {}
+[27.550285] (-) TimerEvent: {}
+[27.652914] (-) TimerEvent: {}
+[27.755310] (-) TimerEvent: {}
+[27.857886] (-) TimerEvent: {}
+[27.960270] (-) TimerEvent: {}
+[28.062766] (-) TimerEvent: {}
+[28.165239] (-) TimerEvent: {}
+[28.267845] (-) TimerEvent: {}
+[28.370414] (-) TimerEvent: {}
+[28.473553] (-) TimerEvent: {}
+[28.575867] (-) TimerEvent: {}
+[28.678298] (-) TimerEvent: {}
+[28.780700] (-) TimerEvent: {}
+[28.883307] (-) TimerEvent: {}
+[28.986008] (-) TimerEvent: {}
+[29.087183] (-) TimerEvent: {}
+[29.188228] (-) TimerEvent: {}
+[29.290884] (-) TimerEvent: {}
+[29.392491] (-) TimerEvent: {}
+[29.494168] (-) TimerEvent: {}
+[29.595756] (-) TimerEvent: {}
+[29.698236] (-) TimerEvent: {}
+[29.800685] (-) TimerEvent: {}
+[29.903204] (-) TimerEvent: {}
+[30.006191] (-) TimerEvent: {}
+[30.109164] (-) TimerEvent: {}
+[30.212539] (-) TimerEvent: {}
+[30.315416] (-) TimerEvent: {}
+[30.418052] (-) TimerEvent: {}
+[30.520524] (-) TimerEvent: {}
+[30.623047] (-) TimerEvent: {}
+[30.725734] (-) TimerEvent: {}
+[30.828185] (-) TimerEvent: {}
+[30.930862] (-) TimerEvent: {}
+[31.033214] (-) TimerEvent: {}
+[31.135396] (-) TimerEvent: {}
+[31.236560] (-) TimerEvent: {}
+[31.337703] (-) TimerEvent: {}
+[31.438691] (-) TimerEvent: {}
+[31.540818] (-) TimerEvent: {}
+[31.643031] (-) TimerEvent: {}
+[31.745282] (-) TimerEvent: {}
+[31.847562] (-) TimerEvent: {}
+[31.949856] (-) TimerEvent: {}
+[32.052123] (-) TimerEvent: {}
+[32.154570] (-) TimerEvent: {}
+[32.258110] (-) TimerEvent: {}
+[32.361768] (-) TimerEvent: {}
+[32.408461] (mecanum_drive_controller) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX static library libgmock.a\x1b[0m\n'}
+[32.462008] (-) TimerEvent: {}
+[32.564292] (-) TimerEvent: {}
+[32.666508] (-) TimerEvent: {}
+[32.767370] (-) TimerEvent: {}
+[32.868916] (-) TimerEvent: {}
+[32.969768] (-) TimerEvent: {}
+[33.070663] (-) TimerEvent: {}
+[33.172237] (-) TimerEvent: {}
+[33.273552] (-) TimerEvent: {}
+[33.374835] (-) TimerEvent: {}
+[33.476076] (-) TimerEvent: {}
+[33.577348] (-) TimerEvent: {}
+[33.678690] (-) TimerEvent: {}
+[33.779967] (-) TimerEvent: {}
+[33.880837] (-) TimerEvent: {}
+[33.981706] (-) TimerEvent: {}
+[34.082596] (-) TimerEvent: {}
+[34.183446] (-) TimerEvent: {}
+[34.284938] (-) TimerEvent: {}
+[34.386394] (-) TimerEvent: {}
+[34.487864] (-) TimerEvent: {}
+[34.589418] (-) TimerEvent: {}
+[34.690912] (-) TimerEvent: {}
+[34.791850] (-) TimerEvent: {}
+[34.892765] (-) TimerEvent: {}
+[34.994265] (-) TimerEvent: {}
+[35.095772] (-) TimerEvent: {}
+[35.197255] (-) TimerEvent: {}
+[35.298804] (-) TimerEvent: {}
+[35.400274] (-) TimerEvent: {}
+[35.501779] (-) TimerEvent: {}
+[35.602614] (-) TimerEvent: {}
+[35.703441] (-) TimerEvent: {}
+[35.804337] (-) TimerEvent: {}
+[35.905288] (-) TimerEvent: {}
+[36.006242] (-) TimerEvent: {}
+[36.107146] (-) TimerEvent: {}
+[36.208017] (-) TimerEvent: {}
+[36.308875] (-) TimerEvent: {}
+[36.409806] (-) TimerEvent: {}
+[36.510702] (-) TimerEvent: {}
+[36.611559] (-) TimerEvent: {}
+[36.712450] (-) TimerEvent: {}
+[36.813296] (-) TimerEvent: {}
+[36.914184] (-) TimerEvent: {}
+[37.015011] (-) TimerEvent: {}
+[37.115862] (-) TimerEvent: {}
+[37.216774] (-) TimerEvent: {}
+[37.318327] (-) TimerEvent: {}
+[37.419807] (-) TimerEvent: {}
+[37.521257] (-) TimerEvent: {}
+[37.622782] (-) TimerEvent: {}
+[37.723734] (-) TimerEvent: {}
+[37.825144] (-) TimerEvent: {}
+[37.926532] (-) TimerEvent: {}
+[38.027545] (-) TimerEvent: {}
+[38.128345] (-) TimerEvent: {}
+[38.229155] (-) TimerEvent: {}
+[38.330039] (-) TimerEvent: {}
+[38.431267] (-) TimerEvent: {}
+[38.532087] (-) TimerEvent: {}
+[38.632906] (-) TimerEvent: {}
+[38.733859] (-) TimerEvent: {}
+[38.834681] (-) TimerEvent: {}
+[38.935543] (-) TimerEvent: {}
+[39.036350] (-) TimerEvent: {}
+[39.137275] (-) TimerEvent: {}
+[39.238086] (-) TimerEvent: {}
+[39.339133] (-) TimerEvent: {}
+[39.440295] (-) TimerEvent: {}
+[39.541076] (-) TimerEvent: {}
+[39.641915] (-) TimerEvent: {}
+[39.742691] (-) TimerEvent: {}
+[39.843472] (-) TimerEvent: {}
+[39.944311] (-) TimerEvent: {}
+[40.045137] (-) TimerEvent: {}
+[40.145936] (-) TimerEvent: {}
+[40.246701] (-) TimerEvent: {}
+[40.347496] (-) TimerEvent: {}
+[40.448293] (-) TimerEvent: {}
+[40.549064] (-) TimerEvent: {}
+[40.649863] (-) TimerEvent: {}
+[40.750622] (-) TimerEvent: {}
+[40.851388] (-) TimerEvent: {}
+[40.952171] (-) TimerEvent: {}
+[41.052987] (-) TimerEvent: {}
+[41.153819] (-) TimerEvent: {}
+[41.254590] (-) TimerEvent: {}
+[41.355361] (-) TimerEvent: {}
+[41.456171] (-) TimerEvent: {}
+[41.556950] (-) TimerEvent: {}
+[41.657761] (-) TimerEvent: {}
+[41.758558] (-) TimerEvent: {}
+[41.859340] (-) TimerEvent: {}
+[41.960149] (-) TimerEvent: {}
+[42.060963] (-) TimerEvent: {}
+[42.161766] (-) TimerEvent: {}
+[42.262542] (-) TimerEvent: {}
+[42.363318] (-) TimerEvent: {}
+[42.464097] (-) TimerEvent: {}
+[42.564866] (-) TimerEvent: {}
+[42.665667] (-) TimerEvent: {}
+[42.766445] (-) TimerEvent: {}
+[42.867223] (-) TimerEvent: {}
+[42.968006] (-) TimerEvent: {}
+[43.068784] (-) TimerEvent: {}
+[43.169560] (-) TimerEvent: {}
+[43.270327] (-) TimerEvent: {}
+[43.371114] (-) TimerEvent: {}
+[43.472035] (-) TimerEvent: {}
+[43.572834] (-) TimerEvent: {}
+[43.673593] (-) TimerEvent: {}
+[43.774343] (-) TimerEvent: {}
+[43.875115] (-) TimerEvent: {}
+[43.975927] (-) TimerEvent: {}
+[44.076715] (-) TimerEvent: {}
+[44.177519] (-) TimerEvent: {}
+[44.278267] (-) TimerEvent: {}
+[44.379034] (-) TimerEvent: {}
+[44.479832] (-) TimerEvent: {}
+[44.580597] (-) TimerEvent: {}
+[44.681405] (-) TimerEvent: {}
+[44.782194] (-) TimerEvent: {}
+[44.882969] (-) TimerEvent: {}
+[44.983776] (-) TimerEvent: {}
+[45.084536] (-) TimerEvent: {}
+[45.185345] (-) TimerEvent: {}
+[45.286136] (-) TimerEvent: {}
+[45.386933] (-) TimerEvent: {}
+[45.487706] (-) TimerEvent: {}
+[45.588499] (-) TimerEvent: {}
+[45.689271] (-) TimerEvent: {}
+[45.790075] (-) TimerEvent: {}
+[45.890763] (-) TimerEvent: {}
+[45.991495] (-) TimerEvent: {}
+[46.092185] (-) TimerEvent: {}
+[46.192926] (-) TimerEvent: {}
+[46.293633] (-) TimerEvent: {}
+[46.394326] (-) TimerEvent: {}
+[46.495046] (-) TimerEvent: {}
+[46.595807] (-) TimerEvent: {}
+[46.696597] (-) TimerEvent: {}
+[46.797490] (-) TimerEvent: {}
+[46.898444] (-) TimerEvent: {}
+[46.999255] (-) TimerEvent: {}
+[47.100048] (-) TimerEvent: {}
+[47.200868] (-) TimerEvent: {}
+[47.301677] (-) TimerEvent: {}
+[47.402499] (-) TimerEvent: {}
+[47.503277] (-) TimerEvent: {}
+[47.604127] (-) TimerEvent: {}
+[47.704897] (-) TimerEvent: {}
+[47.805711] (-) TimerEvent: {}
+[47.906569] (-) TimerEvent: {}
+[48.007923] (-) TimerEvent: {}
+[48.108720] (-) TimerEvent: {}
+[48.209534] (-) TimerEvent: {}
+[48.310286] (-) TimerEvent: {}
+[48.411069] (-) TimerEvent: {}
+[48.511996] (-) TimerEvent: {}
+[48.612959] (-) TimerEvent: {}
+[48.713780] (-) TimerEvent: {}
+[48.814511] (-) TimerEvent: {}
+[48.915306] (-) TimerEvent: {}
+[49.016390] (-) TimerEvent: {}
+[49.117555] (-) TimerEvent: {}
+[49.218839] (-) TimerEvent: {}
+[49.320481] (-) TimerEvent: {}
+[49.423233] (-) TimerEvent: {}
+[49.525162] (-) TimerEvent: {}
+[49.626214] (-) TimerEvent: {}
+[49.727172] (-) TimerEvent: {}
+[49.827995] (-) TimerEvent: {}
+[49.928771] (-) TimerEvent: {}
+[50.029551] (-) TimerEvent: {}
+[50.130335] (-) TimerEvent: {}
+[50.231131] (-) TimerEvent: {}
+[50.331928] (-) TimerEvent: {}
+[50.432750] (-) TimerEvent: {}
+[50.533552] (-) TimerEvent: {}
+[50.634341] (-) TimerEvent: {}
+[50.735136] (-) TimerEvent: {}
+[50.835963] (-) TimerEvent: {}
+[50.936750] (-) TimerEvent: {}
+[51.037567] (-) TimerEvent: {}
+[51.138384] (-) TimerEvent: {}
+[51.239238] (-) TimerEvent: {}
+[51.340125] (-) TimerEvent: {}
+[51.441023] (-) TimerEvent: {}
+[51.541863] (-) TimerEvent: {}
+[51.642653] (-) TimerEvent: {}
+[51.743451] (-) TimerEvent: {}
+[51.844358] (-) TimerEvent: {}
+[51.945145] (-) TimerEvent: {}
+[52.046158] (-) TimerEvent: {}
+[52.147076] (-) TimerEvent: {}
+[52.247920] (-) TimerEvent: {}
+[52.348691] (-) TimerEvent: {}
+[52.449529] (-) TimerEvent: {}
+[52.550374] (-) TimerEvent: {}
+[52.651307] (-) TimerEvent: {}
+[52.752105] (-) TimerEvent: {}
+[52.852889] (-) TimerEvent: {}
+[52.953688] (-) TimerEvent: {}
+[53.054459] (-) TimerEvent: {}
+[53.155234] (-) TimerEvent: {}
+[53.256032] (-) TimerEvent: {}
+[53.356817] (-) TimerEvent: {}
+[53.457612] (-) TimerEvent: {}
+[53.558346] (-) TimerEvent: {}
+[53.659135] (-) TimerEvent: {}
+[53.759936] (-) TimerEvent: {}
+[53.860727] (-) TimerEvent: {}
+[53.961765] (-) TimerEvent: {}
+[54.062495] (-) TimerEvent: {}
+[54.163277] (-) TimerEvent: {}
+[54.264019] (-) TimerEvent: {}
+[54.364811] (-) TimerEvent: {}
+[54.438545] (mecanum_drive_controller) StdoutLine: {'line': b'[ 56%] Built target gmock\n'}
+[54.465073] (-) TimerEvent: {}
+[54.527442] (mecanum_drive_controller) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/test_load_mecanum_drive_controller.dir/test/test_load_mecanum_drive_controller.cpp.o\x1b[0m\n'}
+[54.565317] (-) TimerEvent: {}
+[54.667031] (-) TimerEvent: {}
+[54.768287] (-) TimerEvent: {}
+[54.869556] (-) TimerEvent: {}
+[54.970880] (-) TimerEvent: {}
+[55.072203] (-) TimerEvent: {}
+[55.173438] (-) TimerEvent: {}
+[55.274611] (-) TimerEvent: {}
+[55.375788] (-) TimerEvent: {}
+[55.476958] (-) TimerEvent: {}
+[55.578294] (-) TimerEvent: {}
+[55.679462] (-) TimerEvent: {}
+[55.780673] (-) TimerEvent: {}
+[55.881919] (-) TimerEvent: {}
+[55.983093] (-) TimerEvent: {}
+[56.084282] (-) TimerEvent: {}
+[56.185472] (-) TimerEvent: {}
+[56.286654] (-) TimerEvent: {}
+[56.387920] (-) TimerEvent: {}
+[56.489102] (-) TimerEvent: {}
+[56.590451] (-) TimerEvent: {}
+[56.692705] (-) TimerEvent: {}
+[56.793934] (-) TimerEvent: {}
+[56.895129] (-) TimerEvent: {}
+[56.996297] (-) TimerEvent: {}
+[57.097238] (-) TimerEvent: {}
+[57.198112] (-) TimerEvent: {}
+[57.298962] (-) TimerEvent: {}
+[57.399946] (-) TimerEvent: {}
+[57.500878] (-) TimerEvent: {}
+[57.601898] (-) TimerEvent: {}
+[57.702870] (-) TimerEvent: {}
+[57.804376] (-) TimerEvent: {}
+[57.905361] (-) TimerEvent: {}
+[58.006761] (-) TimerEvent: {}
+[58.108465] (-) TimerEvent: {}
+[58.209605] (-) TimerEvent: {}
+[58.310787] (-) TimerEvent: {}
+[58.411937] (-) TimerEvent: {}
+[58.513153] (-) TimerEvent: {}
+[58.614735] (-) TimerEvent: {}
+[58.715760] (-) TimerEvent: {}
+[58.816923] (-) TimerEvent: {}
+[58.918180] (-) TimerEvent: {}
+[59.019233] (-) TimerEvent: {}
+[59.120255] (-) TimerEvent: {}
+[59.221329] (-) TimerEvent: {}
+[59.322601] (-) TimerEvent: {}
+[59.423720] (-) TimerEvent: {}
+[59.524704] (-) TimerEvent: {}
+[59.626183] (-) TimerEvent: {}
+[59.727785] (-) TimerEvent: {}
+[59.829438] (-) TimerEvent: {}
+[59.931113] (-) TimerEvent: {}
+[60.032714] (-) TimerEvent: {}
+[60.134419] (-) TimerEvent: {}
+[60.236103] (-) TimerEvent: {}
+[60.337778] (-) TimerEvent: {}
+[60.440046] (-) TimerEvent: {}
+[60.541714] (-) TimerEvent: {}
+[60.643377] (-) TimerEvent: {}
+[60.744371] (-) TimerEvent: {}
+[60.845434] (-) TimerEvent: {}
+[60.946627] (-) TimerEvent: {}
+[61.047615] (-) TimerEvent: {}
+[61.148625] (-) TimerEvent: {}
+[61.249822] (-) TimerEvent: {}
+[61.350850] (-) TimerEvent: {}
+[61.452000] (-) TimerEvent: {}
+[61.552962] (-) TimerEvent: {}
+[61.654154] (-) TimerEvent: {}
+[61.755428] (-) TimerEvent: {}
+[61.856769] (-) TimerEvent: {}
+[61.958077] (-) TimerEvent: {}
+[62.059073] (-) TimerEvent: {}
+[62.160078] (-) TimerEvent: {}
+[62.261071] (-) TimerEvent: {}
+[62.362056] (-) TimerEvent: {}
+[62.463132] (-) TimerEvent: {}
+[62.564331] (-) TimerEvent: {}
+[62.665834] (-) TimerEvent: {}
+[62.767035] (-) TimerEvent: {}
+[62.868067] (-) TimerEvent: {}
+[62.969326] (-) TimerEvent: {}
+[63.070591] (-) TimerEvent: {}
+[63.171658] (-) TimerEvent: {}
+[63.272623] (-) TimerEvent: {}
+[63.373712] (-) TimerEvent: {}
+[63.474679] (-) TimerEvent: {}
+[63.575576] (-) TimerEvent: {}
+[63.676580] (-) TimerEvent: {}
+[63.777567] (-) TimerEvent: {}
+[63.878544] (-) TimerEvent: {}
+[63.980099] (-) TimerEvent: {}
+[64.081269] (-) TimerEvent: {}
+[64.182360] (-) TimerEvent: {}
+[64.283305] (-) TimerEvent: {}
+[64.384402] (-) TimerEvent: {}
+[64.485418] (-) TimerEvent: {}
+[64.586384] (-) TimerEvent: {}
+[64.687438] (-) TimerEvent: {}
+[64.788391] (-) TimerEvent: {}
+[64.889490] (-) TimerEvent: {}
+[64.990459] (-) TimerEvent: {}
+[65.091648] (-) TimerEvent: {}
+[65.192602] (-) TimerEvent: {}
+[65.293966] (-) TimerEvent: {}
+[65.394970] (-) TimerEvent: {}
+[65.496007] (-) TimerEvent: {}
+[65.597010] (-) TimerEvent: {}
+[65.697995] (-) TimerEvent: {}
+[65.798991] (-) TimerEvent: {}
+[65.899953] (-) TimerEvent: {}
+[66.000850] (-) TimerEvent: {}
+[66.101830] (-) TimerEvent: {}
+[66.202812] (-) TimerEvent: {}
+[66.303811] (-) TimerEvent: {}
+[66.404868] (-) TimerEvent: {}
+[66.506158] (-) TimerEvent: {}
+[66.607148] (-) TimerEvent: {}
+[66.708206] (-) TimerEvent: {}
+[66.809207] (-) TimerEvent: {}
+[66.910295] (-) TimerEvent: {}
+[67.011394] (-) TimerEvent: {}
+[67.112395] (-) TimerEvent: {}
+[67.213433] (-) TimerEvent: {}
+[67.314746] (-) TimerEvent: {}
+[67.416157] (-) TimerEvent: {}
+[67.517197] (-) TimerEvent: {}
+[67.618252] (-) TimerEvent: {}
+[67.719351] (-) TimerEvent: {}
+[67.820564] (-) TimerEvent: {}
+[67.921555] (-) TimerEvent: {}
+[68.022544] (-) TimerEvent: {}
+[68.123519] (-) TimerEvent: {}
+[68.224574] (-) TimerEvent: {}
+[68.325697] (-) TimerEvent: {}
+[68.426678] (-) TimerEvent: {}
+[68.527659] (-) TimerEvent: {}
+[68.628629] (-) TimerEvent: {}
+[68.729582] (-) TimerEvent: {}
+[68.830548] (-) TimerEvent: {}
+[68.931514] (-) TimerEvent: {}
+[69.032850] (-) TimerEvent: {}
+[69.133843] (-) TimerEvent: {}
+[69.234807] (-) TimerEvent: {}
+[69.335765] (-) TimerEvent: {}
+[69.436719] (-) TimerEvent: {}
+[69.537974] (-) TimerEvent: {}
+[69.638946] (-) TimerEvent: {}
+[69.739931] (-) TimerEvent: {}
+[69.840887] (-) TimerEvent: {}
+[69.941927] (-) TimerEvent: {}
+[70.043049] (-) TimerEvent: {}
+[70.144433] (-) TimerEvent: {}
+[70.245417] (-) TimerEvent: {}
+[70.346375] (-) TimerEvent: {}
+[70.447355] (-) TimerEvent: {}
+[70.548323] (-) TimerEvent: {}
+[70.649291] (-) TimerEvent: {}
+[70.750474] (-) TimerEvent: {}
+[70.851603] (-) TimerEvent: {}
+[70.952462] (-) TimerEvent: {}
+[71.053353] (-) TimerEvent: {}
+[71.154310] (-) TimerEvent: {}
+[71.255520] (-) TimerEvent: {}
+[71.356497] (-) TimerEvent: {}
+[71.457490] (-) TimerEvent: {}
+[71.558450] (-) TimerEvent: {}
+[71.659421] (-) TimerEvent: {}
+[71.760395] (-) TimerEvent: {}
+[71.861358] (-) TimerEvent: {}
+[71.962531] (-) TimerEvent: {}
+[72.063559] (-) TimerEvent: {}
+[72.164485] (-) TimerEvent: {}
+[72.265551] (-) TimerEvent: {}
+[72.366534] (-) TimerEvent: {}
+[72.467478] (-) TimerEvent: {}
+[72.568464] (-) TimerEvent: {}
+[72.669540] (-) TimerEvent: {}
+[72.770875] (-) TimerEvent: {}
+[72.871908] (-) TimerEvent: {}
+[72.972892] (-) TimerEvent: {}
+[73.074093] (-) TimerEvent: {}
+[73.175216] (-) TimerEvent: {}
+[73.276541] (-) TimerEvent: {}
+[73.377597] (-) TimerEvent: {}
+[73.478666] (-) TimerEvent: {}
+[73.580149] (-) TimerEvent: {}
+[73.681330] (-) TimerEvent: {}
+[73.782477] (-) TimerEvent: {}
+[73.883985] (-) TimerEvent: {}
+[73.985329] (-) TimerEvent: {}
+[74.086312] (-) TimerEvent: {}
+[74.187220] (-) TimerEvent: {}
+[74.288157] (-) TimerEvent: {}
+[74.389077] (-) TimerEvent: {}
+[74.490015] (-) TimerEvent: {}
+[74.590851] (-) TimerEvent: {}
+[74.691743] (-) TimerEvent: {}
+[74.792689] (-) TimerEvent: {}
+[74.893569] (-) TimerEvent: {}
+[74.994505] (-) TimerEvent: {}
+[75.095432] (-) TimerEvent: {}
+[75.196281] (-) TimerEvent: {}
+[75.297295] (-) TimerEvent: {}
+[75.398261] (-) TimerEvent: {}
+[75.499209] (-) TimerEvent: {}
+[75.600185] (-) TimerEvent: {}
+[75.701126] (-) TimerEvent: {}
+[75.802182] (-) TimerEvent: {}
+[75.903115] (-) TimerEvent: {}
+[76.004105] (-) TimerEvent: {}
+[76.105060] (-) TimerEvent: {}
+[76.206069] (-) TimerEvent: {}
+[76.307020] (-) TimerEvent: {}
+[76.408095] (-) TimerEvent: {}
+[76.509052] (-) TimerEvent: {}
+[76.610090] (-) TimerEvent: {}
+[76.711144] (-) TimerEvent: {}
+[76.812144] (-) TimerEvent: {}
+[76.913097] (-) TimerEvent: {}
+[77.014246] (-) TimerEvent: {}
+[77.115228] (-) TimerEvent: {}
+[77.216185] (-) TimerEvent: {}
+[77.317148] (-) TimerEvent: {}
+[77.418269] (-) TimerEvent: {}
+[77.519312] (-) TimerEvent: {}
+[77.620736] (-) TimerEvent: {}
+[77.723149] (-) TimerEvent: {}
+[77.824284] (-) TimerEvent: {}
+[77.925362] (-) TimerEvent: {}
+[78.026283] (-) TimerEvent: {}
+[78.127290] (-) TimerEvent: {}
+[78.228356] (-) TimerEvent: {}
+[78.329659] (-) TimerEvent: {}
+[78.430712] (-) TimerEvent: {}
+[78.532067] (-) TimerEvent: {}
+[78.634110] (-) TimerEvent: {}
+[78.741353] (-) TimerEvent: {}
+[78.842291] (-) TimerEvent: {}
+[78.910284] (mecanum_drive_controller) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libmecanum_drive_controller.so\x1b[0m\n'}
+[78.942496] (-) TimerEvent: {}
+[79.043459] (-) TimerEvent: {}
+[79.144447] (-) TimerEvent: {}
+[79.245473] (-) TimerEvent: {}
+[79.346638] (-) TimerEvent: {}
+[79.447840] (-) TimerEvent: {}
+[79.549630] (-) TimerEvent: {}
+[79.651615] (-) TimerEvent: {}
+[79.753041] (-) TimerEvent: {}
+[79.855857] (-) TimerEvent: {}
+[79.957793] (-) TimerEvent: {}
+[80.059293] (-) TimerEvent: {}
+[80.161227] (-) TimerEvent: {}
+[80.263469] (-) TimerEvent: {}
+[80.366219] (-) TimerEvent: {}
+[80.468320] (-) TimerEvent: {}
+[80.570814] (-) TimerEvent: {}
+[80.672142] (-) TimerEvent: {}
+[80.742627] (mecanum_drive_controller) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable test_load_mecanum_drive_controller\x1b[0m\n'}
+[80.772478] (-) TimerEvent: {}
+[80.874049] (-) TimerEvent: {}
+[80.975753] (-) TimerEvent: {}
+[81.077834] (-) TimerEvent: {}
+[81.180460] (-) TimerEvent: {}
+[81.282564] (-) TimerEvent: {}
+[81.384713] (-) TimerEvent: {}
+[81.487119] (-) TimerEvent: {}
+[81.589589] (-) TimerEvent: {}
+[81.691337] (-) TimerEvent: {}
+[81.793817] (-) TimerEvent: {}
+[81.896296] (-) TimerEvent: {}
+[81.998443] (-) TimerEvent: {}
+[82.100014] (-) TimerEvent: {}
+[82.202531] (-) TimerEvent: {}
+[82.304434] (-) TimerEvent: {}
+[82.406457] (-) TimerEvent: {}
+[82.508092] (-) TimerEvent: {}
+[82.609663] (-) TimerEvent: {}
+[82.711661] (-) TimerEvent: {}
+[82.812766] (-) TimerEvent: {}
+[82.914406] (-) TimerEvent: {}
+[83.015560] (-) TimerEvent: {}
+[83.117059] (-) TimerEvent: {}
+[83.218353] (-) TimerEvent: {}
+[83.319220] (-) TimerEvent: {}
+[83.358769] (mecanum_drive_controller) StdoutLine: {'line': b'[ 75%] Built target test_load_mecanum_drive_controller\n'}
+[83.419530] (-) TimerEvent: {}
+[83.520305] (-) TimerEvent: {}
+[83.621142] (-) TimerEvent: {}
+[83.721996] (-) TimerEvent: {}
+[83.823090] (-) TimerEvent: {}
+[83.923878] (-) TimerEvent: {}
+[84.024646] (-) TimerEvent: {}
+[84.125572] (-) TimerEvent: {}
+[84.226342] (-) TimerEvent: {}
+[84.327162] (-) TimerEvent: {}
+[84.427907] (-) TimerEvent: {}
+[84.529185] (-) TimerEvent: {}
+[84.631085] (-) TimerEvent: {}
+[84.700357] (mecanum_drive_controller) StdoutLine: {'line': b'[ 75%] Built target mecanum_drive_controller\n'}
+[84.731403] (-) TimerEvent: {}
+[84.791061] (mecanum_drive_controller) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller.dir/test/test_mecanum_drive_controller.cpp.o\x1b[0m\n'}
+[84.802594] (mecanum_drive_controller) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller_preceeding.dir/test/test_mecanum_drive_controller_preceeding.cpp.o\x1b[0m\n'}
+[84.831625] (-) TimerEvent: {}
+[84.932462] (-) TimerEvent: {}
+[85.033179] (-) TimerEvent: {}
+[85.133921] (-) TimerEvent: {}
+[85.234633] (-) TimerEvent: {}
+[85.335374] (-) TimerEvent: {}
+[85.436167] (-) TimerEvent: {}
+[85.537085] (-) TimerEvent: {}
+[85.638269] (-) TimerEvent: {}
+[85.739242] (-) TimerEvent: {}
+[85.840485] (-) TimerEvent: {}
+[85.941483] (-) TimerEvent: {}
+[86.042196] (-) TimerEvent: {}
+[86.142936] (-) TimerEvent: {}
+[86.243644] (-) TimerEvent: {}
+[86.344402] (-) TimerEvent: {}
+[86.445178] (-) TimerEvent: {}
+[86.546008] (-) TimerEvent: {}
+[86.646717] (-) TimerEvent: {}
+[86.747465] (-) TimerEvent: {}
+[86.848258] (-) TimerEvent: {}
+[86.949048] (-) TimerEvent: {}
+[87.049833] (-) TimerEvent: {}
+[87.150571] (-) TimerEvent: {}
+[87.251810] (-) TimerEvent: {}
+[87.352526] (-) TimerEvent: {}
+[87.453238] (-) TimerEvent: {}
+[87.554044] (-) TimerEvent: {}
+[87.655070] (-) TimerEvent: {}
+[87.755937] (-) TimerEvent: {}
+[87.856741] (-) TimerEvent: {}
+[87.957682] (-) TimerEvent: {}
+[88.058596] (-) TimerEvent: {}
+[88.159547] (-) TimerEvent: {}
+[88.260455] (-) TimerEvent: {}
+[88.361403] (-) TimerEvent: {}
+[88.462459] (-) TimerEvent: {}
+[88.563430] (-) TimerEvent: {}
+[88.664364] (-) TimerEvent: {}
+[88.765542] (-) TimerEvent: {}
+[88.867329] (-) TimerEvent: {}
+[88.969496] (-) TimerEvent: {}
+[89.070759] (-) TimerEvent: {}
+[89.171771] (-) TimerEvent: {}
+[89.272916] (-) TimerEvent: {}
+[89.373773] (-) TimerEvent: {}
+[89.475004] (-) TimerEvent: {}
+[89.576183] (-) TimerEvent: {}
+[89.677193] (-) TimerEvent: {}
+[89.778125] (-) TimerEvent: {}
+[89.879345] (-) TimerEvent: {}
+[89.980660] (-) TimerEvent: {}
+[90.082187] (-) TimerEvent: {}
+[90.183983] (-) TimerEvent: {}
+[90.285831] (-) TimerEvent: {}
+[90.387580] (-) TimerEvent: {}
+[90.489436] (-) TimerEvent: {}
+[90.591148] (-) TimerEvent: {}
+[90.692887] (-) TimerEvent: {}
+[90.794771] (-) TimerEvent: {}
+[90.897283] (-) TimerEvent: {}
+[90.999055] (-) TimerEvent: {}
+[91.100798] (-) TimerEvent: {}
+[91.202579] (-) TimerEvent: {}
+[91.304293] (-) TimerEvent: {}
+[91.406858] (-) TimerEvent: {}
+[91.508930] (-) TimerEvent: {}
+[91.610981] (-) TimerEvent: {}
+[91.713831] (-) TimerEvent: {}
+[91.816242] (-) TimerEvent: {}
+[91.919195] (-) TimerEvent: {}
+[92.020541] (-) TimerEvent: {}
+[92.122290] (-) TimerEvent: {}
+[92.224299] (-) TimerEvent: {}
+[92.325915] (-) TimerEvent: {}
+[92.427189] (-) TimerEvent: {}
+[92.528629] (-) TimerEvent: {}
+[92.630608] (-) TimerEvent: {}
+[92.732076] (-) TimerEvent: {}
+[92.833473] (-) TimerEvent: {}
+[92.935190] (-) TimerEvent: {}
+[93.036968] (-) TimerEvent: {}
+[93.138593] (-) TimerEvent: {}
+[93.240703] (-) TimerEvent: {}
+[93.342532] (-) TimerEvent: {}
+[93.444567] (-) TimerEvent: {}
+[93.546203] (-) TimerEvent: {}
+[93.647927] (-) TimerEvent: {}
+[93.750165] (-) TimerEvent: {}
+[93.852093] (-) TimerEvent: {}
+[93.954182] (-) TimerEvent: {}
+[94.055498] (-) TimerEvent: {}
+[94.157364] (-) TimerEvent: {}
+[94.258669] (-) TimerEvent: {}
+[94.359958] (-) TimerEvent: {}
+[94.461442] (-) TimerEvent: {}
+[94.562949] (-) TimerEvent: {}
+[94.664810] (-) TimerEvent: {}
+[94.766657] (-) TimerEvent: {}
+[94.868065] (-) TimerEvent: {}
+[94.969865] (-) TimerEvent: {}
+[95.072020] (-) TimerEvent: {}
+[95.173701] (-) TimerEvent: {}
+[95.275216] (-) TimerEvent: {}
+[95.376746] (-) TimerEvent: {}
+[95.478598] (-) TimerEvent: {}
+[95.580457] (-) TimerEvent: {}
+[95.683011] (-) TimerEvent: {}
+[95.784876] (-) TimerEvent: {}
+[95.886452] (-) TimerEvent: {}
+[95.987916] (-) TimerEvent: {}
+[96.089481] (-) TimerEvent: {}
+[96.191132] (-) TimerEvent: {}
+[96.292515] (-) TimerEvent: {}
+[96.394768] (-) TimerEvent: {}
+[96.496383] (-) TimerEvent: {}
+[96.597724] (-) TimerEvent: {}
+[96.699389] (-) TimerEvent: {}
+[96.801046] (-) TimerEvent: {}
+[96.902360] (-) TimerEvent: {}
+[97.003791] (-) TimerEvent: {}
+[97.105127] (-) TimerEvent: {}
+[97.206761] (-) TimerEvent: {}
+[97.308745] (-) TimerEvent: {}
+[97.410840] (-) TimerEvent: {}
+[97.512301] (-) TimerEvent: {}
+[97.613896] (-) TimerEvent: {}
+[97.715584] (-) TimerEvent: {}
+[97.817095] (-) TimerEvent: {}
+[97.918809] (-) TimerEvent: {}
+[98.020367] (-) TimerEvent: {}
+[98.121799] (-) TimerEvent: {}
+[98.223183] (-) TimerEvent: {}
+[98.324609] (-) TimerEvent: {}
+[98.426174] (-) TimerEvent: {}
+[98.527662] (-) TimerEvent: {}
+[98.629214] (-) TimerEvent: {}
+[98.730547] (-) TimerEvent: {}
+[98.832119] (-) TimerEvent: {}
+[98.933544] (-) TimerEvent: {}
+[99.035707] (-) TimerEvent: {}
+[99.137457] (-) TimerEvent: {}
+[99.238723] (-) TimerEvent: {}
+[99.339935] (-) TimerEvent: {}
+[99.441105] (-) TimerEvent: {}
+[99.542364] (-) TimerEvent: {}
+[99.643569] (-) TimerEvent: {}
+[99.745160] (-) TimerEvent: {}
+[99.846404] (-) TimerEvent: {}
+[99.947683] (-) TimerEvent: {}
+[100.049061] (-) TimerEvent: {}
+[100.150390] (-) TimerEvent: {}
+[100.251771] (-) TimerEvent: {}
+[100.353091] (-) TimerEvent: {}
+[100.454561] (-) TimerEvent: {}
+[100.556043] (-) TimerEvent: {}
+[100.657543] (-) TimerEvent: {}
+[100.758862] (-) TimerEvent: {}
+[100.860143] (-) TimerEvent: {}
+[100.961512] (-) TimerEvent: {}
+[101.062841] (-) TimerEvent: {}
+[101.164103] (-) TimerEvent: {}
+[101.265558] (-) TimerEvent: {}
+[101.367268] (-) TimerEvent: {}
+[101.468237] (-) TimerEvent: {}
+[101.569195] (-) TimerEvent: {}
+[101.670167] (-) TimerEvent: {}
+[101.771125] (-) TimerEvent: {}
+[101.872048] (-) TimerEvent: {}
+[101.973104] (-) TimerEvent: {}
+[102.074454] (-) TimerEvent: {}
+[102.175780] (-) TimerEvent: {}
+[102.276727] (-) TimerEvent: {}
+[102.377644] (-) TimerEvent: {}
+[102.478589] (-) TimerEvent: {}
+[102.579657] (-) TimerEvent: {}
+[102.680912] (-) TimerEvent: {}
+[102.782231] (-) TimerEvent: {}
+[102.883861] (-) TimerEvent: {}
+[102.985447] (-) TimerEvent: {}
+[103.086757] (-) TimerEvent: {}
+[103.188329] (-) TimerEvent: {}
+[103.289533] (-) TimerEvent: {}
+[103.390897] (-) TimerEvent: {}
+[103.492495] (-) TimerEvent: {}
+[103.593799] (-) TimerEvent: {}
+[103.695163] (-) TimerEvent: {}
+[103.796459] (-) TimerEvent: {}
+[103.897556] (-) TimerEvent: {}
+[103.999019] (-) TimerEvent: {}
+[104.100329] (-) TimerEvent: {}
+[104.201829] (-) TimerEvent: {}
+[104.302887] (-) TimerEvent: {}
+[104.404529] (-) TimerEvent: {}
+[104.505637] (-) TimerEvent: {}
+[104.606837] (-) TimerEvent: {}
+[104.707781] (-) TimerEvent: {}
+[104.808789] (-) TimerEvent: {}
+[104.909768] (-) TimerEvent: {}
+[105.010800] (-) TimerEvent: {}
+[105.111853] (-) TimerEvent: {}
+[105.212890] (-) TimerEvent: {}
+[105.313970] (-) TimerEvent: {}
+[105.415058] (-) TimerEvent: {}
+[105.516243] (-) TimerEvent: {}
+[105.617301] (-) TimerEvent: {}
+[105.718338] (-) TimerEvent: {}
+[105.819280] (-) TimerEvent: {}
+[105.920223] (-) TimerEvent: {}
+[106.021184] (-) TimerEvent: {}
+[106.122682] (-) TimerEvent: {}
+[106.223647] (-) TimerEvent: {}
+[106.324605] (-) TimerEvent: {}
+[106.425552] (-) TimerEvent: {}
+[106.526643] (-) TimerEvent: {}
+[106.627613] (-) TimerEvent: {}
+[106.728591] (-) TimerEvent: {}
+[106.829547] (-) TimerEvent: {}
+[106.930617] (-) TimerEvent: {}
+[107.031554] (-) TimerEvent: {}
+[107.132513] (-) TimerEvent: {}
+[107.233463] (-) TimerEvent: {}
+[107.334405] (-) TimerEvent: {}
+[107.435316] (-) TimerEvent: {}
+[107.536271] (-) TimerEvent: {}
+[107.637225] (-) TimerEvent: {}
+[107.738350] (-) TimerEvent: {}
+[107.839337] (-) TimerEvent: {}
+[107.941626] (-) TimerEvent: {}
+[108.043856] (-) TimerEvent: {}
+[108.146304] (-) TimerEvent: {}
+[108.247226] (-) TimerEvent: {}
+[108.348236] (-) TimerEvent: {}
+[108.459981] (-) TimerEvent: {}
+[108.560930] (-) TimerEvent: {}
+[108.661825] (-) TimerEvent: {}
+[108.762818] (-) TimerEvent: {}
+[108.863782] (-) TimerEvent: {}
+[108.964738] (-) TimerEvent: {}
+[109.065699] (-) TimerEvent: {}
+[109.166650] (-) TimerEvent: {}
+[109.267686] (-) TimerEvent: {}
+[109.368658] (-) TimerEvent: {}
+[109.469723] (-) TimerEvent: {}
+[109.570736] (-) TimerEvent: {}
+[109.671775] (-) TimerEvent: {}
+[109.772726] (-) TimerEvent: {}
+[109.873708] (-) TimerEvent: {}
+[109.974623] (-) TimerEvent: {}
+[110.075555] (-) TimerEvent: {}
+[110.176500] (-) TimerEvent: {}
+[110.277524] (-) TimerEvent: {}
+[110.378621] (-) TimerEvent: {}
+[110.479667] (-) TimerEvent: {}
+[110.581484] (-) TimerEvent: {}
+[110.682429] (-) TimerEvent: {}
+[110.783753] (-) TimerEvent: {}
+[110.884726] (-) TimerEvent: {}
+[110.985707] (-) TimerEvent: {}
+[111.086688] (-) TimerEvent: {}
+[111.187782] (-) TimerEvent: {}
+[111.288724] (-) TimerEvent: {}
+[111.389824] (-) TimerEvent: {}
+[111.490971] (-) TimerEvent: {}
+[111.592085] (-) TimerEvent: {}
+[111.693167] (-) TimerEvent: {}
+[111.794155] (-) TimerEvent: {}
+[111.895155] (-) TimerEvent: {}
+[111.996174] (-) TimerEvent: {}
+[112.097134] (-) TimerEvent: {}
+[112.198362] (-) TimerEvent: {}
+[112.299657] (-) TimerEvent: {}
+[112.400643] (-) TimerEvent: {}
+[112.501583] (-) TimerEvent: {}
+[112.602550] (-) TimerEvent: {}
+[112.703516] (-) TimerEvent: {}
+[112.804513] (-) TimerEvent: {}
+[112.905456] (-) TimerEvent: {}
+[113.006388] (-) TimerEvent: {}
+[113.107326] (-) TimerEvent: {}
+[113.208349] (-) TimerEvent: {}
+[113.309358] (-) TimerEvent: {}
+[113.410390] (-) TimerEvent: {}
+[113.512826] (-) TimerEvent: {}
+[113.614985] (-) TimerEvent: {}
+[113.717085] (-) TimerEvent: {}
+[113.819197] (-) TimerEvent: {}
+[113.921242] (-) TimerEvent: {}
+[114.023305] (-) TimerEvent: {}
+[114.125444] (-) TimerEvent: {}
+[114.227552] (-) TimerEvent: {}
+[114.330065] (-) TimerEvent: {}
+[114.431499] (-) TimerEvent: {}
+[114.532929] (-) TimerEvent: {}
+[114.635359] (-) TimerEvent: {}
+[114.737451] (-) TimerEvent: {}
+[114.839316] (-) TimerEvent: {}
+[114.941193] (-) TimerEvent: {}
+[115.043008] (-) TimerEvent: {}
+[115.145166] (-) TimerEvent: {}
+[115.247304] (-) TimerEvent: {}
+[115.349178] (-) TimerEvent: {}
+[115.451077] (-) TimerEvent: {}
+[115.552940] (-) TimerEvent: {}
+[115.654799] (-) TimerEvent: {}
+[115.756689] (-) TimerEvent: {}
+[115.858701] (-) TimerEvent: {}
+[115.960558] (-) TimerEvent: {}
+[116.062408] (-) TimerEvent: {}
+[116.164353] (-) TimerEvent: {}
+[116.267123] (-) TimerEvent: {}
+[116.369082] (-) TimerEvent: {}
+[116.471080] (-) TimerEvent: {}
+[116.573038] (-) TimerEvent: {}
+[116.674975] (-) TimerEvent: {}
+[116.776943] (-) TimerEvent: {}
+[116.878266] (-) TimerEvent: {}
+[116.979550] (-) TimerEvent: {}
+[117.080827] (-) TimerEvent: {}
+[117.181701] (-) TimerEvent: {}
+[117.282801] (-) TimerEvent: {}
+[117.383784] (-) TimerEvent: {}
+[117.484806] (-) TimerEvent: {}
+[117.585833] (-) TimerEvent: {}
+[117.686822] (-) TimerEvent: {}
+[117.787774] (-) TimerEvent: {}
+[117.888788] (-) TimerEvent: {}
+[117.989985] (-) TimerEvent: {}
+[118.090868] (-) TimerEvent: {}
+[118.191811] (-) TimerEvent: {}
+[118.292705] (-) TimerEvent: {}
+[118.393778] (-) TimerEvent: {}
+[118.433638] (mecanum_drive_controller) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable test_mecanum_drive_controller_preceeding\x1b[0m\n'}
+[118.493991] (-) TimerEvent: {}
+[118.595248] (-) TimerEvent: {}
+[118.696228] (-) TimerEvent: {}
+[118.797771] (-) TimerEvent: {}
+[118.900288] (-) TimerEvent: {}
+[119.001895] (-) TimerEvent: {}
+[119.103385] (-) TimerEvent: {}
+[119.205024] (-) TimerEvent: {}
+[119.306858] (-) TimerEvent: {}
+[119.409147] (-) TimerEvent: {}
+[119.510911] (-) TimerEvent: {}
+[119.612744] (-) TimerEvent: {}
+[119.715101] (-) TimerEvent: {}
+[119.817845] (-) TimerEvent: {}
+[119.920627] (-) TimerEvent: {}
+[120.023297] (-) TimerEvent: {}
+[120.124862] (-) TimerEvent: {}
+[120.226923] (-) TimerEvent: {}
+[120.328428] (-) TimerEvent: {}
+[120.430024] (-) TimerEvent: {}
+[120.531728] (-) TimerEvent: {}
+[120.633221] (-) TimerEvent: {}
+[120.735250] (-) TimerEvent: {}
+[120.836649] (-) TimerEvent: {}
+[120.937748] (-) TimerEvent: {}
+[121.039261] (-) TimerEvent: {}
+[121.141753] (-) TimerEvent: {}
+[121.243669] (-) TimerEvent: {}
+[121.345620] (-) TimerEvent: {}
+[121.447028] (-) TimerEvent: {}
+[121.548597] (-) TimerEvent: {}
+[121.650205] (-) TimerEvent: {}
+[121.751304] (-) TimerEvent: {}
+[121.852512] (-) TimerEvent: {}
+[121.954079] (-) TimerEvent: {}
+[122.055392] (-) TimerEvent: {}
+[122.156972] (-) TimerEvent: {}
+[122.259066] (-) TimerEvent: {}
+[122.360542] (-) TimerEvent: {}
+[122.461669] (-) TimerEvent: {}
+[122.562866] (-) TimerEvent: {}
+[122.664035] (-) TimerEvent: {}
+[122.765592] (-) TimerEvent: {}
+[122.866686] (-) TimerEvent: {}
+[122.968002] (-) TimerEvent: {}
+[123.069103] (-) TimerEvent: {}
+[123.170341] (-) TimerEvent: {}
+[123.271352] (-) TimerEvent: {}
+[123.372405] (-) TimerEvent: {}
+[123.473586] (-) TimerEvent: {}
+[123.574459] (-) TimerEvent: {}
+[123.671762] (mecanum_drive_controller) StdoutLine: {'line': b'[ 93%] Built target test_mecanum_drive_controller_preceeding\n'}
+[123.674672] (-) TimerEvent: {}
+[123.775506] (-) TimerEvent: {}
+[123.876296] (-) TimerEvent: {}
+[123.977043] (-) TimerEvent: {}
+[124.077818] (-) TimerEvent: {}
+[124.178550] (-) TimerEvent: {}
+[124.279339] (-) TimerEvent: {}
+[124.380098] (-) TimerEvent: {}
+[124.480880] (-) TimerEvent: {}
+[124.581694] (-) TimerEvent: {}
+[124.682449] (-) TimerEvent: {}
+[124.783204] (-) TimerEvent: {}
+[124.884006] (-) TimerEvent: {}
+[124.984768] (-) TimerEvent: {}
+[125.085536] (-) TimerEvent: {}
+[125.186274] (-) TimerEvent: {}
+[125.287028] (-) TimerEvent: {}
+[125.387808] (-) TimerEvent: {}
+[125.488676] (-) TimerEvent: {}
+[125.589549] (-) TimerEvent: {}
+[125.690306] (-) TimerEvent: {}
+[125.791075] (-) TimerEvent: {}
+[125.891864] (-) TimerEvent: {}
+[125.992716] (-) TimerEvent: {}
+[126.093512] (-) TimerEvent: {}
+[126.194262] (-) TimerEvent: {}
+[126.295010] (-) TimerEvent: {}
+[126.395766] (-) TimerEvent: {}
+[126.496537] (-) TimerEvent: {}
+[126.597299] (-) TimerEvent: {}
+[126.698088] (-) TimerEvent: {}
+[126.798862] (-) TimerEvent: {}
+[126.899661] (-) TimerEvent: {}
+[127.000416] (-) TimerEvent: {}
+[127.101197] (-) TimerEvent: {}
+[127.201937] (-) TimerEvent: {}
+[127.302687] (-) TimerEvent: {}
+[127.403462] (-) TimerEvent: {}
+[127.504279] (-) TimerEvent: {}
+[127.605141] (-) TimerEvent: {}
+[127.705943] (-) TimerEvent: {}
+[127.806698] (-) TimerEvent: {}
+[127.907453] (-) TimerEvent: {}
+[128.008231] (-) TimerEvent: {}
+[128.109014] (-) TimerEvent: {}
+[128.209790] (-) TimerEvent: {}
+[128.310628] (-) TimerEvent: {}
+[128.411405] (-) TimerEvent: {}
+[128.512169] (-) TimerEvent: {}
+[128.612953] (-) TimerEvent: {}
+[128.713725] (-) TimerEvent: {}
+[128.814436] (-) TimerEvent: {}
+[128.915222] (-) TimerEvent: {}
+[129.015992] (-) TimerEvent: {}
+[129.116749] (-) TimerEvent: {}
+[129.217529] (-) TimerEvent: {}
+[129.318269] (-) TimerEvent: {}
+[129.419074] (-) TimerEvent: {}
+[129.519874] (-) TimerEvent: {}
+[129.620623] (-) TimerEvent: {}
+[129.721465] (-) TimerEvent: {}
+[129.822183] (-) TimerEvent: {}
+[129.922942] (-) TimerEvent: {}
+[130.023753] (-) TimerEvent: {}
+[130.124535] (-) TimerEvent: {}
+[130.225303] (-) TimerEvent: {}
+[130.326087] (-) TimerEvent: {}
+[130.426816] (-) TimerEvent: {}
+[130.527587] (-) TimerEvent: {}
+[130.628331] (-) TimerEvent: {}
+[130.729115] (-) TimerEvent: {}
+[130.829905] (-) TimerEvent: {}
+[130.930667] (-) TimerEvent: {}
+[131.031436] (-) TimerEvent: {}
+[131.132175] (-) TimerEvent: {}
+[131.232958] (-) TimerEvent: {}
+[131.333719] (-) TimerEvent: {}
+[131.434436] (-) TimerEvent: {}
+[131.535187] (-) TimerEvent: {}
+[131.635928] (-) TimerEvent: {}
+[131.736681] (-) TimerEvent: {}
+[131.837455] (-) TimerEvent: {}
+[131.938151] (-) TimerEvent: {}
+[132.038906] (-) TimerEvent: {}
+[132.139676] (-) TimerEvent: {}
+[132.240429] (-) TimerEvent: {}
+[132.341234] (-) TimerEvent: {}
+[132.442039] (-) TimerEvent: {}
+[132.542797] (-) TimerEvent: {}
+[132.643561] (-) TimerEvent: {}
+[132.744345] (-) TimerEvent: {}
+[132.845117] (-) TimerEvent: {}
+[132.945911] (-) TimerEvent: {}
+[133.046632] (-) TimerEvent: {}
+[133.147395] (-) TimerEvent: {}
+[133.248153] (-) TimerEvent: {}
+[133.348853] (-) TimerEvent: {}
+[133.449620] (-) TimerEvent: {}
+[133.550364] (-) TimerEvent: {}
+[133.651112] (-) TimerEvent: {}
+[133.751929] (-) TimerEvent: {}
+[133.852657] (-) TimerEvent: {}
+[133.953451] (-) TimerEvent: {}
+[134.054199] (-) TimerEvent: {}
+[134.154979] (-) TimerEvent: {}
+[134.255737] (-) TimerEvent: {}
+[134.356544] (-) TimerEvent: {}
+[134.457307] (-) TimerEvent: {}
+[134.558100] (-) TimerEvent: {}
+[134.658873] (-) TimerEvent: {}
+[134.759621] (-) TimerEvent: {}
+[134.860348] (-) TimerEvent: {}
+[134.961084] (-) TimerEvent: {}
+[135.061916] (-) TimerEvent: {}
+[135.162677] (-) TimerEvent: {}
+[135.263494] (-) TimerEvent: {}
+[135.364778] (-) TimerEvent: {}
+[135.466093] (-) TimerEvent: {}
+[135.567310] (-) TimerEvent: {}
+[135.668544] (-) TimerEvent: {}
+[135.769521] (-) TimerEvent: {}
+[135.870281] (-) TimerEvent: {}
+[135.971028] (-) TimerEvent: {}
+[136.071841] (-) TimerEvent: {}
+[136.172594] (-) TimerEvent: {}
+[136.273394] (-) TimerEvent: {}
+[136.374114] (-) TimerEvent: {}
+[136.474851] (-) TimerEvent: {}
+[136.575622] (-) TimerEvent: {}
+[136.676364] (-) TimerEvent: {}
+[136.777120] (-) TimerEvent: {}
+[136.877890] (-) TimerEvent: {}
+[136.978632] (-) TimerEvent: {}
+[137.079367] (-) TimerEvent: {}
+[137.180101] (-) TimerEvent: {}
+[137.280837] (-) TimerEvent: {}
+[137.381575] (-) TimerEvent: {}
+[137.482324] (-) TimerEvent: {}
+[137.583024] (-) TimerEvent: {}
+[137.683756] (-) TimerEvent: {}
+[137.784543] (-) TimerEvent: {}
+[137.885319] (-) TimerEvent: {}
+[137.986075] (-) TimerEvent: {}
+[138.086865] (-) TimerEvent: {}
+[138.187792] (-) TimerEvent: {}
+[138.288678] (-) TimerEvent: {}
+[138.389560] (-) TimerEvent: {}
+[138.490310] (-) TimerEvent: {}
+[138.591216] (-) TimerEvent: {}
+[138.692369] (-) TimerEvent: {}
+[138.793796] (-) TimerEvent: {}
+[138.895395] (-) TimerEvent: {}
+[138.996200] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_mecanum_drive_controller\x1b[0m\n'}
+[138.996925] (-) TimerEvent: {}
+[139.097566] (-) TimerEvent: {}
+[139.198380] (-) TimerEvent: {}
+[139.299169] (-) TimerEvent: {}
+[139.400027] (-) TimerEvent: {}
+[139.500948] (-) TimerEvent: {}
+[139.602436] (-) TimerEvent: {}
+[139.703742] (-) TimerEvent: {}
+[139.805050] (-) TimerEvent: {}
+[139.906273] (-) TimerEvent: {}
+[140.007157] (-) TimerEvent: {}
+[140.108107] (-) TimerEvent: {}
+[140.209064] (-) TimerEvent: {}
+[140.310016] (-) TimerEvent: {}
+[140.410919] (-) TimerEvent: {}
+[140.511791] (-) TimerEvent: {}
+[140.612771] (-) TimerEvent: {}
+[140.714075] (-) TimerEvent: {}
+[140.815290] (-) TimerEvent: {}
+[140.916649] (-) TimerEvent: {}
+[141.017891] (-) TimerEvent: {}
+[141.118843] (-) TimerEvent: {}
+[141.219866] (-) TimerEvent: {}
+[141.321085] (-) TimerEvent: {}
+[141.422093] (-) TimerEvent: {}
+[141.523289] (-) TimerEvent: {}
+[141.624203] (-) TimerEvent: {}
+[141.725312] (-) TimerEvent: {}
+[141.826494] (-) TimerEvent: {}
+[141.927382] (-) TimerEvent: {}
+[142.028406] (-) TimerEvent: {}
+[142.129673] (-) TimerEvent: {}
+[142.230850] (-) TimerEvent: {}
+[142.331738] (-) TimerEvent: {}
+[142.432794] (-) TimerEvent: {}
+[142.533986] (-) TimerEvent: {}
+[142.634937] (-) TimerEvent: {}
+[142.736138] (-) TimerEvent: {}
+[142.837064] (-) TimerEvent: {}
+[142.938054] (-) TimerEvent: {}
+[143.039402] (-) TimerEvent: {}
+[143.140502] (-) TimerEvent: {}
+[143.241685] (-) TimerEvent: {}
+[143.342811] (-) TimerEvent: {}
+[143.443841] (-) TimerEvent: {}
+[143.545165] (-) TimerEvent: {}
+[143.646230] (-) TimerEvent: {}
+[143.747136] (-) TimerEvent: {}
+[143.847937] (-) TimerEvent: {}
+[143.948620] (-) TimerEvent: {}
+[144.049297] (-) TimerEvent: {}
+[144.150138] (-) TimerEvent: {}
+[144.251095] (-) TimerEvent: {}
+[144.352285] (-) TimerEvent: {}
+[144.453025] (-) TimerEvent: {}
+[144.553842] (-) TimerEvent: {}
+[144.654739] (-) TimerEvent: {}
+[144.755760] (-) TimerEvent: {}
+[144.856496] (-) TimerEvent: {}
+[144.957313] (-) TimerEvent: {}
+[145.058088] (-) TimerEvent: {}
+[145.158972] (-) TimerEvent: {}
+[145.181005] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] Built target test_mecanum_drive_controller\n'}
+[145.226492] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[145.228771] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'install'}
+[145.232088] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller'], 'cwd': '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 57921 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller'), ('ROS_IPV6', 'off'), ('SSH_CONNECTION', '172.20.10.2 57921 172.20.10.11 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[145.259142] (-) TimerEvent: {}
+[145.262401] (mecanum_drive_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[145.263021] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller\n'}
+[145.263491] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp\n'}
+[145.265764] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml\n'}
+[145.268791] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller\n'}
+[145.269522] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller\n'}
+[145.270071] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp\n'}
+[145.271419] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp\n'}
+[145.272734] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h\n'}
+[145.274561] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so\n'}
+[145.353659] (mecanum_drive_controller) StdoutLine: {'line': b'-- Set runtime path of "/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so" to ""\n'}
+[145.354325] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh\n'}
+[145.355672] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv\n'}
+[145.357443] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller\n'}
+[145.359195] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller\n'}
+[145.359661] (-) TimerEvent: {}
+[145.360596] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh\n'}
+[145.361920] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv\n'}
+[145.363187] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh\n'}
+[145.364381] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv\n'}
+[145.365639] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash\n'}
+[145.366899] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh\n'}
+[145.368199] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh\n'}
+[145.369437] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv\n'}
+[145.370672] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv\n'}
+[145.372185] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller\n'}
+[145.373884] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller\n'}
+[145.375665] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake\n'}
+[145.377214] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake\n'}
+[145.378681] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[145.380152] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[145.381432] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake\n'}
+[145.382609] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake\n'}
+[145.383880] (mecanum_drive_controller) StdoutLine: {'line': b'-- Installing: /mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml\n'}
+[145.389616] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[145.460254] (-) TimerEvent: {}
+[145.469303] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 0}
+[145.471978] (-) EventReactorShutdown: {}

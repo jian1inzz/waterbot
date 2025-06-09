@@ -1,0 +1,36 @@
+[0.172s] Invoking command in '/home/as33697920/larry_ws/robot/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/as33697920/larry_ws/robot/src/waterbot/rplidar_ros -DCMAKE_INSTALL_PREFIX=/home/as33697920/larry_ws/robot/install/rplidar_ros
+[0.728s] -- The C compiler identification is GNU 11.4.0
+[1.146s] -- The CXX compiler identification is GNU 11.4.0
+[1.185s] -- Detecting C compiler ABI info
+[1.618s] -- Detecting C compiler ABI info - done
+[1.650s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.651s] -- Detecting C compile features
+[1.653s] -- Detecting C compile features - done
+[1.679s] -- Detecting CXX compiler ABI info
+[5.058s] -- Detecting CXX compiler ABI info - done
+[5.082s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.083s] -- Detecting CXX compile features
+[5.085s] -- Detecting CXX compile features - done
+[5.508s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.540s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[7.193s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[7.509s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.562s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.642s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.739s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.836s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.106s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.126s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.576s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[8.751s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.030s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.105s] -- Looking for pthread.h
+[9.586s] -- Looking for pthread.h - found
+[9.587s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.557s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[10.561s] -- Found Threads: TRUE  
+[12.343s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[13.004s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[13.466s] -- Configuring done
+[13.575s] -- Generating done
+[13.605s] -- Build files have been written to: /home/as33697920/larry_ws/robot/build/rplidar_ros

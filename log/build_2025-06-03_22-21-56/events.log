@@ -1,0 +1,264 @@
+[0.000000] (-) TimerEvent: {}
+[0.001047] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.002020] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict()}
+[0.002548] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.002998] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.028239] (my_robot) JobStarted: {'identifier': 'my_robot'}
+[0.046057] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.099218] (-) TimerEvent: {}
+[0.118171] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.121295] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/as33697920/larry_ws/robot/src/waterbot/mecanum_drive_controller', '-DCMAKE_INSTALL_PREFIX=/home/as33697920/larry_ws/robot/install/mecanum_drive_controller'], 'cwd': '/home/as33697920/larry_ws/robot/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 62900 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920/larry_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/as33697920/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/as33697920/larry_ws/robot/build/mecanum_drive_controller'), ('SSH_CONNECTION', '172.20.10.2 62900 172.20.10.3 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.133094] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'cmake'}
+[0.135605] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '/home/as33697920/larry_ws/robot/src/waterbot/my_robot', '-DCMAKE_INSTALL_PREFIX=/home/as33697920/larry_ws/robot/install/my_robot'], 'cwd': '/home/as33697920/larry_ws/robot/build/my_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 62900 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920/larry_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/as33697920/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/as33697920/larry_ws/robot/build/my_robot'), ('SSH_CONNECTION', '172.20.10.2 62900 172.20.10.3 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.200248] (-) TimerEvent: {}
+[0.203248] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[0.207122] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/as33697920/larry_ws/robot/src/waterbot/rplidar_ros', '-DCMAKE_INSTALL_PREFIX=/home/as33697920/larry_ws/robot/install/rplidar_ros'], 'cwd': '/home/as33697920/larry_ws/robot/build/rplidar_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'as33697920'), ('SSH_CLIENT', '172.20.10.2 62900 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/as33697920'), ('OLDPWD', '/home/as33697920/larry_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'as33697920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/as33697920/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/as33697920/larry_ws/robot/build/rplidar_ros'), ('SSH_CONNECTION', '172.20.10.2 62900 172.20.10.3 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/USB_DISK/ros2_workspace/install/rplidar_ros:/mnt/USB_DISK/ros2_workspace/install/my_robot:/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller:/opt/ros/humble')]), 'shell': False}
+[0.300414] (-) TimerEvent: {}
+[0.401216] (-) TimerEvent: {}
+[0.502233] (-) TimerEvent: {}
+[0.581937] (mecanum_drive_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.602840] (-) TimerEvent: {}
+[0.656267] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.703169] (-) TimerEvent: {}
+[0.769793] (my_robot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.773911] (rplidar_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.803412] (-) TimerEvent: {}
+[0.905223] (-) TimerEvent: {}
+[1.016031] (-) TimerEvent: {}
+[1.120046] (-) TimerEvent: {}
+[1.173421] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.192097] (rplidar_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.194735] (my_robot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.203010] (mecanum_drive_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.205067] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.206506] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.220229] (-) TimerEvent: {}
+[1.230962] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.237243] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.244097] (my_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.320512] (-) TimerEvent: {}
+[1.423092] (-) TimerEvent: {}
+[1.525315] (-) TimerEvent: {}
+[1.626312] (-) TimerEvent: {}
+[1.663931] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.685991] (my_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.696324] (rplidar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.697391] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.698950] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.723644] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.732504] (-) TimerEvent: {}
+[1.768007] (my_robot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.769676] (my_robot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.772083] (my_robot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.784481] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.832694] (-) TimerEvent: {}
+[1.934122] (-) TimerEvent: {}
+[2.034918] (-) TimerEvent: {}
+[2.135809] (-) TimerEvent: {}
+[2.215902] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.235939] (-) TimerEvent: {}
+[2.336764] (-) TimerEvent: {}
+[2.438084] (-) TimerEvent: {}
+[2.539275] (-) TimerEvent: {}
+[2.640117] (-) TimerEvent: {}
+[2.740929] (-) TimerEvent: {}
+[2.841765] (-) TimerEvent: {}
+[2.942651] (-) TimerEvent: {}
+[3.043891] (-) TimerEvent: {}
+[3.144850] (-) TimerEvent: {}
+[3.246196] (-) TimerEvent: {}
+[3.347475] (-) TimerEvent: {}
+[3.448801] (-) TimerEvent: {}
+[3.550052] (-) TimerEvent: {}
+[3.651252] (-) TimerEvent: {}
+[3.752833] (-) TimerEvent: {}
+[3.854147] (-) TimerEvent: {}
+[3.955333] (-) TimerEvent: {}
+[4.056347] (-) TimerEvent: {}
+[4.157162] (-) TimerEvent: {}
+[4.258193] (-) TimerEvent: {}
+[4.359503] (-) TimerEvent: {}
+[4.460846] (-) TimerEvent: {}
+[4.562158] (-) TimerEvent: {}
+[4.663393] (-) TimerEvent: {}
+[4.764314] (-) TimerEvent: {}
+[4.865583] (-) TimerEvent: {}
+[4.966779] (-) TimerEvent: {}
+[5.067696] (-) TimerEvent: {}
+[5.099510] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.103985] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.128248] (rplidar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.129353] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.130349] (my_robot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.131078] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.131821] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.133689] (my_robot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.156585] (my_robot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.167818] (-) TimerEvent: {}
+[5.268453] (-) TimerEvent: {}
+[5.369152] (-) TimerEvent: {}
+[5.469928] (-) TimerEvent: {}
+[5.553885] (rplidar_ros) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.570141] (-) TimerEvent: {}
+[5.671060] (-) TimerEvent: {}
+[5.772470] (-) TimerEvent: {}
+[5.874018] (-) TimerEvent: {}
+[5.977339] (-) TimerEvent: {}
+[6.084337] (-) TimerEvent: {}
+[6.150113] (my_robot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.184520] (-) TimerEvent: {}
+[6.286304] (-) TimerEvent: {}
+[6.387371] (-) TimerEvent: {}
+[6.488469] (-) TimerEvent: {}
+[6.586019] (rplidar_ros) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.588643] (-) TimerEvent: {}
+[6.625898] (mecanum_drive_controller) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:25 (find_package):\n'}
+[6.626659] (mecanum_drive_controller) StderrLine: {'line': b'  By not providing "Findbackward_ros.cmake" in CMAKE_MODULE_PATH this project\n'}
+[6.627083] (mecanum_drive_controller) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[6.627489] (mecanum_drive_controller) StderrLine: {'line': b'  "backward_ros", but CMake did not find one.\n'}
+[6.627948] (mecanum_drive_controller) StderrLine: {'line': b'\n'}
+[6.628376] (mecanum_drive_controller) StderrLine: {'line': b'  Could not find a package configuration file provided by "backward_ros" with\n'}
+[6.628835] (mecanum_drive_controller) StderrLine: {'line': b'  any of the following names:\n'}
+[6.629349] (mecanum_drive_controller) StderrLine: {'line': b'\n'}
+[6.629805] (mecanum_drive_controller) StderrLine: {'line': b'    backward_rosConfig.cmake\n'}
+[6.630162] (mecanum_drive_controller) StderrLine: {'line': b'    backward_ros-config.cmake\n'}
+[6.630545] (mecanum_drive_controller) StderrLine: {'line': b'\n'}
+[6.630935] (mecanum_drive_controller) StderrLine: {'line': b'  Add the installation prefix of "backward_ros" to CMAKE_PREFIX_PATH or set\n'}
+[6.631614] (mecanum_drive_controller) StderrLine: {'line': b'  "backward_ros_DIR" to a directory containing one of the above files.  If\n'}
+[6.632555] (mecanum_drive_controller) StderrLine: {'line': b'  "backward_ros" provides a separate development package or SDK, be sure it\n'}
+[6.633370] (mecanum_drive_controller) StderrLine: {'line': b'  has been installed.\n'}
+[6.634083] (mecanum_drive_controller) StderrLine: {'line': b'\n'}
+[6.635012] (mecanum_drive_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[6.636466] (mecanum_drive_controller) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[6.637409] (mecanum_drive_controller) StdoutLine: {'line': b'See also "/home/as33697920/larry_ws/robot/build/mecanum_drive_controller/CMakeFiles/CMakeOutput.log".\n'}
+[6.667623] (mecanum_drive_controller) CommandEnded: {'returncode': 1}
+[6.688846] (-) TimerEvent: {}
+[6.770556] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 1}
+[6.789009] (-) TimerEvent: {}
+[6.801029] (my_robot) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.890349] (-) TimerEvent: {}
+[6.992883] (-) TimerEvent: {}
+[7.094521] (-) TimerEvent: {}
+[7.181001] (my_robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.194724] (-) TimerEvent: {}
+[7.230802] (my_robot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.238604] (rplidar_ros) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[7.291833] (my_robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.294914] (-) TimerEvent: {}
+[7.374139] (my_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.395111] (-) TimerEvent: {}
+[7.482697] (my_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.495296] (-) TimerEvent: {}
+[7.555255] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.595483] (-) TimerEvent: {}
+[7.608031] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.688172] (rplidar_ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.695935] (-) TimerEvent: {}
+[7.785500] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.796122] (-) TimerEvent: {}
+[7.865201] (my_robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.881886] (rplidar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.887296] (my_robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.896304] (-) TimerEvent: {}
+[7.997040] (-) TimerEvent: {}
+[8.098379] (-) TimerEvent: {}
+[8.151799] (rplidar_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[8.172571] (rplidar_ros) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[8.198593] (-) TimerEvent: {}
+[8.299449] (-) TimerEvent: {}
+[8.357790] (my_robot) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.399639] (-) TimerEvent: {}
+[8.500979] (-) TimerEvent: {}
+[8.523219] (my_robot) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.601166] (-) TimerEvent: {}
+[8.622178] (rplidar_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.701369] (-) TimerEvent: {}
+[8.787618] (my_robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.797150] (rplidar_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.801586] (-) TimerEvent: {}
+[8.863511] (my_robot) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.901795] (-) TimerEvent: {}
+[9.002587] (-) TimerEvent: {}
+[9.076585] (rplidar_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.102787] (-) TimerEvent: {}
+[9.150705] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[9.202976] (-) TimerEvent: {}
+[9.206411] (my_robot) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[9.209285] (my_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[9.303218] (-) TimerEvent: {}
+[9.404756] (-) TimerEvent: {}
+[9.505747] (-) TimerEvent: {}
+[9.607042] (-) TimerEvent: {}
+[9.631019] (my_robot) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[9.631693] (rplidar_ros) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[9.633107] (rplidar_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[9.635488] (my_robot) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.707305] (-) TimerEvent: {}
+[9.819137] (-) TimerEvent: {}
+[9.920560] (-) TimerEvent: {}
+[10.021475] (-) TimerEvent: {}
+[10.122744] (-) TimerEvent: {}
+[10.223991] (-) TimerEvent: {}
+[10.325322] (-) TimerEvent: {}
+[10.426608] (-) TimerEvent: {}
+[10.573645] (-) TimerEvent: {}
+[10.602566] (rplidar_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[10.607327] (rplidar_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.673846] (-) TimerEvent: {}
+[10.774693] (-) TimerEvent: {}
+[10.912552] (-) TimerEvent: {}
+[11.013636] (-) TimerEvent: {}
+[11.114677] (-) TimerEvent: {}
+[11.215903] (-) TimerEvent: {}
+[11.317113] (-) TimerEvent: {}
+[11.418336] (-) TimerEvent: {}
+[11.519152] (-) TimerEvent: {}
+[11.620036] (-) TimerEvent: {}
+[11.722271] (-) TimerEvent: {}
+[11.823388] (-) TimerEvent: {}
+[11.924530] (-) TimerEvent: {}
+[12.025489] (-) TimerEvent: {}
+[12.126353] (-) TimerEvent: {}
+[12.227422] (-) TimerEvent: {}
+[12.328766] (-) TimerEvent: {}
+[12.388642] (rplidar_ros) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[12.389488] (my_robot) StdoutLine: {'line': b'-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)\n'}
+[12.428931] (-) TimerEvent: {}
+[12.529689] (-) TimerEvent: {}
+[12.630495] (-) TimerEvent: {}
+[12.731784] (-) TimerEvent: {}
+[12.832664] (-) TimerEvent: {}
+[12.933542] (-) TimerEvent: {}
+[13.035605] (-) TimerEvent: {}
+[13.049172] (rplidar_ros) StdoutLine: {'line': b'-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[13.135891] (-) TimerEvent: {}
+[13.175913] (my_robot) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[13.177017] (my_robot) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[13.177600] (my_robot) StderrLine: {'line': b'  By not providing "Findxacro.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[13.178122] (my_robot) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "xacro", but\n'}
+[13.178631] (my_robot) StderrLine: {'line': b'  CMake did not find one.\n'}
+[13.179260] (my_robot) StderrLine: {'line': b'\n'}
+[13.179926] (my_robot) StderrLine: {'line': b'  Could not find a package configuration file provided by "xacro" with any of\n'}
+[13.180995] (my_robot) StderrLine: {'line': b'  the following names:\n'}
+[13.181627] (my_robot) StderrLine: {'line': b'\n'}
+[13.187285] (my_robot) StderrLine: {'line': b'    xacroConfig.cmake\n'}
+[13.188158] (my_robot) StderrLine: {'line': b'    xacro-config.cmake\n'}
+[13.189029] (my_robot) StderrLine: {'line': b'\n'}
+[13.189984] (my_robot) StderrLine: {'line': b'  Add the installation prefix of "xacro" to CMAKE_PREFIX_PATH or set\n'}
+[13.191566] (my_robot) StderrLine: {'line': b'  "xacro_DIR" to a directory containing one of the above files.  If "xacro"\n'}
+[13.205386] (my_robot) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[13.206740] (my_robot) StderrLine: {'line': b'  installed.\n'}
+[13.209712] (my_robot) StderrLine: {'line': b'\n'}
+[13.210709] (my_robot) StderrLine: {'line': b'\x1b[0m\n'}
+[13.211521] (my_robot) StdoutLine: {'line': b'See also "/home/as33697920/larry_ws/robot/build/my_robot/CMakeFiles/CMakeOutput.log".\n'}
+[13.217823] (my_robot) JobEnded: {'identifier': 'my_robot', 'rc': 'SIGINT'}
+[13.236041] (-) TimerEvent: {}
+[13.337004] (-) TimerEvent: {}
+[13.438488] (-) TimerEvent: {}
+[13.512390] (rplidar_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.538734] (-) TimerEvent: {}
+[13.620660] (rplidar_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[13.638924] (-) TimerEvent: {}
+[13.651170] (rplidar_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/as33697920/larry_ws/robot/build/rplidar_ros\n'}
+[13.683603] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 'SIGINT'}
+[13.688034] (-) EventReactorShutdown: {}

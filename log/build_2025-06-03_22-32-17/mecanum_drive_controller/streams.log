@@ -1,0 +1,29 @@
+[0.075s] Invoking command in '/home/as33697920/larry_ws/robot/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/as33697920/larry_ws/robot/src/waterbot/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/as33697920/larry_ws/robot/install/mecanum_drive_controller
+[0.413s] -- The CXX compiler identification is GNU 11.4.0
+[0.447s] -- Detecting CXX compiler ABI info
+[0.868s] -- Detecting CXX compiler ABI info - done
+[0.898s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.900s] -- Detecting CXX compile features
+[0.905s] -- Detecting CXX compile features - done
+[0.934s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.875s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.597s] [31mCMake Error at CMakeLists.txt:25 (find_package):
+[2.598s]   By not providing "Findbackward_ros.cmake" in CMAKE_MODULE_PATH this project
+[2.599s]   has asked CMake to find a package configuration file provided by
+[2.599s]   "backward_ros", but CMake did not find one.
+[2.600s] 
+[2.601s]   Could not find a package configuration file provided by "backward_ros" with
+[2.602s]   any of the following names:
+[2.603s] 
+[2.605s]     backward_rosConfig.cmake
+[2.606s]     backward_ros-config.cmake
+[2.619s] 
+[2.623s]   Add the installation prefix of "backward_ros" to CMAKE_PREFIX_PATH or set
+[2.629s]   "backward_ros_DIR" to a directory containing one of the above files.  If
+[2.630s]   "backward_ros" provides a separate development package or SDK, be sure it
+[2.631s]   has been installed.
+[2.631s] 
+[2.632s] [0m
+[2.632s] -- Configuring incomplete, errors occurred!
+[2.633s] See also "/home/as33697920/larry_ws/robot/build/mecanum_drive_controller/CMakeFiles/CMakeOutput.log".
+[2.634s] Invoked command in '/home/as33697920/larry_ws/robot/build/mecanum_drive_controller' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/as33697920/larry_ws/robot/src/waterbot/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/as33697920/larry_ws/robot/install/mecanum_drive_controller

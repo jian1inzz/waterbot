@@ -1,0 +1,23 @@
+[0.075s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller -- -j4 -l4
+[0.177s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.066s] [31mCMake Error at CMakeLists.txt:25 (find_package):
+[1.067s]   By not providing "Findbackward_ros.cmake" in CMAKE_MODULE_PATH this project
+[1.067s]   has asked CMake to find a package configuration file provided by
+[1.068s]   "backward_ros", but CMake did not find one.
+[1.068s] 
+[1.069s]   Could not find a package configuration file provided by "backward_ros" with
+[1.069s]   any of the following names:
+[1.070s] 
+[1.071s]     backward_rosConfig.cmake
+[1.071s] -- Configuring incomplete, errors occurred!
+[1.072s] See also "/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller/CMakeFiles/CMakeOutput.log".
+[1.072s]     backward_ros-config.cmake
+[1.072s] 
+[1.073s]   Add the installation prefix of "backward_ros" to CMAKE_PREFIX_PATH or set
+[1.073s]   "backward_ros_DIR" to a directory containing one of the above files.  If
+[1.074s]   "backward_ros" provides a separate development package or SDK, be sure it
+[1.074s]   has been installed.
+[1.075s] 
+[1.075s] [0m
+[1.076s] gmake: *** [Makefile:487: cmake_check_build_system] Error 1
+[1.082s] Invoked command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller -- -j4 -l4

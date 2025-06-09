@@ -1,0 +1,61 @@
+[0.094s] Invoking command in '/home/as33697920/larry_ws/robot/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/as33697920/larry_ws/robot/build/rplidar_ros -- -j4 -l4
+[0.375s] [35m[1mConsolidate compiler generated dependencies of target rplidar_composition[0m
+[0.401s] [35m[1mConsolidate compiler generated dependencies of target rplidar_client[0m
+[0.407s] [35m[1mConsolidate compiler generated dependencies of target rplidar_node[0m
+[0.653s] [  5%] Built target rplidar_client
+[0.771s] [ 52%] Built target rplidar_composition
+[0.785s] [100%] Built target rplidar_node
+[0.878s] Invoked command in '/home/as33697920/larry_ws/robot/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/as33697920/larry_ws/robot/build/rplidar_ros -- -j4 -l4
+[0.999s] Invoking command in '/home/as33697920/larry_ws/robot/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/as33697920/larry_ws/robot/build/rplidar_ros
+[1.044s] -- Install configuration: ""
+[1.047s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch
+[1.050s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py
+[1.053s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py
+[1.056s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py
+[1.058s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py
+[1.062s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py
+[1.064s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py
+[1.066s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py
+[1.068s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py
+[1.070s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py
+[1.072s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py
+[1.075s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py
+[1.077s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py
+[1.079s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py
+[1.081s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py
+[1.083s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py
+[1.086s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py
+[1.088s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py
+[1.090s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py
+[1.092s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py
+[1.094s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py
+[1.096s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py
+[1.098s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py
+[1.100s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py
+[1.102s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py
+[1.104s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/rviz
+[1.106s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz
+[1.109s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/lib/rplidar_ros/rplidar_node
+[1.127s] -- Set runtime path of "/home/as33697920/larry_ws/robot/install/rplidar_ros/lib/rplidar_ros/rplidar_node" to ""
+[1.129s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[1.146s] -- Set runtime path of "/home/as33697920/larry_ws/robot/install/rplidar_ros/lib/rplidar_ros/rplidar_composition" to ""
+[1.148s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/lib/rplidar_ros/rplidar_client
+[1.177s] -- Set runtime path of "/home/as33697920/larry_ws/robot/install/rplidar_ros/lib/rplidar_ros/rplidar_client" to ""
+[1.179s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[1.190s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[1.193s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[1.195s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[1.207s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[1.208s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[1.210s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[1.214s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[1.218s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[1.234s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[1.241s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/package.dsv
+[1.251s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[1.251s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.252s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.253s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[1.253s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[1.255s] -- Installing: /home/as33697920/larry_ws/robot/install/rplidar_ros/share/rplidar_ros/package.xml
+[1.273s] Invoked command in '/home/as33697920/larry_ws/robot/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/as33697920/larry_ws/robot/build/rplidar_ros

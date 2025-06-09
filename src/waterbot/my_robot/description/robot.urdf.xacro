@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="mecanum_bot">
+
+  <!-- 載入底盤結構與控制設定 -->
+<xacro:arg name="use_ros2_control" default="true"/>
+<xacro:arg name="controller_config_path" default="$(find my_robot)/config/mecanum_controller.yaml"/>
+
+
+<xacro:include filename="mecanum_base.xacro"/>
+<xacro:include filename="camera.xacro" />
+<xacro:include filename="lidar.xacro" />
+
+
+
+<xacro:if value="$(arg use_ros2_control)">
+  <xacro:include filename="ros2_control.xacro"/>
+</xacro:if>
+<xacro:unless value="$(arg use_ros2_control)">
+  <xacro:include filename="gazebo_control.xacro"/>
+</xacro:unless>
+
+</robot>

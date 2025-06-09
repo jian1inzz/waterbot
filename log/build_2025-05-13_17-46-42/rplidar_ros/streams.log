@@ -1,0 +1,401 @@
+[0.084s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/rplidar_ros -- -j4 -l4
+[0.543s] [  5%] Built target rplidar_client
+[0.546s] [  7%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o[0m
+[0.556s] [ 10%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o[0m
+[11.329s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[11.330s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.331s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.332s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.333s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.333s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[11.334s]       |                [01;35m[K^[m[K
+[11.334s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.335s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.336s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.336s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.337s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[11.338s]       |                    [01;35m[K^[m[K
+[11.345s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:617:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[11.346s]   617 |  }
+[11.346s]       |   [01;31m[K^[m[K
+[11.347s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:62:2:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[11.348s]    62 |  [01;36m[K{[m[K
+[11.348s]       |  [01;36m[K^[m[K
+[11.402s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid RPlidarNode::init_param()[m[K’:
+[11.403s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:90:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kchannel_type[m[K’ was not declared in this scope
+[11.403s]    90 |          this->get_parameter_or<std::string>("channel_type", [01;31m[Kchannel_type[m[K, "serial");
+[11.404s]       |                                                              [01;31m[K^~~~~~~~~~~~[m[K
+[11.426s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:91:56:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcp_ip[m[K’ was not declared in this scope
+[11.427s]    91 |          this->get_parameter_or<std::string>("tcp_ip", [01;31m[Ktcp_ip[m[K, "192.168.0.7");
+[11.428s]       |                                                        [01;31m[K^~~~~~[m[K
+[11.452s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:92:50:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcp_port[m[K’ was not declared in this scope
+[11.453s]    92 |          this->get_parameter_or<int>("tcp_port", [01;31m[Ktcp_port[m[K, 20108);
+[11.454s]       |                                                  [01;31m[K^~~~~~~~[m[K
+[11.477s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:93:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kudp_ip[m[K’ was not declared in this scope
+[11.478s]    93 |          this->get_parameter_or<std::string>("udp_ip", [01;31m[Kudp_ip[m[K, "192.168.11.2");
+[11.479s]       |                                                        [01;31m[K^~~~~~[m[K
+[11.503s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:94:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kudp_port[m[K’ was not declared in this scope
+[11.505s]    94 |          this->get_parameter_or<int>("udp_port", [01;31m[Kudp_port[m[K, 8089);
+[11.506s]       |                                                  [01;31m[K^~~~~~~~[m[K
+[11.507s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[11.508s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.509s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.509s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.510s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.511s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[11.512s]       |                [01;35m[K^[m[K
+[11.512s] In file included from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[11.513s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[11.514s]                  from [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[11.515s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.515s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[11.516s]       |                    [01;35m[K^[m[K
+[11.523s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:617:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[11.524s]   617 |  }
+[11.525s]       |   [01;31m[K^[m[K
+[11.526s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:62:2:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[11.526s]    62 |  [01;36m[K{[m[K
+[11.527s]       |  [01;36m[K^[m[K
+[11.535s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:95:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_port[m[K’ was not declared in this scope
+[11.536s]    95 |          this->get_parameter_or<std::string>("serial_port", [01;31m[Kserial_port[m[K, "/dev/ttyUSB0");
+[11.537s]       |                                                             [01;31m[K^~~~~~~~~~~[m[K
+[11.573s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:96:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_baudrate[m[K’ was not declared in this scope
+[11.574s]    96 |          this->get_parameter_or<int>("serial_baudrate", [01;31m[Kserial_baudrate[m[K, 1000000/*256000*/);//ros run for A1 A2, change to 256000 if A3
+[11.575s]       |                                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[11.585s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid RPlidarNode::init_param()[m[K’:
+[11.586s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:90:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kchannel_type[m[K’ was not declared in this scope
+[11.587s]    90 |          this->get_parameter_or<std::string>("channel_type", [01;31m[Kchannel_type[m[K, "serial");
+[11.588s]       |                                                              [01;31m[K^~~~~~~~~~~~[m[K
+[11.606s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:97:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe_id[m[K’ was not declared in this scope
+[11.610s]    97 |          this->get_parameter_or<std::string>("frame_id", [01;31m[Kframe_id[m[K, "laser_frame");
+[11.613s]       |                                                          [01;31m[K^~~~~~~~[m[K
+[11.619s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:91:56:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcp_ip[m[K’ was not declared in this scope
+[11.622s]    91 |          this->get_parameter_or<std::string>("tcp_ip", [01;31m[Ktcp_ip[m[K, "192.168.0.7");
+[11.626s]       |                                                        [01;31m[K^~~~~~[m[K
+[11.640s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:98:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kinverted[m[K’ was not declared in this scope
+[11.643s]    98 |          this->get_parameter_or<bool>("inverted", [01;31m[Kinverted[m[K, false);
+[11.647s]       |                                                   [01;31m[K^~~~~~~~[m[K
+[11.654s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:92:50:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcp_port[m[K’ was not declared in this scope
+[11.659s]    92 |          this->get_parameter_or<int>("tcp_port", [01;31m[Ktcp_port[m[K, 20108);
+[11.662s]       |                                                  [01;31m[K^~~~~~~~[m[K
+[11.682s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:93:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kudp_ip[m[K’ was not declared in this scope
+[11.687s]    93 |          this->get_parameter_or<std::string>("udp_ip", [01;31m[Kudp_ip[m[K, "192.168.11.2");
+[11.690s]       |                                                        [01;31m[K^~~~~~[m[K
+[11.694s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:99:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_compensate[m[K’ was not declared in this scope
+[11.697s]    99 |          this->get_parameter_or<bool>("angle_compensate", [01;31m[Kangle_compensate[m[K, false);
+[11.700s]       |                                                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[11.716s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:94:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kudp_port[m[K’ was not declared in this scope
+[11.719s]    94 |          this->get_parameter_or<int>("udp_port", [01;31m[Kudp_port[m[K, 8089);
+[11.722s]       |                                                  [01;31m[K^~~~~~~~[m[K
+[11.730s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:100:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kflip_x_axis[m[K’ was not declared in this scope
+[11.733s]   100 |          this->get_parameter_or<bool>("flip_x_axis", [01;31m[Kflip_x_axis[m[K, false);
+[11.736s]       |                                                      [01;31m[K^~~~~~~~~~~[m[K
+[11.748s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:95:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_port[m[K’ was not declared in this scope
+[11.751s]    95 |          this->get_parameter_or<std::string>("serial_port", [01;31m[Kserial_port[m[K, "/dev/ttyUSB0");
+[11.754s]       |                                                             [01;31m[K^~~~~~~~~~~[m[K
+[11.764s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:101:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_standby[m[K’ was not declared in this scope
+[11.767s]   101 |          this->get_parameter_or<bool>("auto_standby", [01;31m[Kauto_standby[m[K, false);
+[11.771s]       |                                                       [01;31m[K^~~~~~~~~~~~[m[K
+[11.787s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:96:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_baudrate[m[K’ was not declared in this scope
+[11.790s]    96 |          this->get_parameter_or<int>("serial_baudrate", [01;31m[Kserial_baudrate[m[K, 1000000/*256000*/);//ros run for A1 A2, change to 256000 if A3
+[11.793s]       |                                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[11.796s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:102:60:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_name[m[K’ was not declared in this scope; did you mean ‘[01m[Ktypename[m[K’?
+[11.799s]   102 |          this->get_parameter_or<std::string>("topic_name", [01;31m[Ktopic_name[m[K, "scan");
+[11.802s]       |                                                            [01;31m[K^~~~~~~~~~[m[K
+[11.805s]       |                                                            [32m[Ktypename[m[K
+[11.817s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:97:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe_id[m[K’ was not declared in this scope
+[11.820s]    97 |          this->get_parameter_or<std::string>("frame_id", [01;31m[Kframe_id[m[K, "laser_frame");
+[11.824s]       |                                                          [01;31m[K^~~~~~~~[m[K
+[11.827s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:103:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan_mode[m[K’ was not declared in this scope
+[11.830s]   103 |          this->get_parameter_or<std::string>("scan_mode", [01;31m[Kscan_mode[m[K, std::string());
+[11.833s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[11.846s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:98:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kinverted[m[K’ was not declared in this scope
+[11.849s]    98 |          this->get_parameter_or<bool>("inverted", [01;31m[Kinverted[m[K, false);
+[11.851s]       |                                                   [01;31m[K^~~~~~~~[m[K
+[11.860s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:105:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan_frequency[m[K’ was not declared in this scope
+[11.863s]   105 |              this->get_parameter_or<float>("scan_frequency", [01;31m[Kscan_frequency[m[K, 20.0);
+[11.866s]       |                                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[11.885s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:99:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_compensate[m[K’ was not declared in this scope
+[11.889s]    99 |          this->get_parameter_or<bool>("angle_compensate", [01;31m[Kangle_compensate[m[K, false);
+[11.892s]       |                                                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[11.895s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:107:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan_frequency[m[K’ was not declared in this scope
+[11.897s]   107 |              this->get_parameter_or<float>("scan_frequency", [01;31m[Kscan_frequency[m[K, 10.0);
+[11.900s]       |                                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[11.916s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:100:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kflip_x_axis[m[K’ was not declared in this scope
+[11.919s]   100 |          this->get_parameter_or<bool>("flip_x_axis", [01;31m[Kflip_x_axis[m[K, false);
+[11.921s]       |                                                      [01;31m[K^~~~~~~~~~~[m[K
+[11.948s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:101:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_standby[m[K’ was not declared in this scope
+[11.951s]   101 |          this->get_parameter_or<bool>("auto_standby", [01;31m[Kauto_standby[m[K, false);
+[11.955s]       |                                                       [01;31m[K^~~~~~~~~~~~[m[K
+[11.966s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kbool RPlidarNode::stop_motor(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)[m[K’:
+[11.969s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:169:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_standby[m[K’ was not declared in this scope
+[11.972s]   169 |          if ([01;31m[Kauto_standby[m[K) {
+[11.975s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[11.978s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:179:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass RPlidarNode[m[K’ has no member named ‘[01m[Kstop[m[K’
+[11.981s]   179 |          this->[01;31m[Kstop[m[K();
+[11.983s]       |                [01;31m[K^~~~[m[K
+[11.987s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:102:60:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_name[m[K’ was not declared in this scope; did you mean ‘[01m[Ktypename[m[K’?
+[11.991s]   102 |          this->get_parameter_or<std::string>("topic_name", [01;31m[Ktopic_name[m[K, "scan");
+[11.994s]       |                                                            [01;31m[K^~~~~~~~~~[m[K
+[11.997s]       |                                                            [32m[Ktypename[m[K
+[12.005s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kbool RPlidarNode::start_motor(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)[m[K’:
+[12.008s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:190:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_standby[m[K’ was not declared in this scope
+[12.011s]   190 |          if ([01;31m[Kauto_standby[m[K) {
+[12.014s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[12.017s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:103:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan_mode[m[K’ was not declared in this scope
+[12.019s]   103 |          this->get_parameter_or<std::string>("scan_mode", [01;31m[Kscan_mode[m[K, std::string());
+[12.021s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[12.024s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:197:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass RPlidarNode[m[K’ has no member named ‘[01m[Kstart[m[K’
+[12.026s]   197 |          return this->[01;31m[Kstart[m[K();
+[12.029s]       |                       [01;31m[K^~~~~[m[K
+[12.039s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid RPlidarNode::publish_scan(rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&, sl_lidar_response_measurement_node_hq_t*, size_t, rclcpp::Time, double, bool, bool, float, float, float, std::string)[m[K’:
+[12.042s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+[12.044s]   308 |      bool set_scan_mode[01;35m[K()[m[K {
+[12.047s]       |                        [01;35m[K^~[m[K
+[12.050s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+[12.053s]   308 |      bool set_scan_mode[01;36m[K()[m[K {
+[12.055s]       |                        [01;36m[K^~[m[K
+[12.057s]       |                        [31m[K--[m[K
+[12.060s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:[m[K [01;36m[Knote: [m[Kor replace parentheses with braces to value-initialize a variable
+[12.063s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:27:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[12.065s]   308 |      bool set_scan_mode() [01;31m[K{[m[K
+[12.068s]       |                           [01;31m[K^[m[K
+[12.071s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+[12.073s]   359 |      bool start[01;35m[K()[m[K
+[12.076s]       |                [01;35m[K^~[m[K
+[12.078s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+[12.081s]   359 |      bool start[01;36m[K()[m[K
+[12.083s]       |                [01;36m[K^~[m[K
+[12.085s]       |                [31m[K--[m[K
+[12.088s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:[m[K [01;36m[Knote: [m[Kor replace parentheses with braces to value-initialize a variable
+[12.091s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:360:6:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[12.093s]   360 |      [01;31m[K{[m[K
+[12.096s]       |      [01;31m[K^[m[K
+[12.098s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:377:6:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[12.100s]   377 |      [01;31m[K{[m[K
+[12.103s]       |      [01;31m[K^[m[K
+[12.105s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:388:2:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+[12.107s]   388 |  [01;31m[Kpublic[m[K:
+[12.109s]       |  [01;31m[K^~~~~~[m[K
+[12.112s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:574:4:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+[12.114s]   574 |    [01;31m[Kprivate[m[K:
+[12.117s]       |    [01;31m[K^~~~~~~[m[K
+[12.119s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:105:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan_frequency[m[K’ was not declared in this scope
+[12.122s]   105 |              this->get_parameter_or<float>("scan_frequency", [01;31m[Kscan_frequency[m[K, 20.0);
+[12.124s]       |                                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[12.127s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:107:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan_frequency[m[K’ was not declared in this scope
+[12.129s]   107 |              this->get_parameter_or<float>("scan_frequency", [01;31m[Kscan_frequency[m[K, 10.0);
+[12.132s]       |                                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[12.134s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:587:18:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kstd::string frame_id[m[K’ shadows a parameter
+[12.136s]   587 |      std::string [01;31m[Kframe_id[m[K;
+[12.139s]       |                  [01;31m[K^~~~~~~~[m[K
+[12.142s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:239:22:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::string frame_id[m[K’ previously declared here
+[12.144s]   239 |          [01;36m[Kstd::string frame_id[m[K)
+[12.145s]       |          [01;36m[K~~~~~~~~~~~~^~~~~~~~[m[K
+[12.146s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:588:11:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kbool inverted[m[K’ shadows a parameter
+[12.147s]   588 |      bool [01;31m[Kinverted[m[K = false;
+[12.148s]       |           [01;31m[K^~~~~~~~[m[K
+[12.148s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:33:[m[K [01;36m[Knote: [m[K‘[01m[Kbool inverted[m[K’ previously declared here
+[12.149s]   236 |          double scan_time, [01;36m[Kbool inverted[m[K, bool flip_X_axis,
+[12.150s]       |                            [01;36m[K~~~~~^~~~~~~~[m[K
+[12.150s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:592:12:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kfloat max_distance[m[K’ shadows a parameter
+[12.151s]   592 |      float [01;31m[Kmax_distance[m[K = 8.0;
+[12.152s]       |            [01;31m[K^~~~~~~~~~~~[m[K
+[12.153s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:238:16:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat max_distance[m[K’ previously declared here
+[12.154s]   238 |          [01;36m[Kfloat max_distance[m[K,
+[12.155s]       |          [01;36m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.155s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:584:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktcp_port[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.156s]   584 |      int [01;35m[Ktcp_port[m[K = 20108;
+[12.157s]       |          [01;35m[K^~~~~~~~[m[K
+[12.158s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:585:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kudp_port[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.158s]   585 |      int [01;35m[Kudp_port[m[K = 8089;
+[12.159s]       |          [01;35m[K^~~~~~~~[m[K
+[12.160s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:586:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kserial_baudrate[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.161s]   586 |      int [01;35m[Kserial_baudrate[m[K = 115200;
+[12.161s]       |          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[12.162s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:588:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinverted[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.163s]   588 |      bool [01;35m[Kinverted[m[K = false;
+[12.164s]       |           [01;35m[K^~~~~~~~[m[K
+[12.164s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:589:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_compensate[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.165s]   589 |      bool [01;35m[Kangle_compensate[m[K = true;
+[12.166s]       |           [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[12.167s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:590:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kflip_x_axis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.168s]   590 |      bool [01;35m[Kflip_x_axis[m[K = false;
+[12.169s]       |           [01;35m[K^~~~~~~~~~~[m[K
+[12.169s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:591:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kauto_standby[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.170s]   591 |      bool [01;35m[Kauto_standby[m[K = false;
+[12.170s]       |           [01;35m[K^~~~~~~~~~~~[m[K
+[12.170s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:592:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.171s]   592 |      float [01;35m[Kmax_distance[m[K = 8.0;
+[12.171s]       |            [01;35m[K^~~~~~~~~~~~[m[K
+[12.172s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:593:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_compensate_multiple[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.172s]   593 |      size_t [01;35m[Kangle_compensate_multiple[m[K = 1;//it stand of angle compensate at per 1 degree
+[12.173s]       |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.174s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:595:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kscan_frequency[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.174s]   595 |      float [01;35m[Kscan_frequency[m[K;
+[12.175s]       |            [01;35m[K^~~~~~~~~~~~~~[m[K
+[12.176s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:597:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kis_scanning[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.176s]   597 |      bool [01;35m[Kis_scanning[m[K = false;
+[12.177s]       |           [01;35m[K^~~~~~~~~~~[m[K
+[12.178s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:599:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdrv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.179s]   599 |      ILidarDriver *[01;35m[Kdrv[m[K = nullptr;
+[12.179s]       |                    [01;35m[K^~~[m[K
+[12.180s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinverted[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.181s]   236 |          double scan_time, [01;35m[Kbool inverted[m[K, bool flip_X_axis,
+[12.182s]       |                            [01;35m[K~~~~~^~~~~~~~[m[K
+[12.183s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflip_X_axis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.183s]   236 |          double scan_time, bool inverted, [01;35m[Kbool flip_X_axis[m[K,
+[12.184s]       |                                           [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[12.184s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:237:16:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.185s]   237 |          [01;35m[Kfloat angle_min[m[K, float angle_max,
+[12.185s]       |          [01;35m[K~~~~~~^~~~~~~~~[m[K
+[12.186s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:237:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.186s]   237 |          float angle_min, [01;35m[Kfloat angle_max[m[K,
+[12.187s]       |                           [01;35m[K~~~~~~^~~~~~~~~[m[K
+[12.187s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kint RPlidarNode::main(int, char**)[m[K’:
+[12.188s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:613:18:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid RPlidarNode::ExitHandler(int)[m[K’
+[12.189s]   613 |    signal(SIGINT,[01;31m[KExitHandler[m[K);
+[12.190s]       |                  [01;31m[K^~~~~~~~~~~[m[K
+[12.191s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:602:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.191s]   602 |  void [01;36m[KExitHandler[m[K(int sig)
+[12.192s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[12.193s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:614:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class RPlidarNode[m[K’ {aka ‘[01m[Kclass RPlidarNode[m[K’} has no member named ‘[01m[Kwork_loop[m[K’
+[12.193s]   614 |    int ret = rplidar_node->[01;31m[Kwork_loop[m[K();
+[12.194s]       |                            [01;31m[K^~~~~~~~~[m[K
+[12.195s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K At global scope:
+[12.195s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:617:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[12.196s]   617 |  }
+[12.197s]       |   [01;31m[K^[m[K
+[12.198s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kbool RPlidarNode::stop_motor(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)[m[K’:
+[12.198s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:169:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_standby[m[K’ was not declared in this scope
+[12.199s]   169 |          if ([01;31m[Kauto_standby[m[K) {
+[12.200s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[12.200s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:179:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass RPlidarNode[m[K’ has no member named ‘[01m[Kstop[m[K’
+[12.201s]   179 |          this->[01;31m[Kstop[m[K();
+[12.201s]       |                [01;31m[K^~~~[m[K
+[12.202s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kbool RPlidarNode::start_motor(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)[m[K’:
+[12.203s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:190:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kauto_standby[m[K’ was not declared in this scope
+[12.203s]   190 |          if ([01;31m[Kauto_standby[m[K) {
+[12.204s]       |              [01;31m[K^~~~~~~~~~~~[m[K
+[12.205s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:197:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass RPlidarNode[m[K’ has no member named ‘[01m[Kstart[m[K’
+[12.205s]   197 |          return this->[01;31m[Kstart[m[K();
+[12.206s]       |                       [01;31m[K^~~~~[m[K
+[12.223s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kvoid RPlidarNode::publish_scan(rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&, sl_lidar_response_measurement_node_hq_t*, size_t, rclcpp::Time, double, bool, bool, float, float, float, std::string)[m[K’:
+[12.224s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+[12.225s]   308 |      bool set_scan_mode[01;35m[K()[m[K {
+[12.226s]       |                        [01;35m[K^~[m[K
+[12.227s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+[12.228s]   308 |      bool set_scan_mode[01;36m[K()[m[K {
+[12.228s]       |                        [01;36m[K^~[m[K
+[12.229s]       |                        [31m[K--[m[K
+[12.229s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:24:[m[K [01;36m[Knote: [m[Kor replace parentheses with braces to value-initialize a variable
+[12.230s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:308:27:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[12.231s]   308 |      bool set_scan_mode() [01;31m[K{[m[K
+[12.231s]       |                           [01;31m[K^[m[K
+[12.232s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+[12.233s]   359 |      bool start[01;35m[K()[m[K
+[12.233s]       |                [01;35m[K^~[m[K
+[12.234s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+[12.234s]   359 |      bool start[01;36m[K()[m[K
+[12.236s]       |                [01;36m[K^~[m[K
+[12.236s]       |                [31m[K--[m[K
+[12.237s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:359:16:[m[K [01;36m[Knote: [m[Kor replace parentheses with braces to value-initialize a variable
+[12.237s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:360:6:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[12.238s]   360 |      [01;31m[K{[m[K
+[12.239s]       |      [01;31m[K^[m[K
+[12.239s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:377:6:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[12.240s]   377 |      [01;31m[K{[m[K
+[12.241s]       |      [01;31m[K^[m[K
+[12.241s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:388:2:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+[12.242s]   388 |  [01;31m[Kpublic[m[K:
+[12.243s]       |  [01;31m[K^~~~~~[m[K
+[12.243s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:574:4:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+[12.244s]   574 |    [01;31m[Kprivate[m[K:
+[12.244s]       |    [01;31m[K^~~~~~~[m[K
+[12.300s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:587:18:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kstd::string frame_id[m[K’ shadows a parameter
+[12.302s]   587 |      std::string [01;31m[Kframe_id[m[K;
+[12.303s]       |                  [01;31m[K^~~~~~~~[m[K
+[12.304s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:239:22:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::string frame_id[m[K’ previously declared here
+[12.305s]   239 |          [01;36m[Kstd::string frame_id[m[K)
+[12.306s]       |          [01;36m[K~~~~~~~~~~~~^~~~~~~~[m[K
+[12.306s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:588:11:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kbool inverted[m[K’ shadows a parameter
+[12.307s]   588 |      bool [01;31m[Kinverted[m[K = false;
+[12.308s]       |           [01;31m[K^~~~~~~~[m[K
+[12.308s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:33:[m[K [01;36m[Knote: [m[K‘[01m[Kbool inverted[m[K’ previously declared here
+[12.309s]   236 |          double scan_time, [01;36m[Kbool inverted[m[K, bool flip_X_axis,
+[12.310s]       |                            [01;36m[K~~~~~^~~~~~~~[m[K
+[12.311s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:592:12:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kfloat max_distance[m[K’ shadows a parameter
+[12.312s]   592 |      float [01;31m[Kmax_distance[m[K = 8.0;
+[12.313s]       |            [01;31m[K^~~~~~~~~~~~[m[K
+[12.314s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:238:16:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat max_distance[m[K’ previously declared here
+[12.314s]   238 |          [01;36m[Kfloat max_distance[m[K,
+[12.315s]       |          [01;36m[K~~~~~~^~~~~~~~~~~~[m[K
+[12.316s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:584:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktcp_port[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.317s]   584 |      int [01;35m[Ktcp_port[m[K = 20108;
+[12.318s]       |          [01;35m[K^~~~~~~~[m[K
+[12.319s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:585:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kudp_port[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.320s]   585 |      int [01;35m[Kudp_port[m[K = 8089;
+[12.321s]       |          [01;35m[K^~~~~~~~[m[K
+[12.321s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:586:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kserial_baudrate[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.322s]   586 |      int [01;35m[Kserial_baudrate[m[K = 115200;
+[12.323s]       |          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[12.324s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:588:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinverted[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.324s]   588 |      bool [01;35m[Kinverted[m[K = false;
+[12.325s]       |           [01;35m[K^~~~~~~~[m[K
+[12.325s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:589:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_compensate[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.326s]   589 |      bool [01;35m[Kangle_compensate[m[K = true;
+[12.327s]       |           [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[12.327s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:590:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kflip_x_axis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.328s]   590 |      bool [01;35m[Kflip_x_axis[m[K = false;
+[12.329s]       |           [01;35m[K^~~~~~~~~~~[m[K
+[12.329s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:591:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kauto_standby[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.330s]   591 |      bool [01;35m[Kauto_standby[m[K = false;
+[12.331s]       |           [01;35m[K^~~~~~~~~~~~[m[K
+[12.331s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:592:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.332s]   592 |      float [01;35m[Kmax_distance[m[K = 8.0;
+[12.332s]       |            [01;35m[K^~~~~~~~~~~~[m[K
+[12.333s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:593:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_compensate_multiple[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.334s]   593 |      size_t [01;35m[Kangle_compensate_multiple[m[K = 1;//it stand of angle compensate at per 1 degree
+[12.334s]       |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.335s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:595:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kscan_frequency[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.336s]   595 |      float [01;35m[Kscan_frequency[m[K;
+[12.336s]       |            [01;35m[K^~~~~~~~~~~~~~[m[K
+[12.337s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:597:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kis_scanning[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.337s]   597 |      bool [01;35m[Kis_scanning[m[K = false;
+[12.338s]       |           [01;35m[K^~~~~~~~~~~[m[K
+[12.339s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:599:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdrv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.339s]   599 |      ILidarDriver *[01;35m[Kdrv[m[K = nullptr;
+[12.340s]       |                    [01;35m[K^~~[m[K
+[12.340s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinverted[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.341s]   236 |          double scan_time, [01;35m[Kbool inverted[m[K, bool flip_X_axis,
+[12.342s]       |                            [01;35m[K~~~~~^~~~~~~~[m[K
+[12.342s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:236:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflip_X_axis[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.350s]   236 |          double scan_time, bool inverted, [01;35m[Kbool flip_X_axis[m[K,
+[12.351s]       |                                           [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[12.352s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:237:16:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_min[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.352s]   237 |          [01;35m[Kfloat angle_min[m[K, float angle_max,
+[12.353s]       |          [01;35m[K~~~~~~^~~~~~~~~[m[K
+[12.353s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:237:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle_max[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.354s]   237 |          float angle_min, [01;35m[Kfloat angle_max[m[K,
+[12.355s]       |                           [01;35m[K~~~~~~^~~~~~~~~[m[K
+[12.356s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K In member function ‘[01m[Kint RPlidarNode::main(int, char**)[m[K’:
+[12.356s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:613:18:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid RPlidarNode::ExitHandler(int)[m[K’
+[12.357s]   613 |    signal(SIGINT,[01;31m[KExitHandler[m[K);
+[12.357s]       |                  [01;31m[K^~~~~~~~~~~[m[K
+[12.358s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:602:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.358s]   602 |  void [01;36m[KExitHandler[m[K(int sig)
+[12.359s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[12.360s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:614:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class RPlidarNode[m[K’ {aka ‘[01m[Kclass RPlidarNode[m[K’} has no member named ‘[01m[Kwork_loop[m[K’
+[12.360s]   614 |    int ret = rplidar_node->[01;31m[Kwork_loop[m[K();
+[12.361s]       |                            [01;31m[K^~~~~~~~~[m[K
+[12.362s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:[m[K At global scope:
+[12.362s] [01m[K/home/as33697920/larry_ws/src/waterbot/rplidar_ros/src/rplidar_node.cpp:617:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[12.363s]   617 |  }
+[12.363s]       |   [01;31m[K^[m[K
+[14.243s] gmake[2]: *** [CMakeFiles/rplidar_composition.dir/build.make:76: CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o] Error 1
+[14.243s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/rplidar_composition.dir/all] Error 2
+[14.243s] gmake[1]: *** Waiting for unfinished jobs....
+[14.406s] gmake[2]: *** [CMakeFiles/rplidar_node.dir/build.make:76: CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o] Error 1
+[14.408s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/rplidar_node.dir/all] Error 2
+[14.408s] gmake: *** [Makefile:146: all] Error 2
+[14.414s] Invoked command in '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/rplidar_ros -- -j4 -l4

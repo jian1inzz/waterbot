@@ -1,0 +1,4 @@
+[0.098s] Invoking command in '/mnt/USB_DISK/ros2_workspace/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/rplidar_ros -- -j4 -l4
+[0.183s] [0mCMake Error: The source directory "/home/as33697920/larry_ws/src/waterbot/rplidar_ros" does not exist.
+[0.185s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.186s] gmake: *** [Makefile:805: cmake_check_build_system] Error 1

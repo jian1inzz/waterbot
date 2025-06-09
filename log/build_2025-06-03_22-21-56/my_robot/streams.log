@@ -1,0 +1,51 @@
+[0.120s] Invoking command in '/home/as33697920/larry_ws/robot/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/as33697920/larry_ws/robot/src/waterbot/my_robot -DCMAKE_INSTALL_PREFIX=/home/as33697920/larry_ws/robot/install/my_robot
+[0.742s] -- The C compiler identification is GNU 11.4.0
+[1.167s] -- The CXX compiler identification is GNU 11.4.0
+[1.216s] -- Detecting C compiler ABI info
+[1.658s] -- Detecting C compiler ABI info - done
+[1.740s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.741s] -- Detecting C compile features
+[1.744s] -- Detecting C compile features - done
+[1.757s] -- Detecting CXX compiler ABI info
+[5.072s] -- Detecting CXX compiler ABI info - done
+[5.102s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.103s] -- Detecting CXX compile features
+[5.105s] -- Detecting CXX compile features - done
+[5.128s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.124s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.773s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[7.153s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.203s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.264s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.346s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.454s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.837s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.859s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.329s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[8.495s] -- Found FastRTPS: /opt/ros/humble/include  
+[8.760s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.836s] -- Looking for pthread.h
+[9.178s] -- Looking for pthread.h - found
+[9.181s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.603s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[9.608s] -- Found Threads: TRUE  
+[12.361s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[13.148s] -- Configuring incomplete, errors occurred!
+[13.149s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[13.149s]   By not providing "Findxacro.cmake" in CMAKE_MODULE_PATH this project has
+[13.150s]   asked CMake to find a package configuration file provided by "xacro", but
+[13.150s]   CMake did not find one.
+[13.151s] 
+[13.152s]   Could not find a package configuration file provided by "xacro" with any of
+[13.153s]   the following names:
+[13.157s] 
+[13.159s]     xacroConfig.cmake
+[13.160s]     xacro-config.cmake
+[13.161s] 
+[13.162s]   Add the installation prefix of "xacro" to CMAKE_PREFIX_PATH or set
+[13.176s]   "xacro_DIR" to a directory containing one of the above files.  If "xacro"
+[13.178s]   provides a separate development package or SDK, be sure it has been
+[13.179s]   installed.
+[13.182s] 
+[13.183s] [0m
+[13.183s] See also "/home/as33697920/larry_ws/robot/build/my_robot/CMakeFiles/CMakeOutput.log".

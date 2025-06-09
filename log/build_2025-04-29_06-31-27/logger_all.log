@@ -1,0 +1,236 @@
+[0.801s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.802s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='/mnt/USB_DISK/ros2_workspace/build', install_base='/mnt/USB_DISK/ros2_workspace/install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb95ee170>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb96fb5e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb96fb5e0>>)
+[1.727s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.728s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.731s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/as33697920/larry_ws'
+[1.732s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.732s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.733s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.733s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.733s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.733s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.733s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.734s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.734s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.809s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.810s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extensions ['ignore', 'ignore_ament_install']
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extension 'ignore'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extension 'ignore_ament_install'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extensions ['colcon_pkg']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extension 'colcon_pkg'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extensions ['colcon_meta']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extension 'colcon_meta'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extensions ['ros']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extension 'ros'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extensions ['cmake', 'python']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extension 'cmake'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extension 'python'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extensions ['python_setup_py']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(kai) by extension 'python_setup_py'
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extensions ['ignore', 'ignore_ament_install']
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extension 'ignore'
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extension 'ignore_ament_install'
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extensions ['colcon_pkg']
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extension 'colcon_pkg'
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extensions ['colcon_meta']
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extension 'colcon_meta'
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extensions ['ros']
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extension 'ros'
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extensions ['cmake', 'python']
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extension 'cmake'
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extension 'python'
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extensions ['python_setup_py']
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot) by extension 'python_setup_py'
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/mecanum_drive_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/mecanum_drive_controller) by extension 'ignore'
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/mecanum_drive_controller) by extension 'ignore_ament_install'
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/mecanum_drive_controller) by extensions ['colcon_pkg']
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/mecanum_drive_controller) by extension 'colcon_pkg'
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/mecanum_drive_controller) by extensions ['colcon_meta']
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/mecanum_drive_controller) by extension 'colcon_meta'
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/mecanum_drive_controller) by extensions ['ros']
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/mecanum_drive_controller) by extension 'ros'
+[1.841s] DEBUG:colcon.colcon_core.package_identification:Package 'src/waterbot/mecanum_drive_controller' with type 'ros.ament_cmake' and name 'mecanum_drive_controller'
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/my_robot) by extensions ['ignore', 'ignore_ament_install']
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/my_robot) by extension 'ignore'
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/my_robot) by extension 'ignore_ament_install'
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/my_robot) by extensions ['colcon_pkg']
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/my_robot) by extension 'colcon_pkg'
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/my_robot) by extensions ['colcon_meta']
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/my_robot) by extension 'colcon_meta'
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/my_robot) by extensions ['ros']
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/waterbot/my_robot) by extension 'ros'
+[1.849s] DEBUG:colcon.colcon_core.package_identification:Package 'src/waterbot/my_robot' with type 'ros.ament_cmake' and name 'my_robot'
+[1.849s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.849s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.849s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.850s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.850s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.961s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.961s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.979s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 222 installed packages in /opt/ros/humble
+[1.985s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.153s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_args' from command line to 'None'
+[2.154s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_target' from command line to 'None'
+[2.154s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.154s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[2.154s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_clean_first' from command line to 'False'
+[2.154s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_force_configure' from command line to 'False'
+[2.154s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'ament_cmake_args' from command line to 'None'
+[2.154s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[2.155s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.155s] DEBUG:colcon.colcon_core.verb:Building package 'mecanum_drive_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller', 'merge_install': False, 'path': '/home/as33697920/larry_ws/src/waterbot/mecanum_drive_controller', 'symlink_install': False, 'test_result_base': None}
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_args' from command line to 'None'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_target' from command line to 'None'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.156s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[2.157s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_clean_first' from command line to 'False'
+[2.157s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'cmake_force_configure' from command line to 'False'
+[2.157s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'ament_cmake_args' from command line to 'None'
+[2.157s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[2.157s] Level 5:colcon.colcon_core.verb:set package 'my_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.157s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/USB_DISK/ros2_workspace/build/my_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/USB_DISK/ros2_workspace/install/my_robot', 'merge_install': False, 'path': '/home/as33697920/larry_ws/src/waterbot/my_robot', 'symlink_install': False, 'test_result_base': None}
+[2.158s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.161s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.162s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/as33697920/larry_ws/src/waterbot/mecanum_drive_controller' with build type 'ament_cmake'
+[2.162s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/as33697920/larry_ws/src/waterbot/mecanum_drive_controller'
+[2.179s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.180s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.181s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.197s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/as33697920/larry_ws/src/waterbot/my_robot' with build type 'ament_cmake'
+[2.198s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/as33697920/larry_ws/src/waterbot/my_robot'
+[2.199s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.199s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller -- -j4 -l4
+[2.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/USB_DISK/ros2_workspace/build/my_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/my_robot -- -j4 -l4
+[2.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/USB_DISK/ros2_workspace/build/my_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/my_robot -- -j4 -l4
+[2.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/USB_DISK/ros2_workspace/build/my_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/USB_DISK/ros2_workspace/build/my_robot
+[2.922s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot)
+[2.932s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/USB_DISK/ros2_workspace/build/my_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/USB_DISK/ros2_workspace/build/my_robot
+[2.954s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot' for CMake module files
+[2.957s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot' for CMake config files
+[2.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot', 'cmake_prefix_path')
+[2.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/hook/cmake_prefix_path.ps1'
+[2.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/hook/cmake_prefix_path.dsv'
+[2.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/hook/cmake_prefix_path.sh'
+[2.974s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot/lib'
+[2.976s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot/bin'
+[2.977s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot/lib/pkgconfig/my_robot.pc'
+[2.978s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot/lib/python3.10/site-packages'
+[2.979s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot/bin'
+[2.981s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.ps1'
+[2.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.dsv'
+[2.990s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.sh'
+[2.995s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.bash'
+[3.001s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.zsh'
+[3.006s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/USB_DISK/ros2_workspace/install/my_robot/share/colcon-core/packages/my_robot)
+[3.012s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot)
+[3.013s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot' for CMake module files
+[3.016s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot' for CMake config files
+[3.018s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot', 'cmake_prefix_path')
+[3.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/hook/cmake_prefix_path.ps1'
+[3.021s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/hook/cmake_prefix_path.dsv'
+[3.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/hook/cmake_prefix_path.sh'
+[3.030s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot/lib'
+[3.031s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot/bin'
+[3.031s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot/lib/pkgconfig/my_robot.pc'
+[3.032s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot/lib/python3.10/site-packages'
+[3.033s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/my_robot/bin'
+[3.034s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.ps1'
+[3.037s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.dsv'
+[3.040s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.sh'
+[3.043s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.bash'
+[3.046s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/my_robot/share/my_robot/package.zsh'
+[3.050s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/USB_DISK/ros2_workspace/install/my_robot/share/colcon-core/packages/my_robot)
+[3.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller -- -j4 -l4
+[3.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller
+[3.360s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_drive_controller)
+[3.361s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller' for CMake module files
+[3.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/USB_DISK/ros2_workspace/build/mecanum_drive_controller
+[3.367s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller' for CMake config files
+[3.370s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'cmake_prefix_path')
+[3.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.ps1'
+[3.373s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.dsv'
+[3.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.sh'
+[3.379s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib'
+[3.380s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'ld_library_path_lib')
+[3.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.ps1'
+[3.383s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.dsv'
+[3.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.sh'
+[3.389s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/bin'
+[3.390s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib/pkgconfig/mecanum_drive_controller.pc'
+[3.391s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib/python3.10/site-packages'
+[3.391s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/bin'
+[3.393s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.ps1'
+[3.395s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv'
+[3.399s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.sh'
+[3.402s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.bash'
+[3.405s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.zsh'
+[3.432s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/colcon-core/packages/mecanum_drive_controller)
+[3.440s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_drive_controller)
+[3.442s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller' for CMake module files
+[3.449s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller' for CMake config files
+[3.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'cmake_prefix_path')
+[3.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.ps1'
+[3.454s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.dsv'
+[3.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.sh'
+[3.461s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib'
+[3.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'ld_library_path_lib')
+[3.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.ps1'
+[3.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.dsv'
+[3.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.sh'
+[3.471s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/bin'
+[3.471s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib/pkgconfig/mecanum_drive_controller.pc'
+[3.472s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/lib/python3.10/site-packages'
+[3.473s] Level 1:colcon.colcon_core.environment:checking '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/bin'
+[3.474s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.ps1'
+[3.477s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv'
+[3.480s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.sh'
+[3.483s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.bash'
+[3.487s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/mecanum_drive_controller/package.zsh'
+[3.490s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/USB_DISK/ros2_workspace/install/mecanum_drive_controller/share/colcon-core/packages/mecanum_drive_controller)
+[3.493s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.495s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.495s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.495s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.523s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[3.523s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.523s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.523s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.550s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[3.550s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.551s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/USB_DISK/ros2_workspace/install/local_setup.ps1'
+[3.556s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/USB_DISK/ros2_workspace/install/_local_setup_util_ps1.py'
+[3.564s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/USB_DISK/ros2_workspace/install/setup.ps1'
+[3.569s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/USB_DISK/ros2_workspace/install/local_setup.sh'
+[3.573s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/USB_DISK/ros2_workspace/install/_local_setup_util_sh.py'
+[3.575s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/USB_DISK/ros2_workspace/install/setup.sh'
+[3.580s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/USB_DISK/ros2_workspace/install/local_setup.bash'
+[3.583s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/USB_DISK/ros2_workspace/install/setup.bash'
+[3.587s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/USB_DISK/ros2_workspace/install/local_setup.zsh'
+[3.590s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/USB_DISK/ros2_workspace/install/setup.zsh'

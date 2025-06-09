@@ -1,0 +1,1 @@
+Invoking command in '/home/as33697920/larry_ws/robot/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/as33697920/larry_ws/robot/build/rplidar_ros -- -j4 -l4

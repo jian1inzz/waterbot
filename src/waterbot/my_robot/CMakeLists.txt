@@ -45,6 +45,7 @@ install(
     my_robot/hcsr04.py
     my_robot/encoder.py
     my_robot/ws.py
+    my_robot/enocder2.py
   
   DESTINATION lib/${PROJECT_NAME}
 )

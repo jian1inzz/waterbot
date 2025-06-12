@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:54 (file):
+  file INSTALL cannot find
+  "/home/as33697920/larry_ws/src/waterbot/my_robot/my_robot/encoder2.py": No
+  such file or directory.
+
+[0m

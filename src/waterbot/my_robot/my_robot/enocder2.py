@@ -3,10 +3,12 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Float32
+from sensor_msgs.msg import Imu
 import serial
 import time
 import threading
 import queue
+from struct import unpack
 
 FRAME_HEADER = 0x7B
 FRAME_TAIL = 0x7D
@@ -29,7 +31,10 @@ class SerialTwistAndEncoderNode(Node):
             return
 
         self.create_subscription(Twist, '/cmd_vel', self.cmd_callback, 10)
+
         self.x_speed_pub = self.create_publisher(Float32, '/x_speed', 10)
+        self.voltage_pub = self.create_publisher(Float32, '/battery_voltage', 10)
+        self.imu_pub = self.create_publisher(Imu, '/imu', 10)
 
         self.send_queue = queue.Queue()
         self.sender_thread = threading.Thread(target=self.send_thread_fn, daemon=True)
@@ -38,11 +43,11 @@ class SerialTwistAndEncoderNode(Node):
         self.buffer = bytearray()
         self.timer = self.create_timer(0.02, self.read_serial)
         self.last_log_time = time.time()
-        self.get_logger().info('✅ Serial Twist + Encoder Node 啟動（指令 + 回報速度）')
+        self.get_logger().info('✅ Serial Twist + Encoder Node 啟動（指令 + 回報速度 + IMU + 電壓）')
 
     def cmd_callback(self, msg: Twist):
         packet = self.build_velocity_packet(msg.linear.x, msg.linear.y, msg.angular.z)
-        self.send_queue.put(packet)  # 放入待傳階段，不占位 main thread
+        self.send_queue.put(packet)
 
     def send_thread_fn(self):
         while True:
@@ -95,6 +100,7 @@ class SerialTwistAndEncoderNode(Node):
                 data = self.buffer[:24]
                 self.buffer = self.buffer[24:]
 
+                # --- 解碼速度 ---
                 x_speed_raw = (data[2] << 8) | data[3]
                 y_speed_raw = (data[4] << 8) | data[5]
                 z_speed_raw = (data[6] << 8) | data[7]
@@ -102,14 +108,44 @@ class SerialTwistAndEncoderNode(Node):
                 x_speed = twos_complement(x_speed_raw, 16) / 1000.0
                 y_speed = twos_complement(y_speed_raw, 16) / 1000.0
                 z_speed = twos_complement(z_speed_raw, 16) / 1000.0
-
                 self.x_speed_pub.publish(Float32(data=x_speed))
 
+                # --- 解碼 IMU 加速度 ---
+                acc_x = twos_complement((data[8] << 8) | data[9], 16)
+                acc_y = twos_complement((data[10] << 8) | data[11], 16)
+                acc_z = twos_complement((data[12] << 8) | data[13], 16)
+
+                # --- 解碼 IMU 角速度 ---
+                gyr_x = twos_complement((data[14] << 8) | data[15], 16)
+                gyr_y = twos_complement((data[16] << 8) | data[17], 16)
+                gyr_z = twos_complement((data[18] << 8) | data[19], 16)
+
+                # --- 解碼電壓 ---
+                voltage_raw = (data[20] << 8) | data[21]
+                voltage = voltage_raw / 1000.0
+                self.voltage_pub.publish(Float32(data=voltage))
+
+                # --- 發布 IMU ---
+                imu_msg = Imu()
+                imu_msg.linear_acceleration.x = acc_x / 1000.0
+                imu_msg.linear_acceleration.y = acc_y / 1000.0
+                imu_msg.linear_acceleration.z = acc_z / 1000.0
+
+                imu_msg.angular_velocity.x = gyr_x / 1000.0
+                imu_msg.angular_velocity.y = gyr_y / 1000.0
+                imu_msg.angular_velocity.z = gyr_z / 1000.0
+
+                self.imu_pub.publish(imu_msg)
+
+                # --- 每秒顯示一次 log ---
                 now = time.time()
                 if now - self.last_log_time >= 1.0:
                     self.get_logger().info(f"📦 UART 封包: {[hex(b) for b in data]}")
                     self.get_logger().info(
-                        f"📥 速度回報 X: {x_speed:.3f} m/s, Y: {y_speed:.3f} m/s, Z: {z_speed:.3f} m/s"
+                        f"📥 速度: X={x_speed:.3f}, Y={y_speed:.3f}, Z={z_speed:.3f} m/s ｜"
+                        f"電壓: {voltage:.3f} V ｜"
+                        f"IMU 加速度: [{acc_x}, {acc_y}, {acc_z}] ｜"
+                        f"IMU 角速度: [{gyr_x}, {gyr_y}, {gyr_z}]"
                     )
                     self.last_log_time = now
 

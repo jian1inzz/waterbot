@@ -25,5 +25,11 @@ def generate_launch_description():
             executable='rplidar.py',  #
             name='lidar_filter_node',
             output='screen'
+        ),
+        Node(
+            package='my_robot',
+            executable='obstacle1.py',
+            name='obstacle1',
+            output='screen'
         )
     ])

@@ -30,7 +30,7 @@ class UltrasonicSensorNode(Node):
         GPIO.setup(TRIG, GPIO.OUT)
         GPIO.setup(ECHO, GPIO.IN)
 
-        self.enabled = True
+        self.enabled = False
         self.last_log_time = time.time()
 
         self.create_subscription(Bool, 'hcsr04_enable', self.cb_enable, 10)

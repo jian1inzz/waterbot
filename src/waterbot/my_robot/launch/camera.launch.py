@@ -23,7 +23,7 @@ def generate_launch_description():
         ),
         Node(
             package='my_robot',
-            executable='encoder.py',  # ✅ 這就是你這支超音波腳本
+            executable='enocder2.py',  # ✅ 這就是你這支超音波腳本
             name='xspeed',
             output='screen'
         )

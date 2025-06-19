@@ -24,8 +24,7 @@ class SerialTwistAndEncoderNode(Node):
 
         try:
             self.ser = serial.Serial(PORT, BAUDRATE, timeout=1)
-        except serial.SerialException as e:
-            self.get_logger().error(f"❌ 無法開啟序列埠 {PORT}: {e}")
+        except serial.SerialException:
             return
 
         self.create_subscription(Twist, '/cmd_vel', self.cmd_callback, 10)
@@ -36,20 +35,19 @@ class SerialTwistAndEncoderNode(Node):
         self.sender_thread.start()
 
         self.buffer = bytearray()
-        self.timer = self.create_timer(0.02, self.read_serial)
+        self.timer = self.create_timer(0.05, self.read_serial)
         self.last_log_time = time.time()
-        self.get_logger().info('✅ Serial Twist + Encoder Node 啟動（指令 + 回報速度）')
 
     def cmd_callback(self, msg: Twist):
         packet = self.build_velocity_packet(msg.linear.x, msg.linear.y, msg.angular.z)
-        self.send_queue.put(packet)  # 放入待傳階段，不占位 main thread
+        self.send_queue.put(packet)
 
     def send_thread_fn(self):
         while True:
             try:
                 packet = self.send_queue.get(timeout=1)
                 self.ser.write(packet)
-                self.get_logger().info(f'📤 發送封包: {[hex(b) for b in packet]}')
+                # 不顯示發送 log
             except queue.Empty:
                 continue
 
@@ -104,14 +102,7 @@ class SerialTwistAndEncoderNode(Node):
                 z_speed = twos_complement(z_speed_raw, 16) / 1000.0
 
                 self.x_speed_pub.publish(Float32(data=x_speed))
-
-                now = time.time()
-                if now - self.last_log_time >= 1.0:
-                    self.get_logger().info(f"📦 UART 封包: {[hex(b) for b in data]}")
-                    self.get_logger().info(
-                        f"📥 速度回報 X: {x_speed:.3f} m/s, Y: {y_speed:.3f} m/s, Z: {z_speed:.3f} m/s"
-                    )
-                    self.last_log_time = now
+                # 不顯示接收 log
 
     def destroy_node(self):
         if hasattr(self, 'ser') and self.ser.is_open:
@@ -124,7 +115,7 @@ def main(args=None):
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        node.get_logger().info("🚫 手動中斷")
+        pass
     finally:
         node.destroy_node()
         rclpy.shutdown()

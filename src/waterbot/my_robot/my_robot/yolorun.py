@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import math, time, rclpy
+import math, time, rclpy, random
 from rclpy.node import Node
 from std_msgs.msg import String, Float32, Bool
 from sensor_msgs.msg import LaserScan
@@ -7,12 +7,15 @@ from geometry_msgs.msg import Twist
 
 # ----------- 參數 ----------
 FORWARD_V     = 0.05
-ANG_KP        = 0.07
-HC_STOP_CM    = 6.0
+ANG_KP        = 0.1
+HC_STOP_CM    = 6.3
+PATROL_V     = 0.06
+PATROL_ANG_V = 0.07  
 EMERGENCY_STOP_CM = 3.5
 ANGLE_GATE    = math.radians(3)
-EXPIRE_SEC    = 5
+EXPIRE_SEC    = 3
 REACTION_TIME = 2.05
+SLIP_K        = 1.0   # ✅ 新增滑行修正係數
 
 class YoloCmdListener(Node):
     def __init__(self):
@@ -30,16 +33,19 @@ class YoloCmdListener(Node):
         self.cmd_time = 0.0
         self.ws_connected = False
         self.ws_warned = False
-        self.cmd_expired_warned = False  # ★ 避免指令過期重複警告
+        self.cmd_expired_warned = False
+        self.last_comp_log_time = 0.0
+        self.last_yolo_time = 0.0 
+        self.hcsr04_enabled = False
 
         self.create_subscription(String, '/yolo_cmd', self.cb_cmd, 10)
         self.create_subscription(Float32, '/yolo_angle', self.cb_angle, 10)
-        self.create_subscription(LaserScan, '/filtered_scan', self.cb_scan, 10)
+        self.create_subscription(Float32, '/obstacle_distance', self.cb_obstacle, 10)
         self.create_subscription(Float32, '/ultrasonic_distance', self.cb_hcsr04, 10)
         self.create_subscription(Float32, '/x_speed', self.cb_xspeed, 10)
         self.create_subscription(Bool, '/websocket_connected', self.cb_ws, 1)
 
-        self.pub_vel = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.pub_vel = self.create_publisher(Twist, '/yolo_cmd_vel', 10)
         self.hcsr_stop_pub = self.create_publisher(Bool, '/hcsr04_enable', 1)
 
         self.create_timer(0.05, self.control_loop)
@@ -52,26 +58,40 @@ class YoloCmdListener(Node):
     def cb_angle(self, msg: Float32):
         self.angle_deg = msg.data
         self.angle_time = time.time()
+        self.last_yolo_time = self.angle_time
 
-    def cb_scan(self, scan: LaserScan):
-        inc = scan.angle_increment
-        n15 = int(math.radians(15) / inc)
-        self.front_dist = min(scan.ranges[:n15] + scan.ranges[-n15:])
+    def cb_obstacle(self, msg: Float32):
+        self.front_dist = msg.data
+
+        
 
     def cb_hcsr04(self, msg: Float32):
-        if self.ws_connected and not self.has_stopped:
-            if msg.data < 2.0:
-                self.get_logger().warn(f"⚠️ 超音波讀值異常：{msg.data:.2f} cm，已忽略")
-                return
-            self.hcsr04_dist = msg.data
+        # 只有在 WebSocket 已連線、且尚未停車時才處理
+        if not (self.ws_connected and not self.has_stopped):
+            return
+        
+        dist = msg.data
+        
+        # ❶ 讀值異常（過小）或 ❷ 感測器回傳 inf，都算「無效」
+        if dist < 2.0 or math.isinf(dist):
+            # 不寫入 self.hcsr04_dist，維持原本值 (通常是 inf)
+            if dist < 2.0:
+                self.get_logger().warn(f"⚠️ 超音波讀值異常：{dist:.2f} cm，已忽略")
+            return
+        
+        # 讀值有效才更新
+        self.hcsr04_dist = dist
 
     def cb_xspeed(self, msg: Float32):
-        self.x_speed = msg.data
+        if not self.has_stopped:
+            raw_speed = msg.data
+            if self.hcsr04_dist < 15.0:
+                raw_speed = min(max(raw_speed, 0.041), 0.48)
+            self.x_speed = raw_speed
 
     def cb_ws(self, msg: Bool):
         prev_state = self.ws_connected
         self.ws_connected = msg.data
-
         if not self.ws_connected and prev_state:
             self.get_logger().warn("🛘 WebSocket 已斷線！")
             self.ws_warned = False
@@ -83,11 +103,23 @@ class YoloCmdListener(Node):
         self.get_logger().info(f"🚩 {reason} → 停車（鎖定）")
         self.has_stopped = True
 
-    def control_loop(self):
+    def patrol_behavior(self):
+        if self.has_stopped:
+            return
         twist = Twist()
+        twist.linear.x = PATROL_V
+        self.pub_vel.publish(twist)
+
+
+    def control_loop(self):
+
+        twist = Twist()
+        now = time.time()
+
 
         if self.has_stopped:
             self.pub_vel.publish(twist)
+            self.get_logger().info("⚠️ 已停車狀態 → 不發送移動指令")
             return
 
         if self.hcsr04_dist < EMERGENCY_STOP_CM:
@@ -98,7 +130,6 @@ class YoloCmdListener(Node):
             if not self.ws_warned:
                 self.get_logger().warn("🚩 WebSocket 尚未連線或已斷線 → 自動停車")
                 self.ws_warned = True
-            self.pub_vel.publish(twist)
             return
         else:
             self.ws_warned = False
@@ -111,27 +142,55 @@ class YoloCmdListener(Node):
             self.get_logger().warn("⏱️ 角度過期且大於 ±3° → 清除")
             self.angle_deg = None
 
-        if not cmd_valid and self.cmd_discrete not in ["forward", "center"]:
+        # ✅ 改為以角度為主的巡邏切換條件
+        if not angle_valid:
             if not self.cmd_expired_warned:
-                self.get_logger().warn(f"⏱️ 指令 {self.cmd_discrete} 已過期 → 停車")
+                self.get_logger().warn("⏱️ 角度已過期 → 切換巡邏模式")
                 self.cmd_expired_warned = True
-            self.pub_vel.publish(twist)
+            self.patrol_behavior()
             return
         else:
             self.cmd_expired_warned = False
 
-        slip_dist = self.x_speed * REACTION_TIME
-        predicted_stop_cm = slip_dist * 100
-
-        self.get_logger().info(
-            f"🧪 [補償判斷] hcsr04={self.hcsr04_dist:.2f} cm, 預測滑行距離={predicted_stop_cm:.2f} cm"
+        should_enable = (
+            self.front_dist < 0.35 and 
+            (now - self.last_yolo_time) < 5.0 and 
+            self.angle_deg is not None and 
+            abs(self.angle_deg) < 10.0
         )
 
-        if self.hcsr04_dist < predicted_stop_cm:
+        
+
+        if should_enable and not self.hcsr04_enabled:
+            self.hcsr_stop_pub.publish(Bool(data=True))
+            self.hcsr04_enabled = True
+            self.get_logger().info("✅ 啟用超音波")
+
+        slip_dist = self.x_speed * REACTION_TIME * SLIP_K
+        predicted_stop_cm = slip_dist * 100
+
+        # ➊ 只有 hcsr04_dist 不是 inf 才印 log
+        if now - self.last_comp_log_time >= 1.0:
+            if not math.isinf(self.hcsr04_dist):
+                self.get_logger().info(
+                    f"🧪 [補償判斷] hcsr04={self.hcsr04_dist:.2f} cm, "
+                    f"預測滑行距離={predicted_stop_cm:.2f} cm"
+                )
+            # 想完全靜默可把 else 刪掉
+            self.last_comp_log_time = now
+
+
+        # ➋ 只有有效距離才比較
+        if (not math.isinf(self.hcsr04_dist)) and self.hcsr04_dist < predicted_stop_cm:
+            self.get_logger().info(
+                f"🧪 [補償觸發] hcsr04={self.hcsr04_dist:.2f} cm, "
+                f"預測滑行距離={predicted_stop_cm:.2f} cm"
+            )
             self.stop_and_lock(
                 f"🚩 滑行補償：速度 {self.x_speed:.3f} m/s → 預測 {predicted_stop_cm:.2f} cm"
             )
             return
+
 
         if self.angle_deg is not None:
             ang_err = math.radians(self.angle_deg)

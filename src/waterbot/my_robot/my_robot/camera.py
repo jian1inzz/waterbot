@@ -30,6 +30,11 @@ class CameraWebSocketNode(Node):
         self.prev_cmd   = None
         self.prev_angle = None
 
+        # -------- 電量狀態 --------
+        self.battery_percent = None
+        self.prev_battery_percent = None
+        self.create_subscription(Float32, '/battery_percent', self.cb_battery, 10)
+
         # -------- 打開相機 --------
         self.cap = cv2.VideoCapture(0)
         if not self.cap.isOpened():
@@ -67,6 +72,22 @@ class CameraWebSocketNode(Node):
 
         if self.ws:
             asyncio.run_coroutine_threadsafe(self.ws_send(frame), self.loop)
+
+    # ================== 電量回呼 ==================
+    def cb_battery(self, msg: Float32):
+        self.battery_percent = int(msg.data)  # 不要小數點
+
+        # 如果與上次不同才傳送
+        if self.battery_percent != self.prev_battery_percent and self.ws:
+            try:
+                battery_json = json.dumps({
+                    "battery_percent": self.battery_percent
+                })
+                asyncio.run_coroutine_threadsafe(self.ws.send(battery_json), self.loop)
+                self.prev_battery_percent = self.battery_percent
+            except Exception as e:
+                self.get_logger().warning(f"⚠️ 傳送電量失敗: {e}")
+                self.ws = None
 
     # ================== WebSocket 連線 ==================
     async def connect_ws(self):
@@ -106,18 +127,12 @@ class CameraWebSocketNode(Node):
                     str_msg = String(); str_msg.data = cmd
                     self.cmd_pub.publish(str_msg)
 
-                    if self.prev_cmd != cmd:
-                        self.get_logger().info(f"📨 cmd={cmd}")
-                        self.prev_cmd = cmd
-
                     if angle is not None:
                         ang_val = float(angle)
                         ang_msg = Float32(); ang_msg.data = ang_val
                         self.ang_pub.publish(ang_msg)
 
-                        if self.prev_angle is None or abs(ang_val - self.prev_angle) > 0.1:
-                            self.get_logger().info(f"   angle={ang_val:+.1f}°")
-                            self.prev_angle = ang_val
+                        
                 else:
                     self.get_logger().warning(f"⚠️ 未知指令: {message}")
         except Exception as e:

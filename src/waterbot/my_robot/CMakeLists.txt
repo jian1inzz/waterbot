@@ -46,6 +46,7 @@ install(
     my_robot/encoder.py
     my_robot/ws.py
     my_robot/enocder2.py
+    my_robot/water.py
   
   DESTINATION lib/${PROJECT_NAME}
 )

@@ -47,6 +47,8 @@ install(
     my_robot/ws.py
     my_robot/enocder2.py
     my_robot/water.py
+    my_robot/hand.py
+    my_robot/water2.py
   
   DESTINATION lib/${PROJECT_NAME}
 )

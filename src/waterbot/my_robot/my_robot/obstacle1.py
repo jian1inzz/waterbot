@@ -3,9 +3,21 @@ import math, rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Float32, Bool
+import os, signal, threading
+import time
+
 
 SAFE_DIST = 0.4     # 安全距離 (m)
 MIN_VALID = 0.15     # 最小有效距離（過濾雜訊）
+
+def monitor_parent():
+    """🛡️ 當父進程被終止，這個子進程也會自動退出"""
+    ppid = os.getppid()
+    while True:
+        if os.getppid() != ppid:
+            print("🔴 父進程已死亡，終止 YOLO 指令節點")
+            os.kill(os.getpid(), signal.SIGINT)
+        time.sleep(1)
 
 class ObstacleAvoidNode(Node):
     def __init__(self):

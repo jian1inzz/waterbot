@@ -23,7 +23,7 @@ COMMAND_MAP = {
     "manual": {
         "start": "start_robot",
         "stop": "shutdown_robot",
-        "launch_file": "keybgggoard.launch.py",
+        "launch_file": "hand.launch.py",
         "package": "my_robot"
     }
 }

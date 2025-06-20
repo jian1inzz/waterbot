@@ -10,6 +10,8 @@ import threading
 import queue
 from collections import deque          # ① 新增
 from struct import unpack
+import signal
+import os
 
 FRAME_HEADER = 0x7B
 FRAME_TAIL   = 0x7D
@@ -38,6 +40,14 @@ def twos_complement(value, bits):
     if value & (1 << (bits - 1)):
         value -= 1 << bits
     return value
+def monitor_parent():
+    """🛡️ 當父進程被終止，這個子節點也自動退出"""
+    ppid = os.getppid()
+    while True:
+        if os.getppid() != ppid:
+            print("🔴 父進程已死亡，終止串列節點")
+            os.kill(os.getpid(), signal.SIGINT)
+        time.sleep(1)
 
 class SerialTwistAndEncoderNode(Node):
     def __init__(self):
@@ -181,6 +191,7 @@ class SerialTwistAndEncoderNode(Node):
         super().destroy_node()
 
 def main(args=None):
+    threading.Thread(target=monitor_parent, daemon=True).start()  # ← ✅加這行
     rclpy.init(args=args)
     node = SerialTwistAndEncoderNode()
     try:

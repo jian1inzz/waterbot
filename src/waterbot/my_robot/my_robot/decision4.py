@@ -4,16 +4,29 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Float32
 from std_msgs.msg import Bool
+import os, signal, threading
+
 
 FORWARD_V     = 0.07
 TURN_V        = 0.08
 BACKWARD_V    = -0.05
 
 TURN_TIME_BASE     = 20
-BACKWARD_TIME      = 13
+BACKWARD_TIME      = 14
 POST_TURN_DELAY_STEP = 8
 
 SAFE_FRONT = 0.38
+LEFT_FRONT_SAFE  = 0.28
+RIGHT_FRONT_SAFE = 0.28
+
+def monitor_parent():
+    """🛡️ 當父進程被終止，這個子進程也會自動退出"""
+    ppid = os.getppid()
+    while True:
+        if os.getppid() != ppid:
+            print("🔴 父進程已死亡，終止 YOLO 指令節點")
+            os.kill(os.getpid(), signal.SIGINT)
+        time.sleep(1)
 
 class ObstacleAvoidNode(Node):
     def __init__(self):
@@ -61,6 +74,8 @@ class ObstacleAvoidNode(Node):
         return round(x, digits)
 
     def cb_yolo_cmd(self, msg: Twist):
+        if self.state != 'straight':
+            return  # ❌ 目前正在避障，不接受 yolo_cmd_vel
         self.latest_cmd = msg
         rounded = (self._round(msg.linear.x), self._round(msg.angular.z))
         if rounded != self.last_logged_cmd:
@@ -108,10 +123,6 @@ class ObstacleAvoidNode(Node):
         twist = Twist()
         now = self.get_clock().now().seconds_nanoseconds()[0]
 
-        if self.hcsr04_enabled:
-            self.pub_cmdvel.publish(self.latest_cmd)
-            return
-
         if now < self.cooldown_until:
             self.send_stop()
             return
@@ -124,16 +135,37 @@ class ObstacleAvoidNode(Node):
             dynamic_safe_front = SAFE_FRONT
 
         if self.state == 'straight':
-            if self.obstacle_dist < dynamic_safe_front and not self.is_narrow_pass():
-                self.send_stop()
+            # ✅ 絕對優先處理避障：正前 + 左前 + 右前任一太近就觸發
+            if self.hcsr04_enabled:
+                danger_front = False
+                self.get_logger().info("🔕 超音波啟用，略過前方雷達避障")
+            else:
+                danger_front = self.obstacle_dist < dynamic_safe_front
+            danger_left  = self.left_front_dist < LEFT_FRONT_SAFE
+            danger_right = self.right_front_dist < RIGHT_FRONT_SAFE
+
+            # ✅ YOLO 指令向前，但實際上前方有障礙 → 視為觸發避障
+            yolo_conflict = (
+                self.latest_cmd.linear.x > 0 and 
+                (danger_front or danger_left or danger_right)
+            )
+
+            if (danger_front or danger_left or danger_right or yolo_conflict) and not self.is_narrow_pass():
                 self.state = 'backward'
                 self.counter = 0
                 twist.linear.x = BACKWARD_V
                 self.pub_cmdvel.publish(twist)
-                self.get_logger().info("[backward] 偵測障礙物 → 先後退")
+                self.get_logger().warn(
+                    f"[backward] ⛔ 偵測障礙物或 YOLO 指令衝突 → 後退！"
+                    f"前={self.obstacle_dist:.2f}, 左前={self.left_front_dist:.2f}, 右前={self.right_front_dist:.2f}"
+                )
                 return
+
+            # ✅ 發送 YOLO 指令（安全情況下）
             self.pub_cmdvel.publish(self.latest_cmd)
             return
+
+
 
         elif self.state == 'backward':
             twist.linear.x = BACKWARD_V
@@ -142,20 +174,24 @@ class ObstacleAvoidNode(Node):
                 self.send_stop()
                 self.state = 'turn'
                 self.counter = 0
-                left_space  = min(self.left_dist, self.left_front_dist)
-                right_space = min(self.right_dist, self.right_front_dist)
-
-                if left_space > right_space:
-                    self.turn_direction = 1
+                if self.angle_deg is not None and abs(self.angle_deg) > 3:
+                    self.turn_direction = -1 if self.angle_deg < 0 else 1
+                    self.get_logger().info(f"🎯 YOLO角度 {self.angle_deg:.1f}° → 優先轉向 {'左' if self.turn_direction == -1 else '右'}")
                 else:
-                    self.turn_direction = -1
+                    left_space  = min(self.left_dist, self.left_front_dist)
+                    right_space = min(self.right_dist, self.right_front_dist)
 
-                if self.turn_direction == 1 and self.left_dist < 0.2:
-                    self.turn_direction = -1
-                    self.get_logger().info("↪️ 左側過近 → 改右轉")
-                elif self.turn_direction == -1 and self.right_dist < 0.2:
-                    self.turn_direction = 1
-                    self.get_logger().info("↩️ 右側過近 → 改左轉")
+                    if left_space > right_space:
+                        self.turn_direction = 1
+                    else:
+                        self.turn_direction = -1
+
+                    if self.turn_direction == 1 and self.left_dist < 0.3:
+                        self.turn_direction = -1
+                        self.get_logger().info("↪️ 左側過近 → 改右轉")
+                    elif self.turn_direction == -1 and self.right_dist < 0.3:
+                        self.turn_direction = 1
+                        self.get_logger().info("↩️ 右側過近 → 改左轉")
 
                 self.last_turn_direction = self.turn_direction
                 self.turn_duration = random.randint(10, TURN_TIME_BASE)
@@ -164,7 +200,12 @@ class ObstacleAvoidNode(Node):
 
         elif self.state == 'turn':
             twist.linear.x = FORWARD_V * 0.5
-            twist.angular.z = self.turn_direction * TURN_V * 0.6
+
+            if self.angle_deg is not None and abs(self.angle_deg) > 3 and (time.time() - self.last_yolo_time) < 3.0:
+                twist.angular.z = self.turn_direction * TURN_V * 0.25
+            else:
+                twist.angular.z = self.turn_direction * TURN_V * 0.5
+
             self.counter += 1
             if self.counter >= self.turn_duration:
                 self.send_stop()
@@ -201,6 +242,7 @@ class ObstacleAvoidNode(Node):
         self.pub_cmdvel.publish(twist)
 
 def main(args=None):
+    threading.Thread(target=monitor_parent, daemon=True).start()
     rclpy.init(args=args)
     node = ObstacleAvoidNode()
     rclpy.spin(node)

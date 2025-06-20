@@ -4,11 +4,12 @@ from rclpy.node import Node
 from std_msgs.msg import String, Float32, Bool
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
+import os, signal, threading
 
 # ----------- 參數 ----------
 FORWARD_V     = 0.05
-ANG_KP        = 0.1
-HC_STOP_CM    = 6.3
+ANG_KP        = 0.13
+HC_STOP_CM    = 6.8
 PATROL_V     = 0.06
 PATROL_ANG_V = 0.07  
 EMERGENCY_STOP_CM = 3.5
@@ -16,6 +17,15 @@ ANGLE_GATE    = math.radians(3)
 EXPIRE_SEC    = 3
 REACTION_TIME = 2.05
 SLIP_K        = 1.0   # ✅ 新增滑行修正係數
+
+def monitor_parent():
+    """🛡️ 當父進程被終止，這個子進程也會自動退出"""
+    ppid = os.getppid()
+    while True:
+        if os.getppid() != ppid:
+            print("🔴 父進程已死亡，終止 YOLO 指令節點")
+            os.kill(os.getpid(), signal.SIGINT)
+        time.sleep(1)
 
 class YoloCmdListener(Node):
     def __init__(self):
@@ -156,7 +166,7 @@ class YoloCmdListener(Node):
             self.front_dist < 0.35 and 
             (now - self.last_yolo_time) < 5.0 and 
             self.angle_deg is not None and 
-            abs(self.angle_deg) < 10.0
+            abs(self.angle_deg) < 5.0
         )
 
         
@@ -165,6 +175,13 @@ class YoloCmdListener(Node):
             self.hcsr_stop_pub.publish(Bool(data=True))
             self.hcsr04_enabled = True
             self.get_logger().info("✅ 啟用超音波")
+        
+        if self.hcsr04_enabled and (
+            self.angle_deg is None or abs(self.angle_deg) > 60.0
+        ):
+            self.hcsr_stop_pub.publish(Bool(data=False))
+            self.hcsr04_enabled = False
+            self.get_logger().info(f"❌ 角度偏移 {self.angle_deg:.1f}° → 關閉超音波")
 
         slip_dist = self.x_speed * REACTION_TIME * SLIP_K
         predicted_stop_cm = slip_dist * 100
@@ -243,6 +260,7 @@ class YoloCmdListener(Node):
         self.pub_vel.publish(twist)
 
 def main(args=None):
+    threading.Thread(target=monitor_parent, daemon=True).start()
     rclpy.init(args=args)
     node = YoloCmdListener()
     try:

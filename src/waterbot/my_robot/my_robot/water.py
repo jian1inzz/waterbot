@@ -4,6 +4,7 @@ from rclpy.node import Node
 import RPi.GPIO as GPIO
 import time
 import threading
+from std_msgs.msg import Bool 
 
 # ---------------- GPIO 腳位定義 ----------------
 DIR_PIN = 20
@@ -28,9 +29,11 @@ class RailPumpController(Node):
         self.step_delay = 0.0003
         self.pause_flag = threading.Event()
         self.pause_flag.set()
+        self.pub_pump_done = self.create_publisher(Bool, '/pump_done', 10)
+        self.create_subscription(Bool, '/start_pump', self.cb_start_pump, 10)
+
 
         self.setup_gpio()
-        threading.Thread(target=self.auto_flow, daemon=True).start()
 
     def setup_gpio(self):
         GPIO.setmode(GPIO.BCM)
@@ -47,6 +50,11 @@ class RailPumpController(Node):
         GPIO.output(PUMP_IN2, GPIO.LOW)
         GPIO.output(PUMP_ENA, GPIO.LOW)
         self.get_logger().info("✅ GPIO 初始化完成")
+
+    def cb_start_pump(self, msg: Bool):
+        if msg.data:
+            self.get_logger().info("📩 收到 /start_pump 啟動抽水指令")
+            threading.Thread(target=self.auto_flow, daemon=True).start()
 
     def move_mm(self, mm, direction="forward"):
         total_steps = int(mm * steps_per_mm)
@@ -95,7 +103,10 @@ class RailPumpController(Node):
         time.sleep(2)
         self.move_mm(200, direction="backward")
         self.get_logger().info("🎉 聯動流程完成！")
-        print("✅ ✅ ✅ 所有流程已執行完畢，請確認水泵與導軌狀態 ✅ ✅ ✅")
+
+        # ✅ 發布抽水完成訊號
+        self.pub_pump_done.publish(Bool(data=True))
+        self.get_logger().info("✅ 已發布 /pump_done = True")
 
     def destroy_node(self):
         self.stop_pump()

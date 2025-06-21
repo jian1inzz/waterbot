@@ -42,6 +42,12 @@ class ObstacleAvoidNode(Node):
         self.create_subscription(Float32, '/obstacle_left_front', self.cb_left_front, 10)
         self.create_subscription(Float32, '/obstacle_right_front', self.cb_right_front, 10)
         self.create_subscription(Bool, '/hcsr04_enable', self.cb_hcsr04, 10)
+        self.pub_pump = self.create_publisher(Bool, '/start_pump', 10)
+        self.waiting_pump_done = False
+
+# 訂閱 pump 完成訊號
+        self.create_subscription(Bool, '/pump_done', self.cb_pump_done, 10)
+
 
         self.create_timer(0.3, self.avoid_loop)
 
@@ -91,12 +97,20 @@ class ObstacleAvoidNode(Node):
         self.yolo_locked = abs(self.angle_deg) < 10.0
 
     def cb_hcsr04(self, msg: Bool):
-        self.get_logger().info(f"📩 一開始收到 /hcsr04_enable = {msg.data}")
-        if self.hcsr04_enabled and (not msg.data):
-            now = self.get_clock().now().seconds_nanoseconds()[0]
-            self.cooldown_until = now + 10
-            self.get_logger().info("🕒 停車完成 → 10 秒冷卻再恢復避障")
-        self.hcsr04_enabled = msg.data
+        self.get_logger().info(f"📩 收到 /hcsr04_enable = {msg.data}")
+
+        prev_state = self.hcsr04_enabled      # ⏮️ 先記住舊狀態
+        self.hcsr04_enabled = msg.data        # ✅ 再更新
+
+        if prev_state and not msg.data and not self.waiting_pump_done:
+            self.get_logger().info("🚰 超音波停用 → 啟動抽水")
+            self.waiting_pump_done = True
+            self.pub_pump.publish(Bool(data=True))
+
+    def cb_pump_done(self, msg: Bool):
+        if msg.data:
+            self.get_logger().info("✅ 抽水完成 → 恢復避障功能")
+            self.waiting_pump_done = False
 
     def cb_obstacle(self, msg: Float32):
         self.obstacle_dist = msg.data
@@ -126,11 +140,15 @@ class ObstacleAvoidNode(Node):
         if now < self.cooldown_until:
             self.send_stop()
             return
+        if self.waiting_pump_done:
+            self.send_stop()
+            self.get_logger().info("⏳ 等待抽水完成中，暫停避障")
+            return
 
         # ✅ 根據是否為 YOLO 鎖定目標，調整避障靈敏度
         recent_yolo = (time.time() - self.last_yolo_time) < 3.0
         if recent_yolo and self.yolo_locked:
-            dynamic_safe_front = 0.35
+            dynamic_safe_front = 0.3
         else:
             dynamic_safe_front = SAFE_FRONT
 
@@ -174,10 +192,18 @@ class ObstacleAvoidNode(Node):
                 self.send_stop()
                 self.state = 'turn'
                 self.counter = 0
-                if self.angle_deg is not None and abs(self.angle_deg) > 3:
+                if (
+                    self.angle_deg is not None
+                    and abs(self.angle_deg) > 3
+                    and (time.time() - self.last_yolo_time) < 3.0
+                ):
                     self.turn_direction = -1 if self.angle_deg < 0 else 1
                     self.get_logger().info(f"🎯 YOLO角度 {self.angle_deg:.1f}° → 優先轉向 {'左' if self.turn_direction == -1 else '右'}")
                 else:
+                    # 🧹 清除過期角度，避免 turn 狀態誤用
+                    self.angle_deg = None
+                    self.last_yolo_time = 0
+
                     left_space  = min(self.left_dist, self.left_front_dist)
                     right_space = min(self.right_dist, self.right_front_dist)
 
@@ -240,6 +266,8 @@ class ObstacleAvoidNode(Node):
                 return
 
         self.pub_cmdvel.publish(twist)
+
+     
 
 def main(args=None):
     threading.Thread(target=monitor_parent, daemon=True).start()

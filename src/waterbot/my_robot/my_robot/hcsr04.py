@@ -100,6 +100,7 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
+        GPIO.cleanup()
 
 if __name__ == '__main__':
     main()

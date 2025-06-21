@@ -9,7 +9,7 @@ import os, signal, threading
 # ----------- 參數 ----------
 FORWARD_V     = 0.05
 ANG_KP        = 0.13
-HC_STOP_CM    = 6.8
+HC_STOP_CM    = 7.0
 PATROL_V     = 0.06
 PATROL_ANG_V = 0.07  
 EMERGENCY_STOP_CM = 3.5
@@ -48,6 +48,7 @@ class YoloCmdListener(Node):
         self.last_yolo_time = 0.0 
         self.hcsr04_enabled = False
 
+        self.create_subscription(Bool, '/pump_done', self.cb_pump_done, 10)
         self.create_subscription(String, '/yolo_cmd', self.cb_cmd, 10)
         self.create_subscription(Float32, '/yolo_angle', self.cb_angle, 10)
         self.create_subscription(Float32, '/obstacle_distance', self.cb_obstacle, 10)
@@ -72,6 +73,14 @@ class YoloCmdListener(Node):
 
     def cb_obstacle(self, msg: Float32):
         self.front_dist = msg.data
+
+    def cb_pump_done(self, msg: Bool):
+        if msg.data:
+            self.get_logger().info("💧 抽水完成 → 解鎖停車狀態（不主動開啟超音波）")
+            self.has_stopped = False
+            self.angle_ready = False
+            self.hcsr04_dist = float('inf')
+            self.hcsr04_enabled = False   # ✅ 重設旗標，允許重新啟用
 
         
 

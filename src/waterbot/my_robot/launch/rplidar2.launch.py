@@ -58,6 +58,12 @@ def generate_launch_description():
         ),
         Node(
             package='my_robot',
+            executable='water.py',  # ✅ 這就是你這支超音波腳本
+            name='water',
+            output='screen'
+        ),
+        Node(
+            package='my_robot',
             executable='enocder2.py',  
             name='enocder2',
             output='screen'
